@@ -1,0 +1,102 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/include/opencv2/ccalib.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/include/opencv2/ccalib/multicalib.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/include/opencv2/ccalib/omnidir.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/include/opencv2/ccalib/randpattern.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/src/ccalib.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/src/multicalib.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/src/omnidir.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/src/randpattern.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_ccalib",
+			"Module"
+		],
+		"name" : "opencv_ccalib"
+	}
+}

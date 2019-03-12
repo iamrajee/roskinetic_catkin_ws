@@ -1,0 +1,23 @@
+# Target labels
+ Extra
+ opencv_hdf
+ Module
+# Source files and their labels
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/hdf/include/opencv2/hdf.hpp
+ Extra
+ opencv_hdf
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/hdf/include/opencv2/hdf/hdf5.hpp
+ Extra
+ opencv_hdf
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/hdf/src/hdf5.cpp
+ Extra
+ opencv_hdf
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/hdf/src/precomp.hpp
+ Extra
+ opencv_hdf
+ Module
+/home/pi/ros_catkin_ws/src/cvconfig.h
+/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp

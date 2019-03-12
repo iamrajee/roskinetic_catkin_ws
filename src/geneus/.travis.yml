@@ -1,0 +1,84 @@
+sudo: required
+dist: trusty
+language: generic
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+env:
+  matrix:
+    - ROS_DISTRO=indigo BUILDER='catkin_make'
+    - ROS_DISTRO=indigo BUILDER='catkin_make_isolated'
+    - ROS_DISTRO=indigo BUILDER='catkin build'
+    - ROS_DISTRO=jade   BUILDER='catkin_make'
+    - ROS_DISTRO=jade   BUILDER='catkin_make_isolated'
+    - ROS_DISTRO=jade   BUILDER='catkin build'
+before_script:
+  - export CI_SOURCE_PATH=$(pwd)
+  - export REPOSITORY_NAME=${PWD##*/}
+  - if [ ! "$ROS_PARALLEL_JOBS" ]; then export ROS_PARALLEL_JOBS="-j8 -l8";  fi
+  - echo "Testing branch $TRAVIS_BRANCH of $REPOSITORY_NAME"
+  - sudo sh -c 'echo "deb http://packages.ros.org/ros-shadow-fixed/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros-latest.list'
+  - wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+  - sudo add-apt-repository -y ppa:openrave/release
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq -y python-catkin-pkg python-rosdep python-wstool python-catkin-tools ros-$ROS_DISTRO-catkin
+  - sudo rosdep init
+  - rosdep update; while [ $? != 0 ]; do sleep 1; rosdep update; done
+  - mkdir -p ~/ros/ws_$REPOSITORY_NAME/src
+  - cd ~/ros/ws_$REPOSITORY_NAME/src
+  - ln -s $CI_SOURCE_PATH . # Link the repo we are testing to the new workspace
+  - git clone https://github.com/ros/std_msgs           std_msgs        -b groovy-devel
+  - git clone https://github.com/ros/ros_comm_msgs      ros_comm_msgs   -b indigo-devel # jade uses indigo-devel
+  - git clone https://github.com/ros/common_msgs        common_msgs     -b ${ROS_DISTRO}-devel
+  - git clone https://github.com/ros/actionlib          actionlib       -b indigo-devel  # jade uses indigo-devel
+  - find actionlib  -name CMakeLists.txt  -exec sed -i 's@add_subdirectory(test)@#add_subdirectory(test)@' {} \;
+  - cd ..
+  - rosdep install -q -r -n --from-paths src --ignore-src --rosdistro $ROS_DISTRO -y
+script:
+  - source /opt/ros/$ROS_DISTRO/setup.bash
+  # on indigo we have to compile geneus before other packages..
+  - if [ ${BUILDER} == "catkin_make" ]; then ${BUILDER} geneus $ROS_PARALLEL_JOBS; rm -fr build; source devel/setup.bash; fi
+  - ${BUILDER} $ROS_PARALLEL_JOBS
+  # test for roseus
+  - sudo apt-get install -qq -y ros-${ROS_DISTRO}-roseus
+  - sudo dpkg -r --force-depends ros-${ROS_DISTRO}-geneus
+  # need to use latest test codes
+  - rm -fr devel build src/*
+  - cd src
+  - git clone http://github.com/jsk-ros-pkg/jsk_roseus /tmp/jsk_roseus
+  - (cd /tmp/jsk_roseus; git checkout `git describe --abbrev=0 --tags`)
+  - cp -r /tmp/jsk_roseus/roseus ./
+  #- sudo wget https://raw.githubusercontent.com/k-okada/jsk_roseus/fix_generate_all/roseus/scripts/generate-all-msg-srv.sh -O /opt/ros/hydro/share/roseus/scripts/generate-all-msg-srv.sh
+  - ln -s $CI_SOURCE_PATH . # Link the repo we are testing to the new workspace
+  - cd ..
+  # check roseus
+  - source /opt/ros/$ROS_DISTRO/setup.bash
+  - rm -fr build devel # need to clean up to check #42 case
+  - if [ ${BUILDER} == "catkin_make" ]; then ${BUILDER} geneus $ROS_PARALLEL_JOBS; rm -fr build; source devel/setup.bash; fi
+  - ${BUILDER}
+  - source devel*/setup.bash
+  - if [ ${BUILDER} == "catkin_make_isolated" ] ; then cat devel_isolated/roseus/share/roseus/ros/roseus/manifest.l; fi
+  - if [ ${BUILDER} != "catkin_make_isolated" ] ; then cat devel/share/roseus/ros/roseus/manifest.l; fi
+  # check https://github.com/jsk-ros-pkg/geneus/pull/42
+  - if [ ${BUILDER} == "catkin_make_isolated" ] ; then grep -c -e "/opt/ros/${ROS_DISTRO}/share/roseus/package.xml" devel_isolated/roseus/share/roseus/ros/roseus/manifest.l; [ "$?" == 1 ]; fi
+  - if [ ${BUILDER} != "catkin_make_isolated" ] ; then grep -c -e "/opt/ros/${ROS_DISTRO}/share/roseus/package.xml" devel/share/roseus/ros/roseus/manifest.l; [ "$?" == 1 ]; fi
+  - rostest roseus test-genmsg.catkin.test
+  - rostest roseus test-genmsg-oneworkspace.catkin.launch
+  # check pr2eus
+  - git clone http://github.com/jsk-ros-pkg/jsk_pr2eus src/jsk_pr2eus
+  - (cd src/jsk_pr2eus; git checkout `git describe --abbrev=0 --tags`)
+  - sudo apt-get -qq -f install
+  - rosdep install -q -r -n --from-paths src --ignore-src --rosdistro $ROS_DISTRO -y
+  - sudo dpkg -r --force-depends ros-${ROS_DISTRO}-geneus
+  - rm -fr build devel install logs .catkin*
+  - source /opt/ros/$ROS_DISTRO/setup.bash
+  - if [ ${BUILDER} == "catkin_make" ]; then ${BUILDER} geneus $ROS_PARALLEL_JOBS; rm -fr build; source devel/setup.bash; fi
+  - ${BUILDER}
+  - source devel*/setup.bash
+  - rostest pr2eus pr2-ri-test-simple.launch
+  - rostest pr2eus default-ri-test.test
+  - rostest pr2eus pr2eus-test.launch
+after_failure:
+  - rostest -t roseus test-genmsg.catkin.test
+  - rostest -t roseus test-genmsg-oneworkspace.catkin.launch

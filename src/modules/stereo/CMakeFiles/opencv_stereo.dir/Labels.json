@@ -1,0 +1,93 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/stereo/include/opencv2/stereo.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_stereo",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/stereo/include/opencv2/stereo/descriptor.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_stereo",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/stereo/include/opencv2/stereo/matching.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_stereo",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/stereo/include/opencv2/stereo/stereo.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_stereo",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/stereo/src/descriptor.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_stereo",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/stereo/src/stereo_binary_bm.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_stereo",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/stereo/src/stereo_binary_sgbm.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_stereo",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/stereo/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_stereo",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_stereo",
+			"Module"
+		],
+		"name" : "opencv_stereo"
+	}
+}

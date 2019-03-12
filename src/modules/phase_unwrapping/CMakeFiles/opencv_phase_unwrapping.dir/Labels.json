@@ -1,0 +1,66 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/phase_unwrapping/include/opencv2/phase_unwrapping.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_phase_unwrapping",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/phase_unwrapping/include/opencv2/phase_unwrapping/histogramphaseunwrapping.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_phase_unwrapping",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/phase_unwrapping/include/opencv2/phase_unwrapping/phase_unwrapping.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_phase_unwrapping",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/phase_unwrapping/src/histogramphaseunwrapping.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_phase_unwrapping",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/phase_unwrapping/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_phase_unwrapping",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_phase_unwrapping",
+			"Module"
+		],
+		"name" : "opencv_phase_unwrapping"
+	}
+}

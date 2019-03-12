@@ -1,0 +1,18 @@
+<launch>
+	<node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+		<param name="video_device" value="/dev/video0" />
+		<param name="image_width" value="640" />
+		<param name="image_height" value="480" />
+		<param name="pixel_format" value="yuyv" />
+		<param name="camera_frame_id" value="usb_cam" />
+		<param name="io_method" value="mmap"/>
+	</node>
+	
+	<node pkg="manualcontrol" name="subnav" type="subnav.py"  output="screen"/>
+	
+	<node pkg="rosserial_python" name="rosserial" type="serial_node.py" output="screen">
+		<param name="port" value="/dev/ttyACM0" />
+		<param name="baud" value="57600" />
+	</node>
+
+</launch>

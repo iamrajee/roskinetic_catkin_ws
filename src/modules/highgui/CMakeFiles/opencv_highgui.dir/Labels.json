@@ -1,0 +1,117 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/highgui/include/opencv2/highgui.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/highgui/include/opencv2/highgui/highgui.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/highgui/include/opencv2/highgui/highgui_c.h",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/highgui/src/window.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/highgui/src/roiSelector.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/highgui/src/window_QT.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/highgui/src/window_QT.h",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/modules/highgui/src/moc_window_QT.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/modules/highgui/qrc_window_QT.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/highgui/src/precomp.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/modules/highgui/src/moc_window_QT.cpp.rule"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/highgui/src/window_QT.qrc"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_highgui",
+			"Module"
+		],
+		"name" : "opencv_highgui"
+	}
+}

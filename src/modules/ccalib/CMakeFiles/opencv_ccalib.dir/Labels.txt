@@ -1,0 +1,43 @@
+# Target labels
+ Extra
+ opencv_ccalib
+ Module
+# Source files and their labels
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/include/opencv2/ccalib.hpp
+ Extra
+ opencv_ccalib
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/include/opencv2/ccalib/multicalib.hpp
+ Extra
+ opencv_ccalib
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/include/opencv2/ccalib/omnidir.hpp
+ Extra
+ opencv_ccalib
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/include/opencv2/ccalib/randpattern.hpp
+ Extra
+ opencv_ccalib
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/src/ccalib.cpp
+ Extra
+ opencv_ccalib
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/src/multicalib.cpp
+ Extra
+ opencv_ccalib
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/src/omnidir.cpp
+ Extra
+ opencv_ccalib
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/src/randpattern.cpp
+ Extra
+ opencv_ccalib
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/ccalib/src/precomp.hpp
+ Extra
+ opencv_ccalib
+ Module
+/home/pi/ros_catkin_ws/src/cvconfig.h
+/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp

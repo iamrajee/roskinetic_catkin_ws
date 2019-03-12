@@ -1,0 +1,273 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/include/opencv2/xphoto.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/include/opencv2/xphoto/bm3d_image_denoising.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/include/opencv2/xphoto/dct_image_denoising.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/include/opencv2/xphoto/inpainting.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/include/opencv2/xphoto/white_balance.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/bm3d_image_denoising.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/dct_image_denoising.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/grayworld_white_balance.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/inpainting.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/learning_based_color_balance.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/simple_color_balance.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/advanced_types.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/annf.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/blending.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/bm3d_denoising_invoker_commons.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/bm3d_denoising_invoker_step1.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/bm3d_denoising_invoker_step2.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/bm3d_denoising_invoker_structs.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/bm3d_denoising_transforms.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/bm3d_denoising_transforms_1D.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/bm3d_denoising_transforms_2D.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/bm3d_denoising_transforms_haar.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/gcgraph.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/kaiser_window.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/learning_based_color_balance_model.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/norm2.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/photomontage.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xphoto/src/whs.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xphoto",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_xphoto",
+			"Module"
+		],
+		"name" : "opencv_xphoto"
+	}
+}

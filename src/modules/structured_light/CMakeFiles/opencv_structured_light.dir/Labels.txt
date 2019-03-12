@@ -1,0 +1,35 @@
+# Target labels
+ Extra
+ opencv_structured_light
+ Module
+# Source files and their labels
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/structured_light/include/opencv2/structured_light.hpp
+ Extra
+ opencv_structured_light
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/structured_light/include/opencv2/structured_light/graycodepattern.hpp
+ Extra
+ opencv_structured_light
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/structured_light/include/opencv2/structured_light/sinusoidalpattern.hpp
+ Extra
+ opencv_structured_light
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/structured_light/include/opencv2/structured_light/structured_light.hpp
+ Extra
+ opencv_structured_light
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/structured_light/src/graycodepattern.cpp
+ Extra
+ opencv_structured_light
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/structured_light/src/sinusoidalpattern.cpp
+ Extra
+ opencv_structured_light
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/structured_light/src/precomp.hpp
+ Extra
+ opencv_structured_light
+ Module
+/home/pi/ros_catkin_ws/src/cvconfig.h
+/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp

@@ -1,0 +1,12 @@
+<package>
+  <name>ros_environment</name>
+  <version>1.0.0</version>
+  <description>The package provides the environment variables `ROS_VERSION`, `ROS_DISTRO`, `ROS_PACKAGE_PATH`, and `ROS_ETC_DIR`.</description>
+  <maintainer email="dthomas@osrfoundation.org">Dirk Thomas</maintainer>
+  <license>Apache License 2.0</license>
+
+  <url type="repository">https://github.com/ros/ros_environment</url>
+  <url type="bugtracker">https://github.com/ros/ros_environment/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

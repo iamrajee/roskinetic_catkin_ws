@@ -1,0 +1,138 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/include/opencv2/rgbd.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/include/opencv2/rgbd/linemod.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/depth_cleaner.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/depth_registration.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/depth_to_3d.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/linemod.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/normal.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/odometry.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/plane.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/utils.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/depth_to_3d.h",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/rgbd/src/utils.h",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_rgbd",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_rgbd",
+			"Module"
+		],
+		"name" : "opencv_rgbd"
+	}
+}

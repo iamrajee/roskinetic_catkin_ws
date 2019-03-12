@@ -1,0 +1,102 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/include/opencv2/fuzzy.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_fuzzy",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/include/opencv2/fuzzy/fuzzy_F0_math.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_fuzzy",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/include/opencv2/fuzzy/fuzzy_F1_math.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_fuzzy",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/include/opencv2/fuzzy/fuzzy_image.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_fuzzy",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/include/opencv2/fuzzy/types.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_fuzzy",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/src/fuzzy_F0_math.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_fuzzy",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/src/fuzzy_F1_math.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_fuzzy",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/src/fuzzy_image.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_fuzzy",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_fuzzy",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_fuzzy",
+			"Module"
+		],
+		"name" : "opencv_fuzzy"
+	}
+}

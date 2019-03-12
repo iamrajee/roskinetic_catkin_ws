@@ -1,0 +1,120 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/include/opencv2/xobjdetect.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/src/feature_evaluator.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/src/lbpfeatures.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/src/waldboost.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/src/wbdetector.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/src/feature_evaluator.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/src/waldboost.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/src/wbdetector.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/src/cascadeclassifier.h",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/xobjdetect/src/lbpfeatures.h",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_xobjdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_xobjdetect",
+			"Module"
+		],
+		"name" : "opencv_xobjdetect"
+	}
+}

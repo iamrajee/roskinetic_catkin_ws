@@ -1,0 +1,246 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/include/opencv2/face.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/include/opencv2/face/bif.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/include/opencv2/face/face_alignment.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/include/opencv2/face/facemark.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/include/opencv2/face/facemarkAAM.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/include/opencv2/face/facemarkLBF.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/include/opencv2/face/facerec.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/include/opencv2/face/predict_collector.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/bif.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/eigen_faces.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/face_alignment.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/face_basic.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/facemark.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/facemarkAAM.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/facemarkLBF.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/facerec.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/fisher_faces.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/getlandmarks.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/lbph_faces.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/predict_collector.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/regtree.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/trainFacemark.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/face_alignmentimpl.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/face_utils.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/face/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_face",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_face",
+			"Module"
+		],
+		"name" : "opencv_face"
+	}
+}

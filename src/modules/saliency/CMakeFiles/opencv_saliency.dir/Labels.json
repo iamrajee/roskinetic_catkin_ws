@@ -1,0 +1,201 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/include/opencv2/saliency.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/include/opencv2/saliency/saliencyBaseClasses.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/include/opencv2/saliency/saliencySpecializedClasses.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/BING/CmFile.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/BING/CmShow.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/BING/FilterTIG.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/BING/ValStructVec.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/BING/objectnessBING.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/motionSaliency.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/motionSaliencyBinWangApr2014.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/objectness.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/saliency.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/staticSaliency.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/staticSaliencyFineGrained.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/staticSaliencySpectralResidual.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/BING/CmFile.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/BING/CmShow.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/BING/CmTimer.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/BING/kyheader.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/saliency/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_saliency",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_saliency",
+			"Module"
+		],
+		"name" : "opencv_saliency"
+	}
+}

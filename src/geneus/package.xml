@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>geneus</name>
+  <version>2.2.6</version>
+  <description>
+  EusLisp ROS message and service generators.
+  </description>
+  <maintainer email="k-okada@jsk.t.u-tokyo.ac.jp">Kei Okada</maintainer>
+  <license>BSD</license>
+
+  <author>Kei Okada</author>
+
+  <buildtool_depend version_gte="0.5.78">catkin</buildtool_depend>
+
+  <build_depend>genmsg</build_depend>
+
+  <run_depend>genmsg</run_depend>
+
+  <export>
+    <message_generator>eus</message_generator>
+  </export>
+</package>

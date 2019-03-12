@@ -1,0 +1,51 @@
+# Target labels
+ Extra
+ opencv_text
+ Module
+# Source files and their labels
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/include/opencv2/text.hpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/include/opencv2/text/erfilter.hpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/include/opencv2/text/ocr.hpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/include/opencv2/text/textDetector.hpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/src/erfilter.cpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/src/ocr_beamsearch_decoder.cpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/src/ocr_hmm_decoder.cpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/src/ocr_holistic.cpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/src/ocr_tesseract.cpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/src/text_detectorCNN.cpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/text/src/precomp.hpp
+ Extra
+ opencv_text
+ Module
+/home/pi/ros_catkin_ws/src/cvconfig.h
+/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp

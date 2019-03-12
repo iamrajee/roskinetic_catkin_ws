@@ -1,0 +1,13 @@
+-I/home/pi/ros_catkin_ws/src
+-I/home/pi/ros_catkin_ws/src
+-I/usr/include/eigen3
+-I/home/pi/ros_catkin_ws/src/opencv3/modules/highgui
+-I/home/pi/ros_catkin_ws/src/modules/highgui
+-D__OPENCV_BUILD=1
+-D_USE_MATH_DEFINES
+-D__STDC_CONSTANT_MACROS
+-D__STDC_LIMIT_MACROS
+-D__STDC_FORMAT_MACROS
+-o
+/home/pi/ros_catkin_ws/src/modules/highgui/src/moc_window_QT.cpp
+/home/pi/ros_catkin_ws/src/opencv3/modules/highgui/src/window_QT.h

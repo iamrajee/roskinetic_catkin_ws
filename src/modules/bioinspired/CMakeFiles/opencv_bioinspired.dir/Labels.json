@@ -1,0 +1,267 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/include/opencv2/bioinspired.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/include/opencv2/bioinspired/bioinspired.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/include/opencv2/bioinspired/retina.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/include/opencv2/bioinspired/retinafasttonemapping.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/include/opencv2/bioinspired/transientareassegmentationmodule.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/basicretinafilter.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/imagelogpolprojection.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/magnoretinafilter.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/parvoretinafilter.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/retina.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/retina_ocl.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/retinacolor.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/retinafasttonemapping.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/retinafilter.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/transientareassegmentationmodule.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/opencl/retina_kernel.cl",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/modules/bioinspired/opencl_kernels_bioinspired.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/modules/bioinspired/opencl_kernels_bioinspired.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/basicretinafilter.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/imagelogpolprojection.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/magnoretinafilter.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/parvoretinafilter.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/retina_ocl.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/retinacolor.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/retinafilter.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bioinspired/src/templatebuffer.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bioinspired",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/modules/bioinspired/opencl_kernels_bioinspired.cpp.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_bioinspired",
+			"Module"
+		],
+		"name" : "opencv_bioinspired"
+	}
+}

@@ -1,0 +1,84 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/include/opencv2/bgsegm.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bgsegm",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/bgfg_gaussmix.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bgsegm",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/bgfg_gmg.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bgsegm",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/bgfg_gsoc.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bgsegm",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/bgfg_subcnt.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bgsegm",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/synthetic_seq.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bgsegm",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_bgsegm",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_bgsegm",
+			"Module"
+		],
+		"name" : "opencv_bgsegm"
+	}
+}

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libopencv_img_hash_pch_dephelp.a  CMakeFiles/opencv_img_hash_pch_dephelp.dir/opencv_img_hash_pch_dephelp.cxx.o
+/usr/bin/ranlib ../../lib/libopencv_img_hash_pch_dephelp.a

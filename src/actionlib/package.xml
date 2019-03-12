@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>actionlib</name>
+  <version>1.11.13</version>
+  <description>
+    The actionlib stack provides a standardized interface for
+    interfacing with preemptable tasks. Examples of this include moving
+    the base to a target location, performing a laser scan and returning
+    the resulting point cloud, detecting the handle of a door, etc.
+  </description>
+  <maintainer email="mikael@osrfoundation.org">Mikael Arguedas</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://www.ros.org/wiki/actionlib</url>
+  <url type="bugtracker">https://github.com/ros/actionlib/issues</url>
+  <url type="repository">https://github.com/ros/actionlib</url>
+  <author>Eitan Marder-Eppstein</author>
+  <author>Vijay Pradeep</author>
+
+  <buildtool_depend version_gte="0.5.78">catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+
+  <depend>actionlib_msgs</depend>
+  <depend>boost</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>rostest</depend>
+  <depend>std_msgs</depend>
+
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>python-wxtools</exec_depend>
+  <exec_depend>roslib</exec_depend>
+  <exec_depend>rostopic</exec_depend>
+
+  <test_depend>rosnode</test_depend>
+</package>

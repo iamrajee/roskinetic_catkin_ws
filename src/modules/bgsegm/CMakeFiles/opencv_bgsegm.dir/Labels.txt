@@ -1,0 +1,35 @@
+# Target labels
+ Extra
+ opencv_bgsegm
+ Module
+# Source files and their labels
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/include/opencv2/bgsegm.hpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/bgfg_gaussmix.cpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/bgfg_gmg.cpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/bgfg_gsoc.cpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/bgfg_subcnt.cpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/synthetic_seq.cpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/bgsegm/src/precomp.hpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/ros_catkin_ws/src/cvconfig.h
+/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp

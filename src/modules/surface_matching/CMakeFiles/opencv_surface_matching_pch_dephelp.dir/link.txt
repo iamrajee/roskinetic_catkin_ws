@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libopencv_surface_matching_pch_dephelp.a  CMakeFiles/opencv_surface_matching_pch_dephelp.dir/opencv_surface_matching_pch_dephelp.cxx.o
+/usr/bin/ranlib ../../lib/libopencv_surface_matching_pch_dephelp.a
