@@ -45,7 +45,7 @@ import sys
 
 if __name__=="__main__":
 
-    rospy.init_node("serial_node")
+    rospy.init_node("serial_node",anonymous=True)
     rospy.loginfo("ROS Serial Python Node")
 
     port_name = rospy.get_param('~port','/dev/ttyUSB0')
