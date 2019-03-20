@@ -22,7 +22,7 @@ Servo servo;
 ros::NodeHandle nh;
 //int lowSpeed = 220;
 //int highSpeed = 30;
-int Speed = 255;
+int Speed = 120;
 int lSpeed = Speed;
 int rSpeed = Speed;
 
