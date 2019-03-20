@@ -6,8 +6,8 @@ std_msgs::Float64 Distance;
 ros::Publisher ultrasonicpub("ultrasonic",&Distance);
 
 // defines pins numbers
-const int trigPin = 26;
-const int echoPin = 27;
+const int trigPin = 40;
+const int echoPin = 41;
 
 // defines variables
 long duration;
@@ -18,7 +18,7 @@ void setup() {
   nh.advertise(ultrasonicpub);
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
   pinMode(echoPin, INPUT); // Sets the echoPin as an Input
-  Serial.begin(57600); // Starts the serial communication
+  //Serial.begin(57600); // Starts the serial communication
 }
 
 void loop() {
@@ -35,8 +35,8 @@ void loop() {
   Distance.data=distance;
   ultrasonicpub.publish(&Distance);
   nh.spinOnce();
-  // Prints the distance on the Serial Monitor
-  //Serial.print("Distance: ");
-  //Serial.println(distance);
-  //delay(100);
+  /*Prints the distance on the Serial Monitor*/
+//  Serial.print("Distance: ");
+//  Serial.println(distance);
+  //delay(500);
 }
