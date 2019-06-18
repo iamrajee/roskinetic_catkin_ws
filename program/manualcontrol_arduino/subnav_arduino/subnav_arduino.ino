@@ -20,8 +20,8 @@ Servo servo;
 #define servo_pin 9
 
 ros::NodeHandle nh;
-//int lowSpeed = 220;
-//int highSpeed = 30;
+//int lowSpeed = 130;
+//int highSpeed = 255;
 int Speed = 120;
 int lSpeed = Speed;
 int rSpeed = Speed;
