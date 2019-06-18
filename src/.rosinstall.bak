@@ -348,6 +348,10 @@
     uri: https://github.com/ros-gbp/rosserial-release/archive/release/kinetic/rosserial/0.7.7-0.tar.gz
     version: rosserial-release-release-kinetic-rosserial-0.7.7-0
 - tar:
+    local-name: rosserial/rosserial_arduino
+    uri: https://github.com/ros-gbp/rosserial-release/archive/release/kinetic/rosserial_arduino/0.7.7-0.tar.gz
+    version: rosserial-release-release-kinetic-rosserial_arduino-0.7.7-0
+- tar:
     local-name: rosserial/rosserial_client
     uri: https://github.com/ros-gbp/rosserial-release/archive/release/kinetic/rosserial_client/0.7.7-0.tar.gz
     version: rosserial-release-release-kinetic-rosserial_client-0.7.7-0

@@ -1,0 +1,61 @@
+<launch>
+	
+	<group ns="camera0">
+		<node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+			<param name="video_device" value="/dev/video0" />
+			<param name="image_width" value="160" />
+			<param name="image_height" value="120" />
+			<!-- <param name="framerate" value="15" /> -->
+			<param name="pixel_format" value="yuyv" />
+			<param name="camera_frame_id" value="yuyv" />
+			<param name="io_method" value="mmap"/>
+		</node>
+	</group>
+
+	<group ns="camera1">
+		<node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+			<param name="video_device" value="/dev/video1" />
+			<param name="image_width" value="160" />
+			<param name="image_height" value="120" />
+			<!-- <param name="framerate" value="15" /> -->
+			<param name="pixel_format" value="yuyv" />
+			<param name="camera_frame_id" value="yuyv" />
+			<param name="io_method" value="mmap"/>
+		</node>
+	</group>
+
+
+	<!-- <node pkg="manualcontrol" name="subnav" type="subnav.py"  output="screen"/> -->
+	
+	<node pkg="rosserial_python" name="rosserial" type="serial_node.py" output="screen">
+		<param name="port" value="/dev/ttyACM0" />
+		<param name="baud" value="57600" />
+	</node>
+	
+	<node pkg="manualcontrol" name="speak" type="speak.py"  output="screen"/>
+
+	<node pkg="manualcontrol" name="sensehat" type="sensehat.py"  output="screen"/>
+
+	<?ignore
+	<group ns="laptop">
+        <node pkg="audio_capture" name="turtlebot_teleop" type="turtlebot_teleop_key"/>
+	</group>
+	?>
+
+	<arg name="device" default=""/>
+	<arg name="channels" default="2"/>
+	<arg name="sample_rate" default="16000"/>
+	<arg name="format" default="mp3"/>
+	<arg name="ns" default="audio"/>
+	
+	<group ns="$(arg ns)">
+		<node name="audio_capture" pkg="audio_capture" type="audio_capture" output="screen">
+			<param name="bitrate" value="128"/>
+			<param name="device" value="$(arg device)"/>
+			<param name="channels" value="$(arg channels)"/>
+			<param name="sample_rate" value="$(arg sample_rate)"/>
+			<param name="format" value="$(arg format)"/>
+		</node>
+	</group>
+
+</launch>

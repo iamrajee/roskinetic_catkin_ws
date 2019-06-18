@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from __future__ import print_function
 import roslib
-#roslib.load_manifest('testcv2')
+#roslib.load_manifest('testcv2new')
 import sys
 import rospy
 import cv2
@@ -13,7 +13,7 @@ class image_converter:
 	def __init__(self):
 		self.image_pub = rospy.Publisher("image_topic_2",Image,queue_size=10)
 		self.bridge = CvBridge()
-		self.image_sub = rospy.Subscriber("usb_cam/image_raw",Image,self.callback)
+		self.image_sub = rospy.Subscriber("/usb_cam/image_raw",Image,self.callback)
 	def callback(self,data):
 		try:
 			cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
