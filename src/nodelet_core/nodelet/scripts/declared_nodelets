@@ -1,0 +1,102 @@
+#!/usr/bin/env python
+
+# Software License Agreement (BSD License)
+#
+# Copyright (c) 2008, Willow Garage, Inc.
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions
+# are met:
+#
+#  * Redistributions of source code must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#  * Redistributions in binary form must reproduce the above
+#    copyright notice, this list of conditions and the following
+#    disclaimer in the documentation and/or other materials provided
+#    with the distribution.
+#  * Neither the name of Willow Garage, Inc. nor the names of its
+#    contributors may be used to endorse or promote products derived
+#    from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+# "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+# LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+# FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+# COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+# BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+# ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
+
+from __future__ import print_function
+
+import argparse
+import os
+import sys
+import xml
+from xml.dom import minidom
+
+import rospkg
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-v', '--verbose', action='store_true')
+    parser.add_argument('-p', '--package')
+    args = parser.parse_args()
+
+    rp = rospkg.RosPack()
+    nodelet_files = []
+    for p in rp.get_depends_on('nodelet', implicit=False):
+        manifest = rp.get_manifest(p)
+        for e in manifest.exports:
+            try:
+                if e.__dict__['tag'] == 'nodelet':
+                    plugin_file = e.get('plugin')
+                    if plugin_file:
+                        plugin_file = plugin_file.replace('${prefix}', rp.get_path(p))
+                        nodelet_files.append((p, plugin_file))
+            except Exception as e:
+                print(e, file=sys.stderr)
+
+    declared_nodelets = []
+    for p, f in nodelet_files:
+        nodelets = []
+        if not os.path.isfile(f):
+            print('%s: %s' % (f, 'The file does not exist.'), file=sys.stderr)
+            continue
+        with open(f) as fh:
+            try:
+                dom = minidom.parse(fh)
+                for lib in dom.getElementsByTagName('library'):
+                    for name in lib.getElementsByTagName('class'):
+                        nodelets.append(name.getAttribute('name'))
+            except xml.parsers.expat.ExpatError as e:
+                print('%s: %s' % (f, e), file=sys.stderr)
+                continue
+        declared_nodelets.append({
+            'package': p,
+            'manifest': f,
+            'nodelets': nodelets,
+        })
+
+    for declared in declared_nodelets:
+        if args.package and declared['package'] != args.package:
+            continue
+        if args.verbose:
+            print('- package: %s' % declared['package'])
+            print('  manifest: %s' % declared['manifest'])
+            print('  nodelets:')
+            for nodelet in declared['nodelets']:
+                print('    - %s' % nodelet)
+        else:
+            for nodelet in declared['nodelets']:
+                print(nodelet)
+
+
+if __name__ == '__main__':
+    main()

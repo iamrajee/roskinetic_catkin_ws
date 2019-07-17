@@ -1,2 +1,2 @@
-{!!python/unicode 'url': 'https://github.com/ros-gbp/ros-release/archive/release/kinetic/rosbuild/1.14.4-0.tar.gz',
-  !!python/unicode 'version': ros-release-release-kinetic-rosbuild-1.14.4-0}
+{!!python/unicode 'url': 'https://github.com/ros-gbp/ros-release/archive/release/kinetic/rosbuild/1.14.6-1.tar.gz',
+  !!python/unicode 'version': ros-release-release-kinetic-rosbuild-1.14.6-1}

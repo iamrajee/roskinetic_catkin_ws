@@ -1,0 +1,48 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/freetype/include/opencv2/freetype.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_freetype",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/freetype/src/freetype.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_freetype",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/freetype/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_freetype",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/cvconfig.h"
+		},
+		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_freetype",
+			"Module"
+		],
+		"name" : "opencv_freetype"
+	}
+}

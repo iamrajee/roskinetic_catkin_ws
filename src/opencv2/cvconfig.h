@@ -84,7 +84,7 @@
 /* #undef HAVE_GDAL */
 
 /* GStreamer multimedia framework */
-/* #undef HAVE_GSTREAMER */
+#define HAVE_GSTREAMER
 
 /* GTK+ 2.0 Thread support */
 /* #undef HAVE_GTHREAD */

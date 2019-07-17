@@ -313,6 +313,33 @@ src/cap_ffmpeg.cpp.s:
 	cd /home/pi/ros_catkin_ws/src && $(MAKE) -f modules/videoio/CMakeFiles/opencv_videoio.dir/build.make modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.s
 .PHONY : src/cap_ffmpeg.cpp.s
 
+src/cap_gstreamer.o: src/cap_gstreamer.cpp.o
+
+.PHONY : src/cap_gstreamer.o
+
+# target to build an object file
+src/cap_gstreamer.cpp.o:
+	cd /home/pi/ros_catkin_ws/src && $(MAKE) -f modules/videoio/CMakeFiles/opencv_videoio.dir/build.make modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o
+.PHONY : src/cap_gstreamer.cpp.o
+
+src/cap_gstreamer.i: src/cap_gstreamer.cpp.i
+
+.PHONY : src/cap_gstreamer.i
+
+# target to preprocess a source file
+src/cap_gstreamer.cpp.i:
+	cd /home/pi/ros_catkin_ws/src && $(MAKE) -f modules/videoio/CMakeFiles/opencv_videoio.dir/build.make modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.i
+.PHONY : src/cap_gstreamer.cpp.i
+
+src/cap_gstreamer.s: src/cap_gstreamer.cpp.s
+
+.PHONY : src/cap_gstreamer.s
+
+# target to generate assembly for a file
+src/cap_gstreamer.cpp.s:
+	cd /home/pi/ros_catkin_ws/src && $(MAKE) -f modules/videoio/CMakeFiles/opencv_videoio.dir/build.make modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.s
+.PHONY : src/cap_gstreamer.cpp.s
+
 src/cap_images.o: src/cap_images.cpp.o
 
 .PHONY : src/cap_images.o
@@ -448,6 +475,9 @@ help:
 	@echo "... src/cap_ffmpeg.o"
 	@echo "... src/cap_ffmpeg.i"
 	@echo "... src/cap_ffmpeg.s"
+	@echo "... src/cap_gstreamer.o"
+	@echo "... src/cap_gstreamer.i"
+	@echo "... src/cap_gstreamer.s"
 	@echo "... src/cap_images.o"
 	@echo "... src/cap_images.i"
 	@echo "... src/cap_images.s"

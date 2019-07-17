@@ -11,15 +11,20 @@ ROS Distros
 This repository has branches for minor releases (`0.2-devel`, `0.3-devel`, `0.4-devel`, etc...) and they map to specific ROS distributions like so:
 
 - `0.2-devel`:
- - ROS Groovy
+   - ROS Groovy
 - `0.3-devel`:
- - ROS Hydro
- - ROS Indigo
+   - ROS Hydro
+   - ROS Indigo
 - `0.4-devel`:
- - ROS Jade
- - ROS Kinetic
+   - ROS Jade
+   - ROS Kinetic
+   - ROS Lunar
+   - ROS Melodic
 
 This mapping will be kept up-to-date in the `README.md` on the default branch.
+
+In the future, new minor releases will increment by the number of ROS distros that are skipped.
+For example, if a custom branch is needed for ROS Lunar, then it will be `0.6-devel` and not `0.5-devel`, so that `0.5-devel` maybe used by Kinetic in the future if necessary.
 
 Provided Modules
 ----------------
@@ -96,7 +101,7 @@ find_package(TinyXML REQUIRED)
 find_package(Xenomai REQUIRED)
 ```
 
-### FindGSL
+##### FindGSL
 
 ```cmake
 find_package(GSL REQUIRED)

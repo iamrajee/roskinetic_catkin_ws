@@ -1,6 +1,6 @@
 <package>
   <name>roslib</name>
-  <version>1.14.4</version>
+  <version>1.14.6</version>
   <description>
     Base dependencies and support libraries for ROS.
     roslib contains many of the common data structures and tools that are shared across ROS client library implementations.
@@ -22,6 +22,8 @@
   <run_depend version_gte="1.0.37">python-rospkg</run_depend>
   <run_depend>ros_environment</run_depend>
   <run_depend>rospack</run_depend>
+
+  <test_depend>rosmake</test_depend>
 
   <export>
      <rosdoc config="${prefix}/rosdoc.yaml" />

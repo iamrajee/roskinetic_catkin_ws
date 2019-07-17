@@ -94,6 +94,7 @@ lib/python3/cv2.cpython-35m-arm-linux-gnueabihf.so: lib/libopencv_hdf3.so.3.3.1
 lib/python3/cv2.cpython-35m-arm-linux-gnueabihf.so: lib/libopencv_reg3.so.3.3.1
 lib/python3/cv2.cpython-35m-arm-linux-gnueabihf.so: lib/libopencv_surface_matching3.so.3.3.1
 lib/python3/cv2.cpython-35m-arm-linux-gnueabihf.so: lib/libopencv_xphoto3.so.3.3.1
+lib/python3/cv2.cpython-35m-arm-linux-gnueabihf.so: lib/libopencv_freetype3.so.3.3.1
 lib/python3/cv2.cpython-35m-arm-linux-gnueabihf.so: lib/libopencv_fuzzy3.so.3.3.1
 lib/python3/cv2.cpython-35m-arm-linux-gnueabihf.so: lib/libopencv_img_hash3.so.3.3.1
 lib/python3/cv2.cpython-35m-arm-linux-gnueabihf.so: lib/libopencv_xobjdetect3.so.3.3.1

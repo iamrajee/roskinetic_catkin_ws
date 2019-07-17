@@ -877,6 +877,45 @@ pch_Generate_opencv_dnn/fast:
 .PHONY : pch_Generate_opencv_dnn/fast
 
 #=============================================================================
+# Target rules for targets named opencv_freetype_pch_dephelp
+
+# Build rule for target.
+opencv_freetype_pch_dephelp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 opencv_freetype_pch_dephelp
+.PHONY : opencv_freetype_pch_dephelp
+
+# fast build rule for target.
+opencv_freetype_pch_dephelp/fast:
+	$(MAKE) -f modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/build.make modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/build
+.PHONY : opencv_freetype_pch_dephelp/fast
+
+#=============================================================================
+# Target rules for targets named opencv_freetype
+
+# Build rule for target.
+opencv_freetype: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 opencv_freetype
+.PHONY : opencv_freetype
+
+# fast build rule for target.
+opencv_freetype/fast:
+	$(MAKE) -f modules/freetype/CMakeFiles/opencv_freetype.dir/build.make modules/freetype/CMakeFiles/opencv_freetype.dir/build
+.PHONY : opencv_freetype/fast
+
+#=============================================================================
+# Target rules for targets named pch_Generate_opencv_freetype
+
+# Build rule for target.
+pch_Generate_opencv_freetype: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pch_Generate_opencv_freetype
+.PHONY : pch_Generate_opencv_freetype
+
+# fast build rule for target.
+pch_Generate_opencv_freetype/fast:
+	$(MAKE) -f modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/build.make modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/build
+.PHONY : pch_Generate_opencv_freetype/fast
+
+#=============================================================================
 # Target rules for targets named opencv_fuzzy
 
 # Build rule for target.
@@ -2205,6 +2244,9 @@ help:
 	@echo "... opencv_dnn_pch_dephelp"
 	@echo "... opencv_dnn"
 	@echo "... pch_Generate_opencv_dnn"
+	@echo "... opencv_freetype_pch_dephelp"
+	@echo "... opencv_freetype"
+	@echo "... pch_Generate_opencv_freetype"
 	@echo "... opencv_fuzzy"
 	@echo "... pch_Generate_opencv_fuzzy"
 	@echo "... opencv_fuzzy_pch_dephelp"

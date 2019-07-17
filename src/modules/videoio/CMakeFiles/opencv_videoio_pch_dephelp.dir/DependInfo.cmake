@@ -21,6 +21,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "/usr/include/eigen3"
+  "/usr/include/gstreamer-1.0"
+  "/usr/include/glib-2.0"
+  "/usr/lib/arm-linux-gnueabihf/glib-2.0/include"
   "/usr/include/arm-linux-gnueabihf"
   "opencv3/modules/videoio/include"
   "opencv3/modules/videoio/src"

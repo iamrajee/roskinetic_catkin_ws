@@ -153,9 +153,33 @@ modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_decoder.cpp.o.provid
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_decoder.cpp.o.provides.build: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_decoder.cpp.o
 
 
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o: modules/videoio/CMakeFiles/opencv_videoio.dir/flags.make
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o: opencv3/modules/videoio/src/cap_gstreamer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o"
+	cd /home/pi/ros_catkin_ws/src/modules/videoio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Winvalid-pch  -include "/home/pi/ros_catkin_ws/src/modules/videoio/precomp.hpp" -o CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o -c /home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_gstreamer.cpp
+
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.i"
+	cd /home/pi/ros_catkin_ws/src/modules/videoio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Winvalid-pch  -include "/home/pi/ros_catkin_ws/src/modules/videoio/precomp.hpp" -E /home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_gstreamer.cpp > CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.i
+
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.s"
+	cd /home/pi/ros_catkin_ws/src/modules/videoio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Winvalid-pch  -include "/home/pi/ros_catkin_ws/src/modules/videoio/precomp.hpp" -S /home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_gstreamer.cpp -o CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.s
+
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o.requires:
+
+.PHONY : modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o.requires
+
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o.provides: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o.requires
+	$(MAKE) -f modules/videoio/CMakeFiles/opencv_videoio.dir/build.make modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o.provides.build
+.PHONY : modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o.provides
+
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o.provides.build: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o
+
+
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o: modules/videoio/CMakeFiles/opencv_videoio.dir/flags.make
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o: opencv3/modules/videoio/src/cap_v4l.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o"
 	cd /home/pi/ros_catkin_ws/src/modules/videoio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Winvalid-pch  -include "/home/pi/ros_catkin_ws/src/modules/videoio/precomp.hpp" -o CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o -c /home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_v4l.cpp
 
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.i: cmake_force
@@ -179,7 +203,7 @@ modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o.provides.build: 
 
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o: modules/videoio/CMakeFiles/opencv_videoio.dir/flags.make
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o: opencv3/modules/videoio/src/cap_ffmpeg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o"
 	cd /home/pi/ros_catkin_ws/src/modules/videoio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Winvalid-pch  -include "/home/pi/ros_catkin_ws/src/modules/videoio/precomp.hpp" -o CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o -c /home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_ffmpeg.cpp
 
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.i: cmake_force
@@ -207,6 +231,7 @@ opencv_videoio_OBJECTS = \
 "CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o" \
 "CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_encoder.cpp.o" \
 "CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_decoder.cpp.o" \
+"CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o" \
 "CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o" \
 "CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o"
 
@@ -217,6 +242,7 @@ lib/libopencv_videoio3.so.3.3.1: modules/videoio/CMakeFiles/opencv_videoio.dir/s
 lib/libopencv_videoio3.so.3.3.1: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o
 lib/libopencv_videoio3.so.3.3.1: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_encoder.cpp.o
 lib/libopencv_videoio3.so.3.3.1: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_decoder.cpp.o
+lib/libopencv_videoio3.so.3.3.1: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o
 lib/libopencv_videoio3.so.3.3.1: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o
 lib/libopencv_videoio3.so.3.3.1: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o
 lib/libopencv_videoio3.so.3.3.1: modules/videoio/CMakeFiles/opencv_videoio.dir/build.make
@@ -225,7 +251,7 @@ lib/libopencv_videoio3.so.3.3.1: 3rdparty/lib/libtegra_hal.a
 lib/libopencv_videoio3.so.3.3.1: lib/libopencv_imgproc3.so.3.3.1
 lib/libopencv_videoio3.so.3.3.1: lib/libopencv_core3.so.3.3.1
 lib/libopencv_videoio3.so.3.3.1: modules/videoio/CMakeFiles/opencv_videoio.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library ../../lib/libopencv_videoio3.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library ../../lib/libopencv_videoio3.so"
 	cd /home/pi/ros_catkin_ws/src/modules/videoio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_videoio.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/pi/ros_catkin_ws/src/modules/videoio && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_videoio3.so.3.3.1 ../../lib/libopencv_videoio3.so.3.3 ../../lib/libopencv_videoio3.so
 
@@ -244,6 +270,7 @@ modules/videoio/CMakeFiles/opencv_videoio.dir/requires: modules/videoio/CMakeFil
 modules/videoio/CMakeFiles/opencv_videoio.dir/requires: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o.requires
 modules/videoio/CMakeFiles/opencv_videoio.dir/requires: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_encoder.cpp.o.requires
 modules/videoio/CMakeFiles/opencv_videoio.dir/requires: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_decoder.cpp.o.requires
+modules/videoio/CMakeFiles/opencv_videoio.dir/requires: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o.requires
 modules/videoio/CMakeFiles/opencv_videoio.dir/requires: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o.requires
 modules/videoio/CMakeFiles/opencv_videoio.dir/requires: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o.requires
 

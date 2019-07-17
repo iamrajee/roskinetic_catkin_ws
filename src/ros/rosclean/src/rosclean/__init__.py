@@ -34,6 +34,7 @@ from __future__ import print_function
 
 __version__ = '1.7.0'
 
+from distutils.spawn import find_executable
 import argparse
 import os
 import sys
@@ -110,6 +111,14 @@ def _rosclean_cmd_check(args):
         desc = get_human_readable_disk_usage(d)
         print("%s %s"%(desc, label))
 
+def _get_disk_usage_by_walking_tree(d):
+    total_size = 0
+    for dirpath, dirnames, filenames in os.walk(d):
+        for f in filenames:
+            fp = os.path.join(dirpath, f)
+            total_size += os.path.getsize(fp)
+    return total_size
+    
 def get_human_readable_disk_usage(d):
     """
     Get human-readable disk usage for directory
@@ -123,6 +132,9 @@ def get_human_readable_disk_usage(d):
             return subprocess.Popen(['du', '-sh', d], stdout=subprocess.PIPE).communicate()[0].split()[0]
         except:
             raise CleanupException("rosclean is not supported on this platform")
+    elif platform.system() == 'Windows':
+        total_size = _get_disk_usage_by_walking_tree(d)
+        return "Total Size: " + str(total_size) + " " + d
     else:
         raise CleanupException("rosclean is not supported on this platform")
     
@@ -133,18 +145,33 @@ def get_disk_usage(d):
     :returns: disk usage in bytes (du -b) or (du -A) * 1024, ``int``
     :raises: :exc:`CleanupException` If get_disk_usage() cannot be used on this platform
     """
+    if platform.system() == 'Windows':
+        return _get_disk_usage_by_walking_tree(d)
+
     # only implemented on Linux and FreeBSD for now. Should work on OS X but need to verify first (du is not identical)
-    if platform.system() == 'Linux':
+    cmd = None
+    unit = 1
+    du = find_executable('du')
+    if du is not None:
+        if platform.system() == 'Linux':
+            cmd = [du, '-sb', d]
+        elif platform.system() == 'FreeBSD':
+            cmd = [du, '-skA', d]
+            unit = 1024
         try:
-            return int(subprocess.Popen(['du', '-sb', d], stdout=subprocess.PIPE).communicate()[0].split()[0])
-        except:
-            raise CleanupException("rosclean is not supported on this platform")
-    elif platform.system() == 'FreeBSD':
-        try:
-            return int(subprocess.Popen(['du', '-sA', d], stdout=subprocess.PIPE).communicate()[0].split()[0]) * 1024
-        except:
-            raise CleanupException("rosclean is not supported on this platform")
-    else:
+            # detect BusyBox du command by following symlink
+            if os.path.basename(os.readlink(du)) == 'busybox':
+                cmd = [du, '-sk', d]
+                unit = 1024
+        except OSError:
+            # readlink raises OSError if the target is not symlink
+            pass
+
+    if cmd is None:
+        raise CleanupException("rosclean is not supported on this platform")
+    try:
+        return int(subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0].split()[0]) * unit
+    except:
         raise CleanupException("rosclean is not supported on this platform")
 
 def _sort_file_by_oldest(d):
@@ -188,7 +215,10 @@ def _rosclean_cmd_purge(args):
                     break
                 path = os.path.join(d, f)
                 log_size -= get_disk_usage(path)
-                cmds = [['rm', '-rf', path]]
+                if platform.system() == 'Windows':
+                    cmds = [['rd', '/s', '/q', path]]
+                else:
+                    cmds = [['rm', '-rf', path]]
                 try:
                     _call(cmds)
                 except:

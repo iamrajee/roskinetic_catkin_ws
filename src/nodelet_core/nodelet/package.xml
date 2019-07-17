@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>nodelet</name>
+  <version>1.9.14</version>
+  <description>
+    The nodelet package is designed to provide a way to run multiple
+    algorithms in the same process with zero copy transport between
+    algorithms.
+
+    This package provides both the nodelet base class needed for
+    implementing a nodelet, as well as the NodeletLoader class used
+    for instantiating nodelets.
+  </description>
+  <maintainer email="mikael@osrfoundation.org">Mikael Arguedas</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/nodelet</url>
+  <url type="bugtracker">https://github.com/ros/nodelet_core/issues</url>
+  <url type="repository">https://github.com/ros/nodelet_core</url>
+  <author>Tully Foote</author>
+  <author>Radu Bogdan Rusu</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend version_gte="0.3.2">cmake_modules</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <depend>bondcpp</depend>
+  <depend>boost</depend>
+  <depend version_gte="1.10.0">pluginlib</depend>
+  <depend>rosconsole</depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>uuid</depend>
+
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>rospy</exec_depend>
+</package>

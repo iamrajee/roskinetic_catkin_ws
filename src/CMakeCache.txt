@@ -173,6 +173,9 @@ BUILD_opencv_features2d:BOOL=ON
 //Include opencv_flann module into the OpenCV build
 BUILD_opencv_flann:BOOL=ON
 
+//Include opencv_freetype module into the OpenCV build
+BUILD_opencv_freetype:BOOL=ON
+
 //Include opencv_fuzzy module into the OpenCV build
 BUILD_opencv_fuzzy:BOOL=ON
 
@@ -1425,6 +1428,18 @@ opencv_flann_SOURCE_DIR:STATIC=/home/pi/ros_catkin_ws/src/opencv3/modules/flann
 opencv_flann_pch_dephelp_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
+opencv_freetype_BINARY_DIR:STATIC=/home/pi/ros_catkin_ws/src/modules/freetype
+
+//Dependencies for the target
+opencv_freetype_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;tegra_hal;general;freetype;general;harfbuzz;
+
+//Value Computed by CMake
+opencv_freetype_SOURCE_DIR:STATIC=/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/freetype
+
+//Dependencies for target
+opencv_freetype_pch_dephelp_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
 opencv_fuzzy_BINARY_DIR:STATIC=/home/pi/ros_catkin_ws/src/modules/fuzzy
 
 //Dependencies for the target
@@ -1584,7 +1599,7 @@ opencv_plot_pch_dephelp_LIB_DEPENDS:STATIC=
 opencv_python2_BINARY_DIR:STATIC=/home/pi/ros_catkin_ws/src/modules/python2
 
 //Dependencies for the target
-opencv_python2_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_hdf;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_phase_unwrapping;general;opencv_photo;general;opencv_plot;general;opencv_reg;general;opencv_surface_matching;general;opencv_video;general;opencv_viz;general;opencv_xphoto;general;opencv_dnn;general;opencv_fuzzy;general;opencv_img_hash;general;opencv_imgcodecs;general;opencv_shape;general;opencv_videoio;general;opencv_xobjdetect;general;opencv_highgui;general;opencv_superres;general;opencv_bioinspired;general;opencv_dpm;general;opencv_features2d;general;opencv_line_descriptor;general;opencv_saliency;general;opencv_text;general;opencv_calib3d;general;opencv_ccalib;general;opencv_cvv;general;opencv_datasets;general;opencv_rgbd;general;opencv_structured_light;general;opencv_tracking;general;opencv_videostab;general;opencv_xfeatures2d;general;opencv_ximgproc;general;opencv_aruco;general;opencv_bgsegm;general;opencv_face;general;opencv_optflow;general;opencv_stitching;
+opencv_python2_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_hdf;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_phase_unwrapping;general;opencv_photo;general;opencv_plot;general;opencv_reg;general;opencv_surface_matching;general;opencv_video;general;opencv_viz;general;opencv_xphoto;general;opencv_dnn;general;opencv_freetype;general;opencv_fuzzy;general;opencv_img_hash;general;opencv_imgcodecs;general;opencv_shape;general;opencv_videoio;general;opencv_xobjdetect;general;opencv_highgui;general;opencv_superres;general;opencv_bioinspired;general;opencv_dpm;general;opencv_features2d;general;opencv_line_descriptor;general;opencv_saliency;general;opencv_text;general;opencv_calib3d;general;opencv_ccalib;general;opencv_cvv;general;opencv_datasets;general;opencv_rgbd;general;opencv_structured_light;general;opencv_tracking;general;opencv_videostab;general;opencv_xfeatures2d;general;opencv_ximgproc;general;opencv_aruco;general;opencv_bgsegm;general;opencv_face;general;opencv_optflow;general;opencv_stitching;
 
 //Value Computed by CMake
 opencv_python2_SOURCE_DIR:STATIC=/home/pi/ros_catkin_ws/src/opencv3/modules/python/python2
@@ -1593,7 +1608,7 @@ opencv_python2_SOURCE_DIR:STATIC=/home/pi/ros_catkin_ws/src/opencv3/modules/pyth
 opencv_python3_BINARY_DIR:STATIC=/home/pi/ros_catkin_ws/src/modules/python3
 
 //Dependencies for the target
-opencv_python3_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_hdf;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_phase_unwrapping;general;opencv_photo;general;opencv_plot;general;opencv_reg;general;opencv_surface_matching;general;opencv_video;general;opencv_viz;general;opencv_xphoto;general;opencv_dnn;general;opencv_fuzzy;general;opencv_img_hash;general;opencv_imgcodecs;general;opencv_shape;general;opencv_videoio;general;opencv_xobjdetect;general;opencv_highgui;general;opencv_superres;general;opencv_bioinspired;general;opencv_dpm;general;opencv_features2d;general;opencv_line_descriptor;general;opencv_saliency;general;opencv_text;general;opencv_calib3d;general;opencv_ccalib;general;opencv_cvv;general;opencv_datasets;general;opencv_rgbd;general;opencv_structured_light;general;opencv_tracking;general;opencv_videostab;general;opencv_xfeatures2d;general;opencv_ximgproc;general;opencv_aruco;general;opencv_bgsegm;general;opencv_face;general;opencv_optflow;general;opencv_stitching;
+opencv_python3_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_hdf;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_phase_unwrapping;general;opencv_photo;general;opencv_plot;general;opencv_reg;general;opencv_surface_matching;general;opencv_video;general;opencv_viz;general;opencv_xphoto;general;opencv_dnn;general;opencv_freetype;general;opencv_fuzzy;general;opencv_img_hash;general;opencv_imgcodecs;general;opencv_shape;general;opencv_videoio;general;opencv_xobjdetect;general;opencv_highgui;general;opencv_superres;general;opencv_bioinspired;general;opencv_dpm;general;opencv_features2d;general;opencv_line_descriptor;general;opencv_saliency;general;opencv_text;general;opencv_calib3d;general;opencv_ccalib;general;opencv_cvv;general;opencv_datasets;general;opencv_rgbd;general;opencv_structured_light;general;opencv_tracking;general;opencv_videostab;general;opencv_xfeatures2d;general;opencv_ximgproc;general;opencv_aruco;general;opencv_bgsegm;general;opencv_face;general;opencv_optflow;general;opencv_stitching;
 
 //Value Computed by CMake
 opencv_python3_SOURCE_DIR:STATIC=/home/pi/ros_catkin_ws/src/opencv3/modules/python/python3
@@ -1758,7 +1773,7 @@ opencv_video_pch_dephelp_LIB_DEPENDS:STATIC=
 opencv_videoio_BINARY_DIR:STATIC=/home/pi/ros_catkin_ws/src/modules/videoio
 
 //Dependencies for the target
-opencv_videoio_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;dl;general;m;general;pthread;general;rt;general;tegra_hal;general;avcodec;general;avformat;general;avutil;general;swscale;
+opencv_videoio_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;dl;general;m;general;pthread;general;rt;general;tegra_hal;general;gstbase-1.0;general;gstreamer-1.0;general;gobject-2.0;general;glib-2.0;general;gstvideo-1.0;general;gstapp-1.0;general;gstriff-1.0;general;gstpbutils-1.0;general;avcodec;general;avformat;general;avutil;general;swscale;
 
 //Value Computed by CMake
 opencv_videoio_SOURCE_DIR:STATIC=/home/pi/ros_catkin_ws/src/opencv3/modules/videoio
@@ -1891,26 +1906,36 @@ ALIASOF_gstreamer-app-0.10_gstreamer-app-0.10_INCLUDEDIR:INTERNAL=
 ALIASOF_gstreamer-app-0.10_gstreamer-app-0.10_LIBDIR:INTERNAL=
 ALIASOF_gstreamer-app-0.10_gstreamer-app-0.10_PREFIX:INTERNAL=
 ALIASOF_gstreamer-app-0.10_gstreamer-app-0.10_VERSION:INTERNAL=
-ALIASOF_gstreamer-app-1.0_CFLAGS:INTERNAL=
+ALIASOF_gstreamer-app-1.0_CFLAGS:INTERNAL=-pthread;-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 ALIASOF_gstreamer-app-1.0_CFLAGS_I:INTERNAL=
-ALIASOF_gstreamer-app-1.0_CFLAGS_OTHER:INTERNAL=
-ALIASOF_gstreamer-app-1.0_FOUND:INTERNAL=
-ALIASOF_gstreamer-app-1.0_INCLUDEDIR:INTERNAL=
-ALIASOF_gstreamer-app-1.0_LIBDIR:INTERNAL=
+ALIASOF_gstreamer-app-1.0_CFLAGS_OTHER:INTERNAL=-pthread
+ALIASOF_gstreamer-app-1.0_FOUND:INTERNAL=1
+ALIASOF_gstreamer-app-1.0_INCLUDEDIR:INTERNAL=/usr/include/gstreamer-1.0
+ALIASOF_gstreamer-app-1.0_INCLUDE_DIRS:INTERNAL=/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+ALIASOF_gstreamer-app-1.0_LDFLAGS:INTERNAL=-lgstapp-1.0;-lgstbase-1.0;-lgstreamer-1.0;-lgobject-2.0;-lglib-2.0
+ALIASOF_gstreamer-app-1.0_LDFLAGS_OTHER:INTERNAL=
+ALIASOF_gstreamer-app-1.0_LIBDIR:INTERNAL=/usr/lib/arm-linux-gnueabihf
+ALIASOF_gstreamer-app-1.0_LIBRARIES:INTERNAL=gstapp-1.0;gstbase-1.0;gstreamer-1.0;gobject-2.0;glib-2.0
+ALIASOF_gstreamer-app-1.0_LIBRARY_DIRS:INTERNAL=
 ALIASOF_gstreamer-app-1.0_LIBS:INTERNAL=
 ALIASOF_gstreamer-app-1.0_LIBS_L:INTERNAL=
 ALIASOF_gstreamer-app-1.0_LIBS_OTHER:INTERNAL=
 ALIASOF_gstreamer-app-1.0_LIBS_PATHS:INTERNAL=
-ALIASOF_gstreamer-app-1.0_PREFIX:INTERNAL=
-ALIASOF_gstreamer-app-1.0_STATIC_CFLAGS:INTERNAL=
+ALIASOF_gstreamer-app-1.0_PREFIX:INTERNAL=/usr
+ALIASOF_gstreamer-app-1.0_STATIC_CFLAGS:INTERNAL=-pthread;-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 ALIASOF_gstreamer-app-1.0_STATIC_CFLAGS_I:INTERNAL=
-ALIASOF_gstreamer-app-1.0_STATIC_CFLAGS_OTHER:INTERNAL=
+ALIASOF_gstreamer-app-1.0_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
+ALIASOF_gstreamer-app-1.0_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+ALIASOF_gstreamer-app-1.0_STATIC_LDFLAGS:INTERNAL=-lgstapp-1.0;-lgstbase-1.0;-lgstreamer-1.0;-lgmodule-2.0;-pthread;-ldl;-lgobject-2.0;-lffi;-lglib-2.0;-pthread;-lpcre;-pthread
+ALIASOF_gstreamer-app-1.0_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
 ALIASOF_gstreamer-app-1.0_STATIC_LIBDIR:INTERNAL=
+ALIASOF_gstreamer-app-1.0_STATIC_LIBRARIES:INTERNAL=gstapp-1.0;gstbase-1.0;gstreamer-1.0;gmodule-2.0;dl;gobject-2.0;ffi;glib-2.0;pcre
+ALIASOF_gstreamer-app-1.0_STATIC_LIBRARY_DIRS:INTERNAL=
 ALIASOF_gstreamer-app-1.0_STATIC_LIBS:INTERNAL=
 ALIASOF_gstreamer-app-1.0_STATIC_LIBS_L:INTERNAL=
 ALIASOF_gstreamer-app-1.0_STATIC_LIBS_OTHER:INTERNAL=
 ALIASOF_gstreamer-app-1.0_STATIC_LIBS_PATHS:INTERNAL=
-ALIASOF_gstreamer-app-1.0_VERSION:INTERNAL=
+ALIASOF_gstreamer-app-1.0_VERSION:INTERNAL=1.10.4
 ALIASOF_gstreamer-app-1.0_gstreamer-app-1.0_INCLUDEDIR:INTERNAL=
 ALIASOF_gstreamer-app-1.0_gstreamer-app-1.0_LIBDIR:INTERNAL=
 ALIASOF_gstreamer-app-1.0_gstreamer-app-1.0_PREFIX:INTERNAL=
@@ -1939,26 +1964,36 @@ ALIASOF_gstreamer-base-0.10_gstreamer-base-0.10_INCLUDEDIR:INTERNAL=
 ALIASOF_gstreamer-base-0.10_gstreamer-base-0.10_LIBDIR:INTERNAL=
 ALIASOF_gstreamer-base-0.10_gstreamer-base-0.10_PREFIX:INTERNAL=
 ALIASOF_gstreamer-base-0.10_gstreamer-base-0.10_VERSION:INTERNAL=
-ALIASOF_gstreamer-base-1.0_CFLAGS:INTERNAL=
+ALIASOF_gstreamer-base-1.0_CFLAGS:INTERNAL=-pthread;-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 ALIASOF_gstreamer-base-1.0_CFLAGS_I:INTERNAL=
-ALIASOF_gstreamer-base-1.0_CFLAGS_OTHER:INTERNAL=
-ALIASOF_gstreamer-base-1.0_FOUND:INTERNAL=
-ALIASOF_gstreamer-base-1.0_INCLUDEDIR:INTERNAL=
-ALIASOF_gstreamer-base-1.0_LIBDIR:INTERNAL=
+ALIASOF_gstreamer-base-1.0_CFLAGS_OTHER:INTERNAL=-pthread
+ALIASOF_gstreamer-base-1.0_FOUND:INTERNAL=1
+ALIASOF_gstreamer-base-1.0_INCLUDEDIR:INTERNAL=/usr/include/gstreamer-1.0
+ALIASOF_gstreamer-base-1.0_INCLUDE_DIRS:INTERNAL=/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+ALIASOF_gstreamer-base-1.0_LDFLAGS:INTERNAL=-lgstbase-1.0;-lgstreamer-1.0;-lgobject-2.0;-lglib-2.0
+ALIASOF_gstreamer-base-1.0_LDFLAGS_OTHER:INTERNAL=
+ALIASOF_gstreamer-base-1.0_LIBDIR:INTERNAL=/usr/lib/arm-linux-gnueabihf
+ALIASOF_gstreamer-base-1.0_LIBRARIES:INTERNAL=gstbase-1.0;gstreamer-1.0;gobject-2.0;glib-2.0
+ALIASOF_gstreamer-base-1.0_LIBRARY_DIRS:INTERNAL=
 ALIASOF_gstreamer-base-1.0_LIBS:INTERNAL=
 ALIASOF_gstreamer-base-1.0_LIBS_L:INTERNAL=
 ALIASOF_gstreamer-base-1.0_LIBS_OTHER:INTERNAL=
 ALIASOF_gstreamer-base-1.0_LIBS_PATHS:INTERNAL=
-ALIASOF_gstreamer-base-1.0_PREFIX:INTERNAL=
-ALIASOF_gstreamer-base-1.0_STATIC_CFLAGS:INTERNAL=
+ALIASOF_gstreamer-base-1.0_PREFIX:INTERNAL=/usr
+ALIASOF_gstreamer-base-1.0_STATIC_CFLAGS:INTERNAL=-pthread;-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 ALIASOF_gstreamer-base-1.0_STATIC_CFLAGS_I:INTERNAL=
-ALIASOF_gstreamer-base-1.0_STATIC_CFLAGS_OTHER:INTERNAL=
+ALIASOF_gstreamer-base-1.0_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
+ALIASOF_gstreamer-base-1.0_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+ALIASOF_gstreamer-base-1.0_STATIC_LDFLAGS:INTERNAL=-lgstbase-1.0;-lgstreamer-1.0;-lgmodule-2.0;-pthread;-ldl;-lgobject-2.0;-lffi;-lglib-2.0;-pthread;-lpcre;-pthread
+ALIASOF_gstreamer-base-1.0_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
 ALIASOF_gstreamer-base-1.0_STATIC_LIBDIR:INTERNAL=
+ALIASOF_gstreamer-base-1.0_STATIC_LIBRARIES:INTERNAL=gstbase-1.0;gstreamer-1.0;gmodule-2.0;dl;gobject-2.0;ffi;glib-2.0;pcre
+ALIASOF_gstreamer-base-1.0_STATIC_LIBRARY_DIRS:INTERNAL=
 ALIASOF_gstreamer-base-1.0_STATIC_LIBS:INTERNAL=
 ALIASOF_gstreamer-base-1.0_STATIC_LIBS_L:INTERNAL=
 ALIASOF_gstreamer-base-1.0_STATIC_LIBS_OTHER:INTERNAL=
 ALIASOF_gstreamer-base-1.0_STATIC_LIBS_PATHS:INTERNAL=
-ALIASOF_gstreamer-base-1.0_VERSION:INTERNAL=
+ALIASOF_gstreamer-base-1.0_VERSION:INTERNAL=1.10.4
 ALIASOF_gstreamer-base-1.0_gstreamer-base-1.0_INCLUDEDIR:INTERNAL=
 ALIASOF_gstreamer-base-1.0_gstreamer-base-1.0_LIBDIR:INTERNAL=
 ALIASOF_gstreamer-base-1.0_gstreamer-base-1.0_PREFIX:INTERNAL=
@@ -1987,26 +2022,36 @@ ALIASOF_gstreamer-pbutils-0.10_gstreamer-pbutils-0.10_INCLUDEDIR:INTERNAL=
 ALIASOF_gstreamer-pbutils-0.10_gstreamer-pbutils-0.10_LIBDIR:INTERNAL=
 ALIASOF_gstreamer-pbutils-0.10_gstreamer-pbutils-0.10_PREFIX:INTERNAL=
 ALIASOF_gstreamer-pbutils-0.10_gstreamer-pbutils-0.10_VERSION:INTERNAL=
-ALIASOF_gstreamer-pbutils-1.0_CFLAGS:INTERNAL=
+ALIASOF_gstreamer-pbutils-1.0_CFLAGS:INTERNAL=-pthread;-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 ALIASOF_gstreamer-pbutils-1.0_CFLAGS_I:INTERNAL=
-ALIASOF_gstreamer-pbutils-1.0_CFLAGS_OTHER:INTERNAL=
-ALIASOF_gstreamer-pbutils-1.0_FOUND:INTERNAL=
-ALIASOF_gstreamer-pbutils-1.0_INCLUDEDIR:INTERNAL=
-ALIASOF_gstreamer-pbutils-1.0_LIBDIR:INTERNAL=
+ALIASOF_gstreamer-pbutils-1.0_CFLAGS_OTHER:INTERNAL=-pthread
+ALIASOF_gstreamer-pbutils-1.0_FOUND:INTERNAL=1
+ALIASOF_gstreamer-pbutils-1.0_INCLUDEDIR:INTERNAL=/usr/include/gstreamer-1.0
+ALIASOF_gstreamer-pbutils-1.0_INCLUDE_DIRS:INTERNAL=/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+ALIASOF_gstreamer-pbutils-1.0_LDFLAGS:INTERNAL=-lgstpbutils-1.0;-lgstreamer-1.0;-lgobject-2.0;-lglib-2.0
+ALIASOF_gstreamer-pbutils-1.0_LDFLAGS_OTHER:INTERNAL=
+ALIASOF_gstreamer-pbutils-1.0_LIBDIR:INTERNAL=/usr/lib/arm-linux-gnueabihf
+ALIASOF_gstreamer-pbutils-1.0_LIBRARIES:INTERNAL=gstpbutils-1.0;gstreamer-1.0;gobject-2.0;glib-2.0
+ALIASOF_gstreamer-pbutils-1.0_LIBRARY_DIRS:INTERNAL=
 ALIASOF_gstreamer-pbutils-1.0_LIBS:INTERNAL=
 ALIASOF_gstreamer-pbutils-1.0_LIBS_L:INTERNAL=
 ALIASOF_gstreamer-pbutils-1.0_LIBS_OTHER:INTERNAL=
 ALIASOF_gstreamer-pbutils-1.0_LIBS_PATHS:INTERNAL=
-ALIASOF_gstreamer-pbutils-1.0_PREFIX:INTERNAL=
-ALIASOF_gstreamer-pbutils-1.0_STATIC_CFLAGS:INTERNAL=
+ALIASOF_gstreamer-pbutils-1.0_PREFIX:INTERNAL=/usr
+ALIASOF_gstreamer-pbutils-1.0_STATIC_CFLAGS:INTERNAL=-pthread;-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 ALIASOF_gstreamer-pbutils-1.0_STATIC_CFLAGS_I:INTERNAL=
-ALIASOF_gstreamer-pbutils-1.0_STATIC_CFLAGS_OTHER:INTERNAL=
+ALIASOF_gstreamer-pbutils-1.0_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
+ALIASOF_gstreamer-pbutils-1.0_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+ALIASOF_gstreamer-pbutils-1.0_STATIC_LDFLAGS:INTERNAL=-lgstpbutils-1.0;-lgstreamer-1.0;-lgmodule-2.0;-pthread;-ldl;-lgobject-2.0;-lffi;-lglib-2.0;-pthread;-lpcre;-pthread
+ALIASOF_gstreamer-pbutils-1.0_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
 ALIASOF_gstreamer-pbutils-1.0_STATIC_LIBDIR:INTERNAL=
+ALIASOF_gstreamer-pbutils-1.0_STATIC_LIBRARIES:INTERNAL=gstpbutils-1.0;gstreamer-1.0;gmodule-2.0;dl;gobject-2.0;ffi;glib-2.0;pcre
+ALIASOF_gstreamer-pbutils-1.0_STATIC_LIBRARY_DIRS:INTERNAL=
 ALIASOF_gstreamer-pbutils-1.0_STATIC_LIBS:INTERNAL=
 ALIASOF_gstreamer-pbutils-1.0_STATIC_LIBS_L:INTERNAL=
 ALIASOF_gstreamer-pbutils-1.0_STATIC_LIBS_OTHER:INTERNAL=
 ALIASOF_gstreamer-pbutils-1.0_STATIC_LIBS_PATHS:INTERNAL=
-ALIASOF_gstreamer-pbutils-1.0_VERSION:INTERNAL=
+ALIASOF_gstreamer-pbutils-1.0_VERSION:INTERNAL=1.10.4
 ALIASOF_gstreamer-pbutils-1.0_gstreamer-pbutils-1.0_INCLUDEDIR:INTERNAL=
 ALIASOF_gstreamer-pbutils-1.0_gstreamer-pbutils-1.0_LIBDIR:INTERNAL=
 ALIASOF_gstreamer-pbutils-1.0_gstreamer-pbutils-1.0_PREFIX:INTERNAL=
@@ -2035,26 +2080,36 @@ ALIASOF_gstreamer-riff-0.10_gstreamer-riff-0.10_INCLUDEDIR:INTERNAL=
 ALIASOF_gstreamer-riff-0.10_gstreamer-riff-0.10_LIBDIR:INTERNAL=
 ALIASOF_gstreamer-riff-0.10_gstreamer-riff-0.10_PREFIX:INTERNAL=
 ALIASOF_gstreamer-riff-0.10_gstreamer-riff-0.10_VERSION:INTERNAL=
-ALIASOF_gstreamer-riff-1.0_CFLAGS:INTERNAL=
+ALIASOF_gstreamer-riff-1.0_CFLAGS:INTERNAL=-pthread;-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 ALIASOF_gstreamer-riff-1.0_CFLAGS_I:INTERNAL=
-ALIASOF_gstreamer-riff-1.0_CFLAGS_OTHER:INTERNAL=
-ALIASOF_gstreamer-riff-1.0_FOUND:INTERNAL=
-ALIASOF_gstreamer-riff-1.0_INCLUDEDIR:INTERNAL=
-ALIASOF_gstreamer-riff-1.0_LIBDIR:INTERNAL=
+ALIASOF_gstreamer-riff-1.0_CFLAGS_OTHER:INTERNAL=-pthread
+ALIASOF_gstreamer-riff-1.0_FOUND:INTERNAL=1
+ALIASOF_gstreamer-riff-1.0_INCLUDEDIR:INTERNAL=/usr/include/gstreamer-1.0
+ALIASOF_gstreamer-riff-1.0_INCLUDE_DIRS:INTERNAL=/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+ALIASOF_gstreamer-riff-1.0_LDFLAGS:INTERNAL=-lgstriff-1.0;-lgstreamer-1.0;-lgobject-2.0;-lglib-2.0
+ALIASOF_gstreamer-riff-1.0_LDFLAGS_OTHER:INTERNAL=
+ALIASOF_gstreamer-riff-1.0_LIBDIR:INTERNAL=/usr/lib/arm-linux-gnueabihf
+ALIASOF_gstreamer-riff-1.0_LIBRARIES:INTERNAL=gstriff-1.0;gstreamer-1.0;gobject-2.0;glib-2.0
+ALIASOF_gstreamer-riff-1.0_LIBRARY_DIRS:INTERNAL=
 ALIASOF_gstreamer-riff-1.0_LIBS:INTERNAL=
 ALIASOF_gstreamer-riff-1.0_LIBS_L:INTERNAL=
 ALIASOF_gstreamer-riff-1.0_LIBS_OTHER:INTERNAL=
 ALIASOF_gstreamer-riff-1.0_LIBS_PATHS:INTERNAL=
-ALIASOF_gstreamer-riff-1.0_PREFIX:INTERNAL=
-ALIASOF_gstreamer-riff-1.0_STATIC_CFLAGS:INTERNAL=
+ALIASOF_gstreamer-riff-1.0_PREFIX:INTERNAL=/usr
+ALIASOF_gstreamer-riff-1.0_STATIC_CFLAGS:INTERNAL=-pthread;-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 ALIASOF_gstreamer-riff-1.0_STATIC_CFLAGS_I:INTERNAL=
-ALIASOF_gstreamer-riff-1.0_STATIC_CFLAGS_OTHER:INTERNAL=
+ALIASOF_gstreamer-riff-1.0_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
+ALIASOF_gstreamer-riff-1.0_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+ALIASOF_gstreamer-riff-1.0_STATIC_LDFLAGS:INTERNAL=-lgstriff-1.0;-lgstreamer-1.0;-lgmodule-2.0;-pthread;-ldl;-lgobject-2.0;-lffi;-lglib-2.0;-pthread;-lpcre;-pthread
+ALIASOF_gstreamer-riff-1.0_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
 ALIASOF_gstreamer-riff-1.0_STATIC_LIBDIR:INTERNAL=
+ALIASOF_gstreamer-riff-1.0_STATIC_LIBRARIES:INTERNAL=gstriff-1.0;gstreamer-1.0;gmodule-2.0;dl;gobject-2.0;ffi;glib-2.0;pcre
+ALIASOF_gstreamer-riff-1.0_STATIC_LIBRARY_DIRS:INTERNAL=
 ALIASOF_gstreamer-riff-1.0_STATIC_LIBS:INTERNAL=
 ALIASOF_gstreamer-riff-1.0_STATIC_LIBS_L:INTERNAL=
 ALIASOF_gstreamer-riff-1.0_STATIC_LIBS_OTHER:INTERNAL=
 ALIASOF_gstreamer-riff-1.0_STATIC_LIBS_PATHS:INTERNAL=
-ALIASOF_gstreamer-riff-1.0_VERSION:INTERNAL=
+ALIASOF_gstreamer-riff-1.0_VERSION:INTERNAL=1.10.4
 ALIASOF_gstreamer-riff-1.0_gstreamer-riff-1.0_INCLUDEDIR:INTERNAL=
 ALIASOF_gstreamer-riff-1.0_gstreamer-riff-1.0_LIBDIR:INTERNAL=
 ALIASOF_gstreamer-riff-1.0_gstreamer-riff-1.0_PREFIX:INTERNAL=
@@ -2083,26 +2138,36 @@ ALIASOF_gstreamer-video-0.10_gstreamer-video-0.10_INCLUDEDIR:INTERNAL=
 ALIASOF_gstreamer-video-0.10_gstreamer-video-0.10_LIBDIR:INTERNAL=
 ALIASOF_gstreamer-video-0.10_gstreamer-video-0.10_PREFIX:INTERNAL=
 ALIASOF_gstreamer-video-0.10_gstreamer-video-0.10_VERSION:INTERNAL=
-ALIASOF_gstreamer-video-1.0_CFLAGS:INTERNAL=
+ALIASOF_gstreamer-video-1.0_CFLAGS:INTERNAL=-pthread;-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 ALIASOF_gstreamer-video-1.0_CFLAGS_I:INTERNAL=
-ALIASOF_gstreamer-video-1.0_CFLAGS_OTHER:INTERNAL=
-ALIASOF_gstreamer-video-1.0_FOUND:INTERNAL=
-ALIASOF_gstreamer-video-1.0_INCLUDEDIR:INTERNAL=
-ALIASOF_gstreamer-video-1.0_LIBDIR:INTERNAL=
+ALIASOF_gstreamer-video-1.0_CFLAGS_OTHER:INTERNAL=-pthread
+ALIASOF_gstreamer-video-1.0_FOUND:INTERNAL=1
+ALIASOF_gstreamer-video-1.0_INCLUDEDIR:INTERNAL=/usr/include/gstreamer-1.0
+ALIASOF_gstreamer-video-1.0_INCLUDE_DIRS:INTERNAL=/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+ALIASOF_gstreamer-video-1.0_LDFLAGS:INTERNAL=-lgstvideo-1.0;-lgstbase-1.0;-lgstreamer-1.0;-lgobject-2.0;-lglib-2.0
+ALIASOF_gstreamer-video-1.0_LDFLAGS_OTHER:INTERNAL=
+ALIASOF_gstreamer-video-1.0_LIBDIR:INTERNAL=/usr/lib/arm-linux-gnueabihf
+ALIASOF_gstreamer-video-1.0_LIBRARIES:INTERNAL=gstvideo-1.0;gstbase-1.0;gstreamer-1.0;gobject-2.0;glib-2.0
+ALIASOF_gstreamer-video-1.0_LIBRARY_DIRS:INTERNAL=
 ALIASOF_gstreamer-video-1.0_LIBS:INTERNAL=
 ALIASOF_gstreamer-video-1.0_LIBS_L:INTERNAL=
 ALIASOF_gstreamer-video-1.0_LIBS_OTHER:INTERNAL=
 ALIASOF_gstreamer-video-1.0_LIBS_PATHS:INTERNAL=
-ALIASOF_gstreamer-video-1.0_PREFIX:INTERNAL=
-ALIASOF_gstreamer-video-1.0_STATIC_CFLAGS:INTERNAL=
+ALIASOF_gstreamer-video-1.0_PREFIX:INTERNAL=/usr
+ALIASOF_gstreamer-video-1.0_STATIC_CFLAGS:INTERNAL=-pthread;-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 ALIASOF_gstreamer-video-1.0_STATIC_CFLAGS_I:INTERNAL=
-ALIASOF_gstreamer-video-1.0_STATIC_CFLAGS_OTHER:INTERNAL=
+ALIASOF_gstreamer-video-1.0_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
+ALIASOF_gstreamer-video-1.0_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+ALIASOF_gstreamer-video-1.0_STATIC_LDFLAGS:INTERNAL=-lgstvideo-1.0;-lgstbase-1.0;-lgstreamer-1.0;-lgmodule-2.0;-pthread;-ldl;-lgobject-2.0;-lffi;-lglib-2.0;-pthread;-lpcre;-pthread
+ALIASOF_gstreamer-video-1.0_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
 ALIASOF_gstreamer-video-1.0_STATIC_LIBDIR:INTERNAL=
+ALIASOF_gstreamer-video-1.0_STATIC_LIBRARIES:INTERNAL=gstvideo-1.0;gstbase-1.0;gstreamer-1.0;gmodule-2.0;dl;gobject-2.0;ffi;glib-2.0;pcre
+ALIASOF_gstreamer-video-1.0_STATIC_LIBRARY_DIRS:INTERNAL=
 ALIASOF_gstreamer-video-1.0_STATIC_LIBS:INTERNAL=
 ALIASOF_gstreamer-video-1.0_STATIC_LIBS_L:INTERNAL=
 ALIASOF_gstreamer-video-1.0_STATIC_LIBS_OTHER:INTERNAL=
 ALIASOF_gstreamer-video-1.0_STATIC_LIBS_PATHS:INTERNAL=
-ALIASOF_gstreamer-video-1.0_VERSION:INTERNAL=
+ALIASOF_gstreamer-video-1.0_VERSION:INTERNAL=1.10.4
 ALIASOF_gstreamer-video-1.0_gstreamer-video-1.0_INCLUDEDIR:INTERNAL=
 ALIASOF_gstreamer-video-1.0_gstreamer-video-1.0_LIBDIR:INTERNAL=
 ALIASOF_gstreamer-video-1.0_gstreamer-video-1.0_PREFIX:INTERNAL=
@@ -2336,7 +2401,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=137
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=138
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -2618,26 +2683,36 @@ GFLAGS_NAMESPACE-ADVANCED:INTERNAL=0
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLOG_INCLUDE_DIR
 GLOG_INCLUDE_DIR-ADVANCED:INTERNAL=0
-HARFBUZZ_CFLAGS:INTERNAL=
+HARFBUZZ_CFLAGS:INTERNAL=-I/usr/include/harfbuzz;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 HARFBUZZ_CFLAGS_I:INTERNAL=
 HARFBUZZ_CFLAGS_OTHER:INTERNAL=
-HARFBUZZ_FOUND:INTERNAL=
-HARFBUZZ_INCLUDEDIR:INTERNAL=
-HARFBUZZ_LIBDIR:INTERNAL=
+HARFBUZZ_FOUND:INTERNAL=1
+HARFBUZZ_INCLUDEDIR:INTERNAL=/usr/include
+HARFBUZZ_INCLUDE_DIRS:INTERNAL=/usr/include/harfbuzz;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+HARFBUZZ_LDFLAGS:INTERNAL=-lharfbuzz
+HARFBUZZ_LDFLAGS_OTHER:INTERNAL=
+HARFBUZZ_LIBDIR:INTERNAL=/usr/lib/arm-linux-gnueabihf
+HARFBUZZ_LIBRARIES:INTERNAL=harfbuzz
+HARFBUZZ_LIBRARY_DIRS:INTERNAL=
 HARFBUZZ_LIBS:INTERNAL=
 HARFBUZZ_LIBS_L:INTERNAL=
 HARFBUZZ_LIBS_OTHER:INTERNAL=
 HARFBUZZ_LIBS_PATHS:INTERNAL=
-HARFBUZZ_PREFIX:INTERNAL=
-HARFBUZZ_STATIC_CFLAGS:INTERNAL=
+HARFBUZZ_PREFIX:INTERNAL=/usr
+HARFBUZZ_STATIC_CFLAGS:INTERNAL=-I/usr/include/harfbuzz;-I/usr/include/glib-2.0;-I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
 HARFBUZZ_STATIC_CFLAGS_I:INTERNAL=
 HARFBUZZ_STATIC_CFLAGS_OTHER:INTERNAL=
+HARFBUZZ_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/harfbuzz;/usr/include/glib-2.0;/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+HARFBUZZ_STATIC_LDFLAGS:INTERNAL=-lharfbuzz;-lglib-2.0;-pthread;-lpcre;-pthread;-lgraphite2
+HARFBUZZ_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
 HARFBUZZ_STATIC_LIBDIR:INTERNAL=
+HARFBUZZ_STATIC_LIBRARIES:INTERNAL=harfbuzz;glib-2.0;pcre;graphite2
+HARFBUZZ_STATIC_LIBRARY_DIRS:INTERNAL=
 HARFBUZZ_STATIC_LIBS:INTERNAL=
 HARFBUZZ_STATIC_LIBS_L:INTERNAL=
 HARFBUZZ_STATIC_LIBS_OTHER:INTERNAL=
 HARFBUZZ_STATIC_LIBS_PATHS:INTERNAL=
-HARFBUZZ_VERSION:INTERNAL=
+HARFBUZZ_VERSION:INTERNAL=1.4.2
 HARFBUZZ_harfbuzz_INCLUDEDIR:INTERNAL=
 HARFBUZZ_harfbuzz_LIBDIR:INTERNAL=
 HARFBUZZ_harfbuzz_PREFIX:INTERNAL=
@@ -2944,8 +3019,8 @@ HAVE_opencv_face:INTERNAL=ON
 HAVE_opencv_features2d:INTERNAL=ON
 //Module opencv_flann will be built in current configuration
 HAVE_opencv_flann:INTERNAL=ON
-//Module opencv_freetype can not be built in current configuration
-HAVE_opencv_freetype:INTERNAL=OFF
+//Module opencv_freetype will be built in current configuration
+HAVE_opencv_freetype:INTERNAL=ON
 //Module opencv_fuzzy will be built in current configuration
 HAVE_opencv_fuzzy:INTERNAL=ON
 //Module opencv_hdf will be built in current configuration
@@ -3103,15 +3178,15 @@ OPENCV_EXTRA_FLAGS_DEBUG:INTERNAL= -O0 -DDEBUG -D_DEBUG
 //Extra compiler options for Release build
 OPENCV_EXTRA_FLAGS_RELEASE:INTERNAL= -DNDEBUG
 //List of OpenCV modules included into the build
-OPENCV_MODULES_BUILD:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_stereo;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching;opencv_python_bindings_generator;opencv_python2;opencv_python3
+OPENCV_MODULES_BUILD:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_freetype;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_stereo;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching;opencv_python_bindings_generator;opencv_python2;opencv_python3
 //List of OpenCV modules implicitly disabled due to dependencies
 OPENCV_MODULES_DISABLED_AUTO:INTERNAL=
 //List of OpenCV modules which can not be build in current configuration
-OPENCV_MODULES_DISABLED_FORCE:INTERNAL=opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_java;opencv_ts;opencv_cnn_3dobj;opencv_dnn_modern;opencv_freetype;opencv_matlab;opencv_ovis;opencv_sfm
+OPENCV_MODULES_DISABLED_FORCE:INTERNAL=opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_java;opencv_ts;opencv_cnn_3dobj;opencv_dnn_modern;opencv_matlab;opencv_ovis;opencv_sfm
 //List of OpenCV modules explicitly disabled by user
 OPENCV_MODULES_DISABLED_USER:INTERNAL=opencv_js;opencv_world
 //List of OpenCV modules marked for export
-OPENCV_MODULES_PUBLIC:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;opencv_viz;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dpm;opencv_face;opencv_fuzzy;opencv_hdf;opencv_img_hash;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_reg;opencv_rgbd;opencv_saliency;opencv_stereo;opencv_structured_light;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+OPENCV_MODULES_PUBLIC:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;opencv_viz;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_img_hash;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_reg;opencv_rgbd;opencv_saliency;opencv_stereo;opencv_structured_light;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
 OPENCV_MODULE_opencv_aruco_BINARY_DIR:INTERNAL=/home/pi/ros_catkin_ws/src/modules/aruco
 //The category of the module
 OPENCV_MODULE_opencv_aruco_CLASS:INTERNAL=PUBLIC
@@ -3530,8 +3605,36 @@ OPENCV_MODULE_opencv_flann_REQ_DEPS:INTERNAL=opencv_core
 OPENCV_MODULE_opencv_flann_SOURCES:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/modules/flann/src/flann.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/flann/src/miniflann.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/flann/src/precomp.hpp
 //List of wrappers supporting module opencv_flann
 OPENCV_MODULE_opencv_flann_WRAPPERS:INTERNAL=python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_freetype_BINARY_DIR:INTERNAL=/home/pi/ros_catkin_ws/src/modules/freetype
+//The category of the module
+OPENCV_MODULE_opencv_freetype_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_freetype module
+OPENCV_MODULE_opencv_freetype_DEPS:INTERNAL=opencv_core;opencv_imgproc
+//Extra dependencies of opencv_freetype module
+OPENCV_MODULE_opencv_freetype_DEPS_EXT:INTERNAL=
+//Flattened dependencies of opencv_freetype module (for linker)
+OPENCV_MODULE_opencv_freetype_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc
+//Brief description of opencv_freetype module
+OPENCV_MODULE_opencv_freetype_DESCRIPTION:INTERNAL=FreeType module. It enables to draw strings with outlines and mono-bitmaps/gray-bitmaps.
+//List of header files for opencv_freetype
+OPENCV_MODULE_opencv_freetype_HEADERS:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/freetype/include/opencv2/freetype.hpp
+OPENCV_MODULE_opencv_freetype_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_freetype_LABEL:INTERNAL=Extra;opencv_freetype
+OPENCV_MODULE_opencv_freetype_LINK_DEPS:INTERNAL=
 //Location of opencv_freetype module sources
 OPENCV_MODULE_opencv_freetype_LOCATION:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/freetype
+//Optional dependencies of opencv_freetype module
+OPENCV_MODULE_opencv_freetype_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_freetype module
+OPENCV_MODULE_opencv_freetype_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_freetype module
+OPENCV_MODULE_opencv_freetype_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_freetype module
+OPENCV_MODULE_opencv_freetype_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc
+//List of source files for opencv_freetype
+OPENCV_MODULE_opencv_freetype_SOURCES:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/freetype/src/freetype.cpp;/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/freetype/src/precomp.hpp
+//List of wrappers supporting module opencv_freetype
+OPENCV_MODULE_opencv_freetype_WRAPPERS:INTERNAL=python_bindings_generator;python2;python3
 OPENCV_MODULE_opencv_fuzzy_BINARY_DIR:INTERNAL=/home/pi/ros_catkin_ws/src/modules/fuzzy
 //The category of the module
 OPENCV_MODULE_opencv_fuzzy_CLASS:INTERNAL=PUBLIC
@@ -3973,11 +4076,11 @@ OPENCV_MODULE_opencv_python2_BINARY_DIR:INTERNAL=/home/pi/ros_catkin_ws/src/modu
 //The category of the module
 OPENCV_MODULE_opencv_python2_CLASS:INTERNAL=BINDINGS
 //Flattened dependencies of opencv_python2 module
-OPENCV_MODULE_opencv_python2_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching;opencv_python_bindings_generator
+OPENCV_MODULE_opencv_python2_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_freetype;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching;opencv_python_bindings_generator
 //Extra dependencies of opencv_python2 module
 OPENCV_MODULE_opencv_python2_DEPS_EXT:INTERNAL=
 //Flattened dependencies of opencv_python2 module (for linker)
-OPENCV_MODULE_opencv_python2_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching;opencv_python_bindings_generator
+OPENCV_MODULE_opencv_python2_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_freetype;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching;opencv_python_bindings_generator
 //Brief description of opencv_python2 module
 OPENCV_MODULE_opencv_python2_DESCRIPTION:INTERNAL=The python2 bindings
 OPENCV_MODULE_opencv_python2_IS_PART_OF_WORLD:INTERNAL=OFF
@@ -3986,7 +4089,7 @@ OPENCV_MODULE_opencv_python2_LINK_DEPS:INTERNAL=
 //Location of opencv_python2 module sources
 OPENCV_MODULE_opencv_python2_LOCATION:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/modules/python/python2
 //Optional dependencies of opencv_python2 module
-OPENCV_MODULE_opencv_python2_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;opencv_viz;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dpm;opencv_face;opencv_fuzzy;opencv_hdf;opencv_img_hash;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_reg;opencv_rgbd;opencv_saliency;opencv_structured_light;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+OPENCV_MODULE_opencv_python2_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;opencv_viz;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_img_hash;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_reg;opencv_rgbd;opencv_saliency;opencv_structured_light;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
 //Optional private dependencies of opencv_python2 module
 OPENCV_MODULE_opencv_python2_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_python2 module
@@ -3999,11 +4102,11 @@ OPENCV_MODULE_opencv_python3_BINARY_DIR:INTERNAL=/home/pi/ros_catkin_ws/src/modu
 //The category of the module
 OPENCV_MODULE_opencv_python3_CLASS:INTERNAL=BINDINGS
 //Flattened dependencies of opencv_python3 module
-OPENCV_MODULE_opencv_python3_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching;opencv_python_bindings_generator
+OPENCV_MODULE_opencv_python3_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_freetype;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching;opencv_python_bindings_generator
 //Extra dependencies of opencv_python3 module
 OPENCV_MODULE_opencv_python3_DEPS_EXT:INTERNAL=
 //Flattened dependencies of opencv_python3 module (for linker)
-OPENCV_MODULE_opencv_python3_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching;opencv_python_bindings_generator
+OPENCV_MODULE_opencv_python3_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_freetype;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching;opencv_python_bindings_generator
 //Brief description of opencv_python3 module
 OPENCV_MODULE_opencv_python3_DESCRIPTION:INTERNAL=The python3 bindings
 OPENCV_MODULE_opencv_python3_IS_PART_OF_WORLD:INTERNAL=OFF
@@ -4012,7 +4115,7 @@ OPENCV_MODULE_opencv_python3_LINK_DEPS:INTERNAL=
 //Location of opencv_python3 module sources
 OPENCV_MODULE_opencv_python3_LOCATION:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/modules/python/python3
 //Optional dependencies of opencv_python3 module
-OPENCV_MODULE_opencv_python3_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;opencv_viz;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dpm;opencv_face;opencv_fuzzy;opencv_hdf;opencv_img_hash;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_reg;opencv_rgbd;opencv_saliency;opencv_structured_light;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+OPENCV_MODULE_opencv_python3_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;opencv_viz;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_img_hash;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_reg;opencv_rgbd;opencv_saliency;opencv_structured_light;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
 //Optional private dependencies of opencv_python3 module
 OPENCV_MODULE_opencv_python3_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_python3 module
@@ -4025,12 +4128,12 @@ OPENCV_MODULE_opencv_python_bindings_generator_BINARY_DIR:INTERNAL=/home/pi/ros_
 //The category of the module
 OPENCV_MODULE_opencv_python_bindings_generator_CLASS:INTERNAL=INTERNAL
 //Flattened dependencies of opencv_python_bindings_generator module
-OPENCV_MODULE_opencv_python_bindings_generator_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching
+OPENCV_MODULE_opencv_python_bindings_generator_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_freetype;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching
 //Extra dependencies of opencv_python_bindings_generator module
 OPENCV_MODULE_opencv_python_bindings_generator_DEPS_EXT:INTERNAL=
 //Flattened dependencies of opencv_python_bindings_generator module
 // (for linker)
-OPENCV_MODULE_opencv_python_bindings_generator_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching
+OPENCV_MODULE_opencv_python_bindings_generator_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_freetype;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching
 //Brief description of opencv_python_bindings_generator module
 OPENCV_MODULE_opencv_python_bindings_generator_DESCRIPTION:INTERNAL=The python_bindings_generator OpenCV module
 OPENCV_MODULE_opencv_python_bindings_generator_IS_PART_OF_WORLD:INTERNAL=ON
@@ -4039,7 +4142,7 @@ OPENCV_MODULE_opencv_python_bindings_generator_LINK_DEPS:INTERNAL=
 //Location of opencv_python_bindings_generator module sources
 OPENCV_MODULE_opencv_python_bindings_generator_LOCATION:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/modules/python/bindings
 //Optional dependencies of opencv_python_bindings_generator module
-OPENCV_MODULE_opencv_python_bindings_generator_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;opencv_viz;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dpm;opencv_face;opencv_fuzzy;opencv_hdf;opencv_img_hash;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_reg;opencv_rgbd;opencv_saliency;opencv_structured_light;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+OPENCV_MODULE_opencv_python_bindings_generator_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;opencv_viz;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_img_hash;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_reg;opencv_rgbd;opencv_saliency;opencv_structured_light;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
 //Optional private dependencies of opencv_python_bindings_generator
 // module
 OPENCV_MODULE_opencv_python_bindings_generator_PRIVATE_OPT_DEPS:INTERNAL=
@@ -4431,7 +4534,7 @@ OPENCV_MODULE_opencv_videoio_DESCRIPTION:INTERNAL=Media I/O
 OPENCV_MODULE_opencv_videoio_HEADERS:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/include/opencv2/videoio.hpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/include/opencv2/videoio/videoio.hpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/include/opencv2/videoio/cap_ios.h;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/include/opencv2/videoio/videoio_c.h
 OPENCV_MODULE_opencv_videoio_IS_PART_OF_WORLD:INTERNAL=ON
 OPENCV_MODULE_opencv_videoio_LABEL:INTERNAL=Main;opencv_videoio
-OPENCV_MODULE_opencv_videoio_LINK_DEPS:INTERNAL=;avcodec;avformat;avutil;swscale
+OPENCV_MODULE_opencv_videoio_LINK_DEPS:INTERNAL=;gstbase-1.0;gstreamer-1.0;gobject-2.0;glib-2.0;gstvideo-1.0;gstapp-1.0;gstriff-1.0;gstpbutils-1.0;avcodec;avformat;avutil;swscale
 //Location of opencv_videoio module sources
 OPENCV_MODULE_opencv_videoio_LOCATION:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/modules/videoio
 //Optional dependencies of opencv_videoio module
@@ -4443,7 +4546,7 @@ OPENCV_MODULE_opencv_videoio_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_videoio module
 OPENCV_MODULE_opencv_videoio_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_imgcodecs
 //List of source files for opencv_videoio
-OPENCV_MODULE_opencv_videoio_SOURCES:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_images.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_mjpeg_encoder.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_mjpeg_decoder.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_v4l.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_ffmpeg.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/precomp.hpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_ffmpeg_impl.hpp
+OPENCV_MODULE_opencv_videoio_SOURCES:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_images.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_mjpeg_encoder.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_mjpeg_decoder.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_gstreamer.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_v4l.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_ffmpeg.cpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/precomp.hpp;/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_ffmpeg_impl.hpp
 //List of wrappers supporting module opencv_videoio
 OPENCV_MODULE_opencv_videoio_WRAPPERS:INTERNAL=java;python_bindings_generator;python2;python3
 OPENCV_MODULE_opencv_videostab_BINARY_DIR:INTERNAL=/home/pi/ros_catkin_ws/src/modules/videostab
@@ -4516,7 +4619,7 @@ OPENCV_MODULE_opencv_world_LINK_DEPS:INTERNAL=
 //Location of opencv_world module sources
 OPENCV_MODULE_opencv_world_LOCATION:INTERNAL=/home/pi/ros_catkin_ws/src/opencv3/modules/world
 //Optional dependencies of opencv_world module
-OPENCV_MODULE_opencv_world_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_python_bindings_generator;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;opencv_viz;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dpm;opencv_face;opencv_fuzzy;opencv_hdf;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_reg;opencv_rgbd;opencv_saliency;opencv_stereo;opencv_structured_light;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+OPENCV_MODULE_opencv_world_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_python_bindings_generator;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;opencv_viz;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_reg;opencv_rgbd;opencv_saliency;opencv_stereo;opencv_structured_light;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
 //Optional private dependencies of opencv_world module
 OPENCV_MODULE_opencv_world_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_world module
@@ -4662,7 +4765,7 @@ OpenBLAS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OpenBLAS_LIB
 OpenBLAS_LIB-ADVANCED:INTERNAL=1
 //List of OpenCVModules targets
-OpenCVModules_TARGETS:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_stereo;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching
+OpenCVModules_TARGETS:INTERNAL=opencv_core;opencv_flann;opencv_hdf;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_phase_unwrapping;opencv_photo;opencv_plot;opencv_reg;opencv_surface_matching;opencv_video;opencv_viz;opencv_xphoto;opencv_dnn;opencv_freetype;opencv_fuzzy;opencv_img_hash;opencv_imgcodecs;opencv_shape;opencv_videoio;opencv_xobjdetect;opencv_highgui;opencv_superres;opencv_bioinspired;opencv_dpm;opencv_features2d;opencv_line_descriptor;opencv_saliency;opencv_text;opencv_calib3d;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_rgbd;opencv_stereo;opencv_structured_light;opencv_tracking;opencv_videostab;opencv_xfeatures2d;opencv_ximgproc;opencv_aruco;opencv_bgsegm;opencv_face;opencv_optflow;opencv_stitching
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PNG_LIBRARY_DEBUG

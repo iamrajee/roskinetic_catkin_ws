@@ -98,6 +98,7 @@
 /home/pi/ros_catkin_ws/src/opencv3/modules/dnn/include/opencv2/dnn/dnn.hpp
 /home/pi/ros_catkin_ws/src/opencv3/modules/dnn/include/opencv2/dnn/layer.hpp
 /home/pi/ros_catkin_ws/src/opencv3/modules/dnn/include/opencv2/dnn/shape_utils.hpp
+/home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/freetype/include/opencv2/freetype.hpp
 /home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/include/opencv2/fuzzy.hpp
 /home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/include/opencv2/fuzzy/fuzzy_F0_math.hpp
 /home/pi/ros_catkin_ws/src/opencv3/opencv_contrib/fuzzy/include/opencv2/fuzzy/fuzzy_F1_math.hpp

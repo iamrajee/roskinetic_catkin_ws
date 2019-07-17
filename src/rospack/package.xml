@@ -1,6 +1,6 @@
 <package>
   <name>rospack</name>
-  <version>2.4.4</version>
+  <version>2.4.5</version>
   <description>ROS Package Tool</description>
   <maintainer email="dthomas@osrfoundation.org">Dirk Thomas</maintainer>
   <license>BSD</license>
@@ -27,6 +27,7 @@
   <run_depend>python</run_depend>
   <run_depend>python-catkin-pkg</run_depend>
   <run_depend>python-rosdep</run_depend>
+  <run_depend>ros_environment</run_depend>
   <run_depend>tinyxml</run_depend>
 
   <test_depend>python-coverage</test_depend>

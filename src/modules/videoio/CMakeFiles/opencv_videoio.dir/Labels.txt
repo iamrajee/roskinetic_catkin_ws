@@ -35,6 +35,10 @@
  Main
  opencv_videoio
  Module
+/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_gstreamer.cpp
+ Main
+ opencv_videoio
+ Module
 /home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_v4l.cpp
  Main
  opencv_videoio

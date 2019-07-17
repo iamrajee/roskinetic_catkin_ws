@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap.cpp" "/home/pi/ros_catkin_ws/src/modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o"
   "/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_ffmpeg.cpp" "/home/pi/ros_catkin_ws/src/modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o"
+  "/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_gstreamer.cpp" "/home/pi/ros_catkin_ws/src/modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_gstreamer.cpp.o"
   "/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_images.cpp" "/home/pi/ros_catkin_ws/src/modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o"
   "/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_mjpeg_decoder.cpp" "/home/pi/ros_catkin_ws/src/modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_decoder.cpp.o"
   "/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_mjpeg_encoder.cpp" "/home/pi/ros_catkin_ws/src/modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_encoder.cpp.o"
@@ -26,6 +27,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "/usr/include/eigen3"
+  "/usr/include/gstreamer-1.0"
+  "/usr/include/glib-2.0"
+  "/usr/lib/arm-linux-gnueabihf/glib-2.0/include"
   "/usr/include/arm-linux-gnueabihf"
   "opencv3/modules/videoio/include"
   "opencv3/modules/videoio/src"

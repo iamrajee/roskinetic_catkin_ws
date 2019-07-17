@@ -43,7 +43,11 @@ endif()
 # or CMAKE_PREFIX_PATH from the environment
 if(NOT DEFINED CMAKE_PREFIX_PATH)
   if(NOT "$ENV{CMAKE_PREFIX_PATH}" STREQUAL "")
-    string(REPLACE ":" ";" CMAKE_PREFIX_PATH $ENV{CMAKE_PREFIX_PATH})
+    if(NOT WIN32)
+      string(REPLACE ":" ";" CMAKE_PREFIX_PATH $ENV{CMAKE_PREFIX_PATH})
+    else()
+      set(CMAKE_PREFIX_PATH $ENV{CMAKE_PREFIX_PATH})
+    endif()
   endif()
 endif()
 message(STATUS "Using CMAKE_PREFIX_PATH: ${CMAKE_PREFIX_PATH}")
@@ -165,6 +169,9 @@ message(STATUS "catkin ${catkin_VERSION}")
 # ensure that no current package name is set
 unset(_CATKIN_CURRENT_PACKAGE)
 
+# tools/libraries.cmake
+configure_shared_library_build_settings()
+
 # set global install destinations
 set(CATKIN_GLOBAL_BIN_DESTINATION bin)
 set(CATKIN_GLOBAL_ETC_DESTINATION etc)
@@ -194,7 +201,9 @@ set(SETUP_FILENAME "setup_cached")
 configure_file(${catkin_EXTRAS_DIR}/templates/generate_cached_setup.py.in
   ${CMAKE_BINARY_DIR}/catkin_generated/generate_cached_setup.py)
 set(GENERATE_ENVIRONMENT_CACHE_COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_BINARY_DIR}/catkin_generated/generate_cached_setup.py)
-# the script is generated once here and refreshed by every call to catkin_add_env_hooks()
+# the script is generated once here and refreshed by
+# every call to catkin_add_env_hooks() and
+# the first call to catkin_python_setup() if the Python install directory didn't exist yet
 safe_execute_process(COMMAND ${GENERATE_ENVIRONMENT_CACHE_COMMAND})
 # generate env_cached which just relays to the setup_cached
 configure_file(${catkin_EXTRAS_DIR}/templates/env.${script_ext}.in

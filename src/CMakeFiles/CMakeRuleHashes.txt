@@ -39,6 +39,9 @@ d5e19a51ebc931133f8667dbca90aade modules/features2d/precomp.hpp
 316e19105c7cc90e242f3882d9176afd modules/flann/CMakeFiles/pch_Generate_opencv_flann
 b0a37aa767bb48b8b6c86656f4224e5a modules/flann/precomp.hpp
 0b47cb66ed0be6b66100d34ca4984b97 modules/flann/precomp.hpp.gch/opencv_flann_Release.gch
+e51283148fbb7b9a4a06881972be682a modules/freetype/CMakeFiles/pch_Generate_opencv_freetype
+42b9a6b356ba84644971465e623c80cb modules/freetype/precomp.hpp
+4cc3b21a43732125d9cd7ec35c09a03f modules/freetype/precomp.hpp.gch/opencv_freetype_Release.gch
 89b8ae8d7b8a1da6483c4fcd76a737f9 modules/fuzzy/CMakeFiles/pch_Generate_opencv_fuzzy
 81740c3e91210a832b2944038bb10ca0 modules/fuzzy/precomp.hpp
 efe66fe4a6b673e2765e15f36d0d485a modules/fuzzy/precomp.hpp.gch/opencv_fuzzy_Release.gch
@@ -128,7 +131,7 @@ db39fb81351917f43bf549883649e2f3 modules/video/precomp.hpp
 9130f1087300e29130ebbe275b2adaa5 modules/video/precomp.hpp.gch/opencv_video_Release.gch
 727666c2006e6c8cf1702f9c5fba136c modules/videoio/CMakeFiles/pch_Generate_opencv_videoio
 9cc9780d72bd04c479443b9de0ecddd5 modules/videoio/precomp.hpp
-75f5268120769ea9b5f1c6e0543f30c4 modules/videoio/precomp.hpp.gch/opencv_videoio_Release.gch
+25372faeb33030cef003e33fe69897c7 modules/videoio/precomp.hpp.gch/opencv_videoio_Release.gch
 d89173fdbdb21b25d52d56f118a58b1d modules/videostab/CMakeFiles/pch_Generate_opencv_videostab
 132e1046fb0349c341c5867ff6a68863 modules/videostab/precomp.hpp
 2f7eb04fc280bf33d11fb5f2fa6a2b0a modules/videostab/precomp.hpp.gch/opencv_videostab_Release.gch

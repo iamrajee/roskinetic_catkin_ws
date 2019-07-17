@@ -74,6 +74,15 @@
 			]
 		},
 		{
+			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_gstreamer.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"Module"
+			]
+		},
+		{
 			"file" : "/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src/cap_v4l.cpp",
 			"labels" : 
 			[

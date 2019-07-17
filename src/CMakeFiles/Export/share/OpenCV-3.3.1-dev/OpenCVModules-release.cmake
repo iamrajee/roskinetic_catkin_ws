@@ -156,6 +156,16 @@ set_target_properties(opencv_dnn PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS opencv_dnn )
 list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_dnn "${_IMPORT_PREFIX}/lib/libopencv_dnn3.so.3.3.1" )
 
+# Import target "opencv_freetype" for configuration "Release"
+set_property(TARGET opencv_freetype APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_freetype PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib/libopencv_freetype3.so.3.3.1"
+  IMPORTED_SONAME_RELEASE "libopencv_freetype3.so.3.3"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_freetype )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_freetype "${_IMPORT_PREFIX}/lib/libopencv_freetype3.so.3.3.1" )
+
 # Import target "opencv_fuzzy" for configuration "Release"
 set_property(TARGET opencv_fuzzy APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_fuzzy PROPERTIES

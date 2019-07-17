@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget opencv_core opencv_flann opencv_hdf opencv_imgproc opencv_ml opencv_objdetect opencv_phase_unwrapping opencv_photo opencv_plot opencv_reg opencv_surface_matching opencv_video opencv_viz opencv_xphoto opencv_dnn opencv_fuzzy opencv_img_hash opencv_imgcodecs opencv_shape opencv_videoio opencv_xobjdetect opencv_highgui opencv_superres opencv_bioinspired opencv_dpm opencv_features2d opencv_line_descriptor opencv_saliency opencv_text opencv_calib3d opencv_ccalib opencv_cvv opencv_datasets opencv_rgbd opencv_stereo opencv_structured_light opencv_tracking opencv_videostab opencv_xfeatures2d opencv_ximgproc opencv_aruco opencv_bgsegm opencv_face opencv_optflow opencv_stitching)
+foreach(_expectedTarget opencv_core opencv_flann opencv_hdf opencv_imgproc opencv_ml opencv_objdetect opencv_phase_unwrapping opencv_photo opencv_plot opencv_reg opencv_surface_matching opencv_video opencv_viz opencv_xphoto opencv_dnn opencv_freetype opencv_fuzzy opencv_img_hash opencv_imgcodecs opencv_shape opencv_videoio opencv_xobjdetect opencv_highgui opencv_superres opencv_bioinspired opencv_dpm opencv_features2d opencv_line_descriptor opencv_saliency opencv_text opencv_calib3d opencv_ccalib opencv_cvv opencv_datasets opencv_rgbd opencv_stereo opencv_structured_light opencv_tracking opencv_videostab opencv_xfeatures2d opencv_ximgproc opencv_aruco opencv_bgsegm opencv_face opencv_optflow opencv_stitching)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -139,6 +139,13 @@ set_target_properties(opencv_xphoto PROPERTIES
 add_library(opencv_dnn SHARED IMPORTED)
 
 set_target_properties(opencv_dnn PROPERTIES
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc"
+)
+
+# Create imported target opencv_freetype
+add_library(opencv_freetype SHARED IMPORTED)
+
+set_target_properties(opencv_freetype PROPERTIES
   INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc"
 )
 
@@ -456,6 +463,13 @@ set_property(TARGET opencv_dnn APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_dnn PROPERTIES
   IMPORTED_LOCATION_RELEASE "/home/pi/ros_catkin_ws/src/lib/libopencv_dnn3.so.3.3.1"
   IMPORTED_SONAME_RELEASE "libopencv_dnn3.so.3.3"
+  )
+
+# Import target "opencv_freetype" for configuration "Release"
+set_property(TARGET opencv_freetype APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_freetype PROPERTIES
+  IMPORTED_LOCATION_RELEASE "/home/pi/ros_catkin_ws/src/lib/libopencv_freetype3.so.3.3.1"
+  IMPORTED_SONAME_RELEASE "libopencv_freetype3.so.3.3"
   )
 
 # Import target "opencv_fuzzy" for configuration "Release"

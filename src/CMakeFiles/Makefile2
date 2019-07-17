@@ -115,6 +115,7 @@ CMakeFiles/opencv_modules.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/viz/CMakeFiles/opencv_viz.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/xphoto/CMakeFiles/opencv_xphoto.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/dnn/CMakeFiles/opencv_dnn.dir/all
+CMakeFiles/opencv_modules.dir/all: modules/freetype/CMakeFiles/opencv_freetype.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/fuzzy/CMakeFiles/opencv_fuzzy.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/img_hash/CMakeFiles/opencv_img_hash.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all
@@ -152,7 +153,7 @@ CMakeFiles/opencv_modules.dir/all: modules/stitching/CMakeFiles/opencv_stitching
 
 # Build rule for subdir invocation for target.
 CMakeFiles/opencv_modules.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 98
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/opencv_modules.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : CMakeFiles/opencv_modules.dir/rule
@@ -596,6 +597,7 @@ modules/all: modules/video/all
 modules/all: modules/viz/all
 modules/all: modules/xphoto/all
 modules/all: modules/dnn/all
+modules/all: modules/freetype/all
 modules/all: modules/fuzzy/all
 modules/all: modules/img_hash/all
 modules/all: modules/imgcodecs/all
@@ -716,6 +718,7 @@ modules/clean: modules/video/clean
 modules/clean: modules/viz/clean
 modules/clean: modules/xphoto/clean
 modules/clean: modules/dnn/clean
+modules/clean: modules/freetype/clean
 modules/clean: modules/fuzzy/clean
 modules/clean: modules/img_hash/clean
 modules/clean: modules/imgcodecs/clean
@@ -836,6 +839,7 @@ modules/preinstall: modules/video/preinstall
 modules/preinstall: modules/viz/preinstall
 modules/preinstall: modules/xphoto/preinstall
 modules/preinstall: modules/dnn/preinstall
+modules/preinstall: modules/freetype/preinstall
 modules/preinstall: modules/fuzzy/preinstall
 modules/preinstall: modules/img_hash/preinstall
 modules/preinstall: modules/imgcodecs/preinstall
@@ -2239,7 +2243,7 @@ modules/core/preinstall:
 modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/all:
 	$(MAKE) -f modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/build.make modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/depend
 	$(MAKE) -f modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/build.make modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=31 "Built target opencv_core_pch_dephelp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_core_pch_dephelp"
 .PHONY : modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/all
 
 # Include target in all.
@@ -2249,7 +2253,7 @@ all: modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/rule
@@ -2281,7 +2285,7 @@ modules/core/CMakeFiles/pch_Generate_opencv_core.dir/all: modules/core/CMakeFile
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/pch_Generate_opencv_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/pch_Generate_opencv_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/pch_Generate_opencv_core.dir/rule
@@ -2309,7 +2313,7 @@ modules/core/CMakeFiles/opencv_core.dir/all: 3rdparty/carotene/hal/CMakeFiles/te
 modules/core/CMakeFiles/opencv_core.dir/all: modules/core/CMakeFiles/pch_Generate_opencv_core.dir/all
 	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/depend
 	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=27,28,29,30 "Built target opencv_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=26,27,28,29,30 "Built target opencv_core"
 .PHONY : modules/core/CMakeFiles/opencv_core.dir/all
 
 # Include target in all.
@@ -2508,7 +2512,7 @@ all: modules/hdf/CMakeFiles/opencv_hdf.dir/all
 
 # Build rule for subdir invocation for target.
 modules/hdf/CMakeFiles/opencv_hdf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 modules/hdf/CMakeFiles/opencv_hdf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/hdf/CMakeFiles/opencv_hdf.dir/rule
@@ -2535,12 +2539,12 @@ clean: modules/hdf/CMakeFiles/opencv_hdf.dir/clean
 modules/hdf/CMakeFiles/pch_Generate_opencv_hdf.dir/all: modules/hdf/CMakeFiles/opencv_hdf_pch_dephelp.dir/all
 	$(MAKE) -f modules/hdf/CMakeFiles/pch_Generate_opencv_hdf.dir/build.make modules/hdf/CMakeFiles/pch_Generate_opencv_hdf.dir/depend
 	$(MAKE) -f modules/hdf/CMakeFiles/pch_Generate_opencv_hdf.dir/build.make modules/hdf/CMakeFiles/pch_Generate_opencv_hdf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target pch_Generate_opencv_hdf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=95 "Built target pch_Generate_opencv_hdf"
 .PHONY : modules/hdf/CMakeFiles/pch_Generate_opencv_hdf.dir/all
 
 # Build rule for subdir invocation for target.
 modules/hdf/CMakeFiles/pch_Generate_opencv_hdf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/hdf/CMakeFiles/pch_Generate_opencv_hdf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/hdf/CMakeFiles/pch_Generate_opencv_hdf.dir/rule
@@ -2754,7 +2758,7 @@ modules/ml/preinstall:
 modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/all:
 	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/build.make modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/depend
 	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/build.make modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=63 "Built target opencv_ml_pch_dephelp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_ml_pch_dephelp"
 .PHONY : modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/all
 
 # Include target in all.
@@ -2764,7 +2768,7 @@ all: modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/rule
@@ -2796,7 +2800,7 @@ modules/ml/CMakeFiles/pch_Generate_opencv_ml.dir/all: modules/ml/CMakeFiles/open
 
 # Build rule for subdir invocation for target.
 modules/ml/CMakeFiles/pch_Generate_opencv_ml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ml/CMakeFiles/pch_Generate_opencv_ml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/ml/CMakeFiles/pch_Generate_opencv_ml.dir/rule
@@ -2835,7 +2839,7 @@ all: modules/ml/CMakeFiles/opencv_ml.dir/all
 
 # Build rule for subdir invocation for target.
 modules/ml/CMakeFiles/opencv_ml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ml/CMakeFiles/opencv_ml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/ml/CMakeFiles/opencv_ml.dir/rule
@@ -2955,7 +2959,7 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/imgproc/CMakeFile
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/objdetect/CMakeFiles/pch_Generate_opencv_objdetect.dir/all
 	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend
 	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_objdetect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=63 "Built target opencv_objdetect"
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/all
 
 # Include target in all.
@@ -2965,7 +2969,7 @@ all: modules/objdetect/CMakeFiles/opencv_objdetect.dir/all
 
 # Build rule for subdir invocation for target.
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/CMakeFiles/opencv_objdetect.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/rule
@@ -3666,7 +3670,7 @@ modules/video/CMakeFiles/opencv_video.dir/all: modules/imgproc/CMakeFiles/opencv
 modules/video/CMakeFiles/opencv_video.dir/all: modules/video/CMakeFiles/pch_Generate_opencv_video.dir/all
 	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/depend
 	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=82 "Built target opencv_video"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=81 "Built target opencv_video"
 .PHONY : modules/video/CMakeFiles/opencv_video.dir/all
 
 # Include target in all.
@@ -3676,7 +3680,7 @@ all: modules/video/CMakeFiles/opencv_video.dir/all
 
 # Build rule for subdir invocation for target.
 modules/video/CMakeFiles/opencv_video.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_video.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/video/CMakeFiles/opencv_video.dir/rule
@@ -3703,7 +3707,7 @@ clean: modules/video/CMakeFiles/opencv_video.dir/clean
 modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/all:
 	$(MAKE) -f modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/build.make modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/depend
 	$(MAKE) -f modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/build.make modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_video_pch_dephelp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=82 "Built target opencv_video_pch_dephelp"
 .PHONY : modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/all
 
 # Include target in all.
@@ -3713,7 +3717,7 @@ all: modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/rule
@@ -3745,7 +3749,7 @@ modules/video/CMakeFiles/pch_Generate_opencv_video.dir/all: modules/video/CMakeF
 
 # Build rule for subdir invocation for target.
 modules/video/CMakeFiles/pch_Generate_opencv_video.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/pch_Generate_opencv_video.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/video/CMakeFiles/pch_Generate_opencv_video.dir/rule
@@ -4079,6 +4083,136 @@ modules/dnn/CMakeFiles/pch_Generate_opencv_dnn.dir/clean:
 
 # clean rule for target.
 clean: modules/dnn/CMakeFiles/pch_Generate_opencv_dnn.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory modules/freetype
+
+# Convenience name for "all" pass in the directory.
+modules/freetype/all: modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/all
+modules/freetype/all: modules/freetype/CMakeFiles/opencv_freetype.dir/all
+
+.PHONY : modules/freetype/all
+
+# Convenience name for "clean" pass in the directory.
+modules/freetype/clean: modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/clean
+modules/freetype/clean: modules/freetype/CMakeFiles/opencv_freetype.dir/clean
+modules/freetype/clean: modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/clean
+
+.PHONY : modules/freetype/clean
+
+# Convenience name for "preinstall" pass in the directory.
+modules/freetype/preinstall:
+
+.PHONY : modules/freetype/preinstall
+
+#=============================================================================
+# Target rules for target modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir
+
+# All Build rule for target.
+modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/all:
+	$(MAKE) -f modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/build.make modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/depend
+	$(MAKE) -f modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/build.make modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_freetype_pch_dephelp"
+.PHONY : modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/all
+
+# Include target in all.
+all: modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+.PHONY : modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/rule
+
+# Convenience name for target.
+opencv_freetype_pch_dephelp: modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/rule
+
+.PHONY : opencv_freetype_pch_dephelp
+
+# clean rule for target.
+modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/clean:
+	$(MAKE) -f modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/build.make modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/clean
+.PHONY : modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/clean
+
+# clean rule for target.
+clean: modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/freetype/CMakeFiles/opencv_freetype.dir
+
+# All Build rule for target.
+modules/freetype/CMakeFiles/opencv_freetype.dir/all: 3rdparty/carotene/hal/CMakeFiles/tegra_hal.dir/all
+modules/freetype/CMakeFiles/opencv_freetype.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
+modules/freetype/CMakeFiles/opencv_freetype.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
+modules/freetype/CMakeFiles/opencv_freetype.dir/all: modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/all
+	$(MAKE) -f modules/freetype/CMakeFiles/opencv_freetype.dir/build.make modules/freetype/CMakeFiles/opencv_freetype.dir/depend
+	$(MAKE) -f modules/freetype/CMakeFiles/opencv_freetype.dir/build.make modules/freetype/CMakeFiles/opencv_freetype.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_freetype"
+.PHONY : modules/freetype/CMakeFiles/opencv_freetype.dir/all
+
+# Include target in all.
+all: modules/freetype/CMakeFiles/opencv_freetype.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+modules/freetype/CMakeFiles/opencv_freetype.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 15
+	$(MAKE) -f CMakeFiles/Makefile2 modules/freetype/CMakeFiles/opencv_freetype.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+.PHONY : modules/freetype/CMakeFiles/opencv_freetype.dir/rule
+
+# Convenience name for target.
+opencv_freetype: modules/freetype/CMakeFiles/opencv_freetype.dir/rule
+
+.PHONY : opencv_freetype
+
+# clean rule for target.
+modules/freetype/CMakeFiles/opencv_freetype.dir/clean:
+	$(MAKE) -f modules/freetype/CMakeFiles/opencv_freetype.dir/build.make modules/freetype/CMakeFiles/opencv_freetype.dir/clean
+.PHONY : modules/freetype/CMakeFiles/opencv_freetype.dir/clean
+
+# clean rule for target.
+clean: modules/freetype/CMakeFiles/opencv_freetype.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir
+
+# All Build rule for target.
+modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/all: modules/freetype/CMakeFiles/opencv_freetype_pch_dephelp.dir/all
+	$(MAKE) -f modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/build.make modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/depend
+	$(MAKE) -f modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/build.make modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target pch_Generate_opencv_freetype"
+.PHONY : modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/all
+
+# Build rule for subdir invocation for target.
+modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+.PHONY : modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/rule
+
+# Convenience name for target.
+pch_Generate_opencv_freetype: modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/rule
+
+.PHONY : pch_Generate_opencv_freetype
+
+# clean rule for target.
+modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/clean:
+	$(MAKE) -f modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/build.make modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/clean
+.PHONY : modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/clean
+
+# clean rule for target.
+clean: modules/freetype/CMakeFiles/pch_Generate_opencv_freetype.dir/clean
 
 .PHONY : clean
 
@@ -4585,7 +4719,7 @@ all: modules/shape/CMakeFiles/opencv_shape.dir/all
 
 # Build rule for subdir invocation for target.
 modules/shape/CMakeFiles/opencv_shape.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 modules/shape/CMakeFiles/opencv_shape.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/shape/CMakeFiles/opencv_shape.dir/rule
@@ -4771,7 +4905,7 @@ modules/xobjdetect/CMakeFiles/pch_Generate_opencv_xobjdetect.dir/all: modules/xo
 
 # Build rule for subdir invocation for target.
 modules/xobjdetect/CMakeFiles/pch_Generate_opencv_xobjdetect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/xobjdetect/CMakeFiles/pch_Generate_opencv_xobjdetect.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/xobjdetect/CMakeFiles/pch_Generate_opencv_xobjdetect.dir/rule
@@ -4803,7 +4937,7 @@ modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/all: modules/imgcodecs/CMake
 modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/all: modules/xobjdetect/CMakeFiles/pch_Generate_opencv_xobjdetect.dir/all
 	$(MAKE) -f modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/build.make modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/depend
 	$(MAKE) -f modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/build.make modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=92 "Built target opencv_xobjdetect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_xobjdetect"
 .PHONY : modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/all
 
 # Include target in all.
@@ -4813,7 +4947,7 @@ all: modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/all
 
 # Build rule for subdir invocation for target.
 modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/rule
@@ -4840,7 +4974,7 @@ clean: modules/xobjdetect/CMakeFiles/opencv_xobjdetect.dir/clean
 modules/xobjdetect/CMakeFiles/opencv_xobjdetect_pch_dephelp.dir/all:
 	$(MAKE) -f modules/xobjdetect/CMakeFiles/opencv_xobjdetect_pch_dephelp.dir/build.make modules/xobjdetect/CMakeFiles/opencv_xobjdetect_pch_dephelp.dir/depend
 	$(MAKE) -f modules/xobjdetect/CMakeFiles/opencv_xobjdetect_pch_dephelp.dir/build.make modules/xobjdetect/CMakeFiles/opencv_xobjdetect_pch_dephelp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_xobjdetect_pch_dephelp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=92 "Built target opencv_xobjdetect_pch_dephelp"
 .PHONY : modules/xobjdetect/CMakeFiles/opencv_xobjdetect_pch_dephelp.dir/all
 
 # Include target in all.
@@ -4850,7 +4984,7 @@ all: modules/xobjdetect/CMakeFiles/opencv_xobjdetect_pch_dephelp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/xobjdetect/CMakeFiles/opencv_xobjdetect_pch_dephelp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/xobjdetect/CMakeFiles/opencv_xobjdetect_pch_dephelp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/xobjdetect/CMakeFiles/opencv_xobjdetect_pch_dephelp.dir/rule
@@ -4919,7 +5053,7 @@ modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_detector
 modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_detector.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
 	$(MAKE) -f modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_detector.dir/build.make modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_detector.dir/depend
 	$(MAKE) -f modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_detector.dir/build.make modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_detector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=86 "Built target opencv_waldboost_detector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_waldboost_detector"
 .PHONY : modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_detector.dir/all
 
 # Include target in all.
@@ -4929,7 +5063,7 @@ all: modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_det
 
 # Build rule for subdir invocation for target.
 modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_detector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_detector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/xobjdetect/tools/waldboost_detector/CMakeFiles/opencv_waldboost_detector.dir/rule
@@ -4992,7 +5126,7 @@ all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
 
 # Build rule for subdir invocation for target.
 modules/highgui/CMakeFiles/opencv_highgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 modules/highgui/CMakeFiles/opencv_highgui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/rule
@@ -5019,12 +5153,12 @@ clean: modules/highgui/CMakeFiles/opencv_highgui.dir/clean
 modules/highgui/CMakeFiles/pch_Generate_opencv_highgui.dir/all: modules/highgui/CMakeFiles/opencv_highgui_pch_dephelp.dir/all
 	$(MAKE) -f modules/highgui/CMakeFiles/pch_Generate_opencv_highgui.dir/build.make modules/highgui/CMakeFiles/pch_Generate_opencv_highgui.dir/depend
 	$(MAKE) -f modules/highgui/CMakeFiles/pch_Generate_opencv_highgui.dir/build.make modules/highgui/CMakeFiles/pch_Generate_opencv_highgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=95 "Built target pch_Generate_opencv_highgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target pch_Generate_opencv_highgui"
 .PHONY : modules/highgui/CMakeFiles/pch_Generate_opencv_highgui.dir/all
 
 # Build rule for subdir invocation for target.
 modules/highgui/CMakeFiles/pch_Generate_opencv_highgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/highgui/CMakeFiles/pch_Generate_opencv_highgui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/highgui/CMakeFiles/pch_Generate_opencv_highgui.dir/rule
@@ -5115,7 +5249,7 @@ modules/superres/CMakeFiles/opencv_superres.dir/all: modules/videoio/CMakeFiles/
 modules/superres/CMakeFiles/opencv_superres.dir/all: modules/superres/CMakeFiles/pch_Generate_opencv_superres.dir/all
 	$(MAKE) -f modules/superres/CMakeFiles/opencv_superres.dir/build.make modules/superres/CMakeFiles/opencv_superres.dir/depend
 	$(MAKE) -f modules/superres/CMakeFiles/opencv_superres.dir/build.make modules/superres/CMakeFiles/opencv_superres.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=75 "Built target opencv_superres"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_superres"
 .PHONY : modules/superres/CMakeFiles/opencv_superres.dir/all
 
 # Include target in all.
@@ -5125,7 +5259,7 @@ all: modules/superres/CMakeFiles/opencv_superres.dir/all
 
 # Build rule for subdir invocation for target.
 modules/superres/CMakeFiles/opencv_superres.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/superres/CMakeFiles/opencv_superres.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/superres/CMakeFiles/opencv_superres.dir/rule
@@ -5157,7 +5291,7 @@ modules/superres/CMakeFiles/pch_Generate_opencv_superres.dir/all: modules/superr
 
 # Build rule for subdir invocation for target.
 modules/superres/CMakeFiles/pch_Generate_opencv_superres.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/superres/CMakeFiles/pch_Generate_opencv_superres.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/superres/CMakeFiles/pch_Generate_opencv_superres.dir/rule
@@ -5184,7 +5318,7 @@ clean: modules/superres/CMakeFiles/pch_Generate_opencv_superres.dir/clean
 modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/all:
 	$(MAKE) -f modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/build.make modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/depend
 	$(MAKE) -f modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/build.make modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_superres_pch_dephelp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=75 "Built target opencv_superres_pch_dephelp"
 .PHONY : modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/all
 
 # Include target in all.
@@ -5194,7 +5328,7 @@ all: modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/rule
@@ -5242,12 +5376,12 @@ modules/bioinspired/preinstall:
 modules/bioinspired/CMakeFiles/pch_Generate_opencv_bioinspired.dir/all: modules/bioinspired/CMakeFiles/opencv_bioinspired_pch_dephelp.dir/all
 	$(MAKE) -f modules/bioinspired/CMakeFiles/pch_Generate_opencv_bioinspired.dir/build.make modules/bioinspired/CMakeFiles/pch_Generate_opencv_bioinspired.dir/depend
 	$(MAKE) -f modules/bioinspired/CMakeFiles/pch_Generate_opencv_bioinspired.dir/build.make modules/bioinspired/CMakeFiles/pch_Generate_opencv_bioinspired.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target pch_Generate_opencv_bioinspired"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=93 "Built target pch_Generate_opencv_bioinspired"
 .PHONY : modules/bioinspired/CMakeFiles/pch_Generate_opencv_bioinspired.dir/all
 
 # Build rule for subdir invocation for target.
 modules/bioinspired/CMakeFiles/pch_Generate_opencv_bioinspired.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/bioinspired/CMakeFiles/pch_Generate_opencv_bioinspired.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/bioinspired/CMakeFiles/pch_Generate_opencv_bioinspired.dir/rule
@@ -5375,12 +5509,12 @@ modules/dpm/preinstall:
 modules/dpm/CMakeFiles/pch_Generate_opencv_dpm.dir/all: modules/dpm/CMakeFiles/opencv_dpm_pch_dephelp.dir/all
 	$(MAKE) -f modules/dpm/CMakeFiles/pch_Generate_opencv_dpm.dir/build.make modules/dpm/CMakeFiles/pch_Generate_opencv_dpm.dir/depend
 	$(MAKE) -f modules/dpm/CMakeFiles/pch_Generate_opencv_dpm.dir/build.make modules/dpm/CMakeFiles/pch_Generate_opencv_dpm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=94 "Built target pch_Generate_opencv_dpm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target pch_Generate_opencv_dpm"
 .PHONY : modules/dpm/CMakeFiles/pch_Generate_opencv_dpm.dir/all
 
 # Build rule for subdir invocation for target.
 modules/dpm/CMakeFiles/pch_Generate_opencv_dpm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/dpm/CMakeFiles/pch_Generate_opencv_dpm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/dpm/CMakeFiles/pch_Generate_opencv_dpm.dir/rule
@@ -5424,7 +5558,7 @@ all: modules/dpm/CMakeFiles/opencv_dpm.dir/all
 
 # Build rule for subdir invocation for target.
 modules/dpm/CMakeFiles/opencv_dpm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/dpm/CMakeFiles/opencv_dpm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/dpm/CMakeFiles/opencv_dpm.dir/rule
@@ -5548,7 +5682,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/all: modules/highgui/CMakeFi
 modules/features2d/CMakeFiles/opencv_features2d.dir/all: modules/features2d/CMakeFiles/pch_Generate_opencv_features2d.dir/all
 	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/depend
 	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=49,50 "Built target opencv_features2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=48,49,50 "Built target opencv_features2d"
 .PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/all
 
 # Include target in all.
@@ -5783,7 +5917,7 @@ modules/saliency/CMakeFiles/pch_Generate_opencv_saliency.dir/all: modules/salien
 
 # Build rule for subdir invocation for target.
 modules/saliency/CMakeFiles/pch_Generate_opencv_saliency.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/saliency/CMakeFiles/pch_Generate_opencv_saliency.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/saliency/CMakeFiles/pch_Generate_opencv_saliency.dir/rule
@@ -5810,7 +5944,7 @@ clean: modules/saliency/CMakeFiles/pch_Generate_opencv_saliency.dir/clean
 modules/saliency/CMakeFiles/opencv_saliency_pch_dephelp.dir/all:
 	$(MAKE) -f modules/saliency/CMakeFiles/opencv_saliency_pch_dephelp.dir/build.make modules/saliency/CMakeFiles/opencv_saliency_pch_dephelp.dir/depend
 	$(MAKE) -f modules/saliency/CMakeFiles/opencv_saliency_pch_dephelp.dir/build.make modules/saliency/CMakeFiles/opencv_saliency_pch_dephelp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_saliency_pch_dephelp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=71 "Built target opencv_saliency_pch_dephelp"
 .PHONY : modules/saliency/CMakeFiles/opencv_saliency_pch_dephelp.dir/all
 
 # Include target in all.
@@ -5820,7 +5954,7 @@ all: modules/saliency/CMakeFiles/opencv_saliency_pch_dephelp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/saliency/CMakeFiles/opencv_saliency_pch_dephelp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/saliency/CMakeFiles/opencv_saliency_pch_dephelp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/saliency/CMakeFiles/opencv_saliency_pch_dephelp.dir/rule
@@ -5855,7 +5989,7 @@ modules/saliency/CMakeFiles/opencv_saliency.dir/all: modules/features2d/CMakeFil
 modules/saliency/CMakeFiles/opencv_saliency.dir/all: modules/saliency/CMakeFiles/pch_Generate_opencv_saliency.dir/all
 	$(MAKE) -f modules/saliency/CMakeFiles/opencv_saliency.dir/build.make modules/saliency/CMakeFiles/opencv_saliency.dir/depend
 	$(MAKE) -f modules/saliency/CMakeFiles/opencv_saliency.dir/build.make modules/saliency/CMakeFiles/opencv_saliency.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=70,71 "Built target opencv_saliency"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=70 "Built target opencv_saliency"
 .PHONY : modules/saliency/CMakeFiles/opencv_saliency.dir/all
 
 # Include target in all.
@@ -6002,7 +6136,7 @@ all: modules/text/CMakeFiles/opencv_text.dir/all
 
 # Build rule for subdir invocation for target.
 modules/text/CMakeFiles/opencv_text.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 46
 	$(MAKE) -f CMakeFiles/Makefile2 modules/text/CMakeFiles/opencv_text.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/text/CMakeFiles/opencv_text.dir/rule
@@ -6190,7 +6324,7 @@ modules/ccalib/CMakeFiles/pch_Generate_opencv_ccalib.dir/all: modules/ccalib/CMa
 
 # Build rule for subdir invocation for target.
 modules/ccalib/CMakeFiles/pch_Generate_opencv_ccalib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ccalib/CMakeFiles/pch_Generate_opencv_ccalib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/ccalib/CMakeFiles/pch_Generate_opencv_ccalib.dir/rule
@@ -6217,7 +6351,7 @@ clean: modules/ccalib/CMakeFiles/pch_Generate_opencv_ccalib.dir/clean
 modules/ccalib/CMakeFiles/opencv_ccalib_pch_dephelp.dir/all:
 	$(MAKE) -f modules/ccalib/CMakeFiles/opencv_ccalib_pch_dephelp.dir/build.make modules/ccalib/CMakeFiles/opencv_ccalib_pch_dephelp.dir/depend
 	$(MAKE) -f modules/ccalib/CMakeFiles/opencv_ccalib_pch_dephelp.dir/build.make modules/ccalib/CMakeFiles/opencv_ccalib_pch_dephelp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=26 "Built target opencv_ccalib_pch_dephelp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_ccalib_pch_dephelp"
 .PHONY : modules/ccalib/CMakeFiles/opencv_ccalib_pch_dephelp.dir/all
 
 # Include target in all.
@@ -6227,7 +6361,7 @@ all: modules/ccalib/CMakeFiles/opencv_ccalib_pch_dephelp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/ccalib/CMakeFiles/opencv_ccalib_pch_dephelp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ccalib/CMakeFiles/opencv_ccalib_pch_dephelp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/ccalib/CMakeFiles/opencv_ccalib_pch_dephelp.dir/rule
@@ -6273,7 +6407,7 @@ all: modules/ccalib/CMakeFiles/opencv_ccalib.dir/all
 
 # Build rule for subdir invocation for target.
 modules/ccalib/CMakeFiles/opencv_ccalib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 35
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ccalib/CMakeFiles/opencv_ccalib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/ccalib/CMakeFiles/opencv_ccalib.dir/rule
@@ -6434,7 +6568,7 @@ all: modules/datasets/CMakeFiles/opencv_datasets.dir/all
 
 # Build rule for subdir invocation for target.
 modules/datasets/CMakeFiles/opencv_datasets.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 modules/datasets/CMakeFiles/opencv_datasets.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/datasets/CMakeFiles/opencv_datasets.dir/rule
@@ -7044,7 +7178,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/calib3d/CMakeFile
 modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/videostab/CMakeFiles/pch_Generate_opencv_videostab.dir/all
 	$(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/depend
 	$(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=83,84 "Built target opencv_videostab"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=83 "Built target opencv_videostab"
 .PHONY : modules/videostab/CMakeFiles/opencv_videostab.dir/all
 
 # Include target in all.
@@ -7054,7 +7188,7 @@ all: modules/videostab/CMakeFiles/opencv_videostab.dir/all
 
 # Build rule for subdir invocation for target.
 modules/videostab/CMakeFiles/opencv_videostab.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 41
 	$(MAKE) -f CMakeFiles/Makefile2 modules/videostab/CMakeFiles/opencv_videostab.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/videostab/CMakeFiles/opencv_videostab.dir/rule
@@ -7086,7 +7220,7 @@ modules/videostab/CMakeFiles/pch_Generate_opencv_videostab.dir/all: modules/vide
 
 # Build rule for subdir invocation for target.
 modules/videostab/CMakeFiles/pch_Generate_opencv_videostab.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/videostab/CMakeFiles/pch_Generate_opencv_videostab.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/videostab/CMakeFiles/pch_Generate_opencv_videostab.dir/rule
@@ -7113,7 +7247,7 @@ clean: modules/videostab/CMakeFiles/pch_Generate_opencv_videostab.dir/clean
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/all:
 	$(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/build.make modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/depend
 	$(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/build.make modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_videostab_pch_dephelp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=84 "Built target opencv_videostab_pch_dephelp"
 .PHONY : modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/all
 
 # Include target in all.
@@ -7123,7 +7257,7 @@ all: modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/rule
@@ -7252,7 +7386,7 @@ modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/all: modules/calib3d/CMake
 modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/all: modules/xfeatures2d/CMakeFiles/pch_Generate_opencv_xfeatures2d.dir/all
 	$(MAKE) -f modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/build.make modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/depend
 	$(MAKE) -f modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/build.make modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=87,88 "Built target opencv_xfeatures2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=86,87,88 "Built target opencv_xfeatures2d"
 .PHONY : modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/all
 
 # Include target in all.
@@ -7262,7 +7396,7 @@ all: modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/all
 
 # Build rule for subdir invocation for target.
 modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/xfeatures2d/CMakeFiles/opencv_xfeatures2d.dir/rule
@@ -7582,12 +7716,12 @@ modules/bgsegm/preinstall:
 modules/bgsegm/CMakeFiles/pch_Generate_opencv_bgsegm.dir/all: modules/bgsegm/CMakeFiles/opencv_bgsegm_pch_dephelp.dir/all
 	$(MAKE) -f modules/bgsegm/CMakeFiles/pch_Generate_opencv_bgsegm.dir/build.make modules/bgsegm/CMakeFiles/pch_Generate_opencv_bgsegm.dir/depend
 	$(MAKE) -f modules/bgsegm/CMakeFiles/pch_Generate_opencv_bgsegm.dir/build.make modules/bgsegm/CMakeFiles/pch_Generate_opencv_bgsegm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=93 "Built target pch_Generate_opencv_bgsegm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target pch_Generate_opencv_bgsegm"
 .PHONY : modules/bgsegm/CMakeFiles/pch_Generate_opencv_bgsegm.dir/all
 
 # Build rule for subdir invocation for target.
 modules/bgsegm/CMakeFiles/pch_Generate_opencv_bgsegm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/bgsegm/CMakeFiles/pch_Generate_opencv_bgsegm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/bgsegm/CMakeFiles/pch_Generate_opencv_bgsegm.dir/rule
@@ -7719,7 +7853,7 @@ modules/face/preinstall:
 modules/face/CMakeFiles/pch_Generate_opencv_face.dir/all: modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/all
 	$(MAKE) -f modules/face/CMakeFiles/pch_Generate_opencv_face.dir/build.make modules/face/CMakeFiles/pch_Generate_opencv_face.dir/depend
 	$(MAKE) -f modules/face/CMakeFiles/pch_Generate_opencv_face.dir/build.make modules/face/CMakeFiles/pch_Generate_opencv_face.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target pch_Generate_opencv_face"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=94 "Built target pch_Generate_opencv_face"
 .PHONY : modules/face/CMakeFiles/pch_Generate_opencv_face.dir/all
 
 # Build rule for subdir invocation for target.
@@ -7751,7 +7885,7 @@ clean: modules/face/CMakeFiles/pch_Generate_opencv_face.dir/clean
 modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/all:
 	$(MAKE) -f modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/build.make modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/depend
 	$(MAKE) -f modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/build.make modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=48 "Built target opencv_face_pch_dephelp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_face_pch_dephelp"
 .PHONY : modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/all
 
 # Include target in all.
@@ -7761,7 +7895,7 @@ all: modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/face/CMakeFiles/opencv_face_pch_dephelp.dir/rule
@@ -7815,7 +7949,7 @@ all: modules/face/CMakeFiles/opencv_face.dir/all
 
 # Build rule for subdir invocation for target.
 modules/face/CMakeFiles/opencv_face.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 59
 	$(MAKE) -f CMakeFiles/Makefile2 modules/face/CMakeFiles/opencv_face.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/face/CMakeFiles/opencv_face.dir/rule
@@ -7953,7 +8087,7 @@ all: modules/optflow/CMakeFiles/opencv_optflow.dir/all
 
 # Build rule for subdir invocation for target.
 modules/optflow/CMakeFiles/opencv_optflow.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/optflow/CMakeFiles/opencv_optflow.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/optflow/CMakeFiles/opencv_optflow.dir/rule
@@ -8093,7 +8227,7 @@ all: modules/stitching/CMakeFiles/opencv_stitching.dir/all
 
 # Build rule for subdir invocation for target.
 modules/stitching/CMakeFiles/opencv_stitching.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 43
 	$(MAKE) -f CMakeFiles/Makefile2 modules/stitching/CMakeFiles/opencv_stitching.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/rule
@@ -8200,6 +8334,7 @@ modules/python2/CMakeFiles/opencv_python2.dir/all: modules/video/CMakeFiles/open
 modules/python2/CMakeFiles/opencv_python2.dir/all: modules/viz/CMakeFiles/opencv_viz.dir/all
 modules/python2/CMakeFiles/opencv_python2.dir/all: modules/xphoto/CMakeFiles/opencv_xphoto.dir/all
 modules/python2/CMakeFiles/opencv_python2.dir/all: modules/dnn/CMakeFiles/opencv_dnn.dir/all
+modules/python2/CMakeFiles/opencv_python2.dir/all: modules/freetype/CMakeFiles/opencv_freetype.dir/all
 modules/python2/CMakeFiles/opencv_python2.dir/all: modules/fuzzy/CMakeFiles/opencv_fuzzy.dir/all
 modules/python2/CMakeFiles/opencv_python2.dir/all: modules/img_hash/CMakeFiles/opencv_img_hash.dir/all
 modules/python2/CMakeFiles/opencv_python2.dir/all: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all
@@ -8242,7 +8377,7 @@ all: modules/python2/CMakeFiles/opencv_python2.dir/all
 
 # Build rule for subdir invocation for target.
 modules/python2/CMakeFiles/opencv_python2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 96
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 97
 	$(MAKE) -f CMakeFiles/Makefile2 modules/python2/CMakeFiles/opencv_python2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/python2/CMakeFiles/opencv_python2.dir/rule
@@ -8299,6 +8434,7 @@ modules/python3/CMakeFiles/opencv_python3.dir/all: modules/video/CMakeFiles/open
 modules/python3/CMakeFiles/opencv_python3.dir/all: modules/viz/CMakeFiles/opencv_viz.dir/all
 modules/python3/CMakeFiles/opencv_python3.dir/all: modules/xphoto/CMakeFiles/opencv_xphoto.dir/all
 modules/python3/CMakeFiles/opencv_python3.dir/all: modules/dnn/CMakeFiles/opencv_dnn.dir/all
+modules/python3/CMakeFiles/opencv_python3.dir/all: modules/freetype/CMakeFiles/opencv_freetype.dir/all
 modules/python3/CMakeFiles/opencv_python3.dir/all: modules/fuzzy/CMakeFiles/opencv_fuzzy.dir/all
 modules/python3/CMakeFiles/opencv_python3.dir/all: modules/img_hash/CMakeFiles/opencv_img_hash.dir/all
 modules/python3/CMakeFiles/opencv_python3.dir/all: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all
@@ -8341,7 +8477,7 @@ all: modules/python3/CMakeFiles/opencv_python3.dir/all
 
 # Build rule for subdir invocation for target.
 modules/python3/CMakeFiles/opencv_python3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 96
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 97
 	$(MAKE) -f CMakeFiles/Makefile2 modules/python3/CMakeFiles/opencv_python3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : modules/python3/CMakeFiles/opencv_python3.dir/rule
@@ -8455,7 +8591,7 @@ all: apps/traincascade/CMakeFiles/opencv_traincascade.dir/all
 
 # Build rule for subdir invocation for target.
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 37
 	$(MAKE) -f CMakeFiles/Makefile2 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : apps/traincascade/CMakeFiles/opencv_traincascade.dir/rule
@@ -8508,7 +8644,7 @@ apps/createsamples/CMakeFiles/opencv_createsamples.dir/all: modules/features2d/C
 apps/createsamples/CMakeFiles/opencv_createsamples.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 	$(MAKE) -f apps/createsamples/CMakeFiles/opencv_createsamples.dir/build.make apps/createsamples/CMakeFiles/opencv_createsamples.dir/depend
 	$(MAKE) -f apps/createsamples/CMakeFiles/opencv_createsamples.dir/build.make apps/createsamples/CMakeFiles/opencv_createsamples.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_createsamples"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=31 "Built target opencv_createsamples"
 .PHONY : apps/createsamples/CMakeFiles/opencv_createsamples.dir/all
 
 # Include target in all.
@@ -8518,7 +8654,7 @@ all: apps/createsamples/CMakeFiles/opencv_createsamples.dir/all
 
 # Build rule for subdir invocation for target.
 apps/createsamples/CMakeFiles/opencv_createsamples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 37
 	$(MAKE) -f CMakeFiles/Makefile2 apps/createsamples/CMakeFiles/opencv_createsamples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : apps/createsamples/CMakeFiles/opencv_createsamples.dir/rule
@@ -8577,7 +8713,7 @@ all: apps/annotation/CMakeFiles/opencv_annotation.dir/all
 
 # Build rule for subdir invocation for target.
 apps/annotation/CMakeFiles/opencv_annotation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 apps/annotation/CMakeFiles/opencv_annotation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : apps/annotation/CMakeFiles/opencv_annotation.dir/rule
@@ -8636,7 +8772,7 @@ all: apps/visualisation/CMakeFiles/opencv_visualisation.dir/all
 
 # Build rule for subdir invocation for target.
 apps/visualisation/CMakeFiles/opencv_visualisation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 apps/visualisation/CMakeFiles/opencv_visualisation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : apps/visualisation/CMakeFiles/opencv_visualisation.dir/rule
@@ -8748,7 +8884,7 @@ apps/version/CMakeFiles/opencv_version.dir/all: modules/videoio/CMakeFiles/openc
 apps/version/CMakeFiles/opencv_version.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
 	$(MAKE) -f apps/version/CMakeFiles/opencv_version.dir/build.make apps/version/CMakeFiles/opencv_version.dir/depend
 	$(MAKE) -f apps/version/CMakeFiles/opencv_version.dir/build.make apps/version/CMakeFiles/opencv_version.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num=81 "Built target opencv_version"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/ros_catkin_ws/src/CMakeFiles --progress-num= "Built target opencv_version"
 .PHONY : apps/version/CMakeFiles/opencv_version.dir/all
 
 # Include target in all.
@@ -8758,7 +8894,7 @@ all: apps/version/CMakeFiles/opencv_version.dir/all
 
 # Build rule for subdir invocation for target.
 apps/version/CMakeFiles/opencv_version.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 apps/version/CMakeFiles/opencv_version.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ros_catkin_ws/src/CMakeFiles 0
 .PHONY : apps/version/CMakeFiles/opencv_version.dir/rule

@@ -300,7 +300,7 @@ def get_python_install_dir():
     return python_install_dir
 
 
-def handle_make_arguments(input_make_args):
+def handle_make_arguments(input_make_args, append_default_jobs_flags=True):
     make_args = list(input_make_args)
 
     # If no -j/--jobs/-l/--load-average flags are in make_args
@@ -316,7 +316,7 @@ def handle_make_arguments(input_make_args):
                 # ROS_PARALLEL_JOBS is a set of make variables, not just a number
                 ros_parallel_jobs = os.environ['ROS_PARALLEL_JOBS']
                 make_args.extend(ros_parallel_jobs.split())
-            else:
+            elif append_default_jobs_flags:
                 # Else Use the number of CPU cores
                 try:
                     jobs = multiprocessing.cpu_count()
@@ -355,7 +355,7 @@ def build_catkin_package(
     if last_env is not None:
         cprint(
             blue_arrow + " Building with env: " +
-            "'{0}'".format(last_env)
+            "'{0}'".format(sanitize(last_env))
         )
 
     # Check for Makefile and maybe call cmake
@@ -427,7 +427,7 @@ def build_catkin_package(
         make_executable = 'make'
 
     make_cmd = [make_executable]
-    make_cmd.extend(handle_make_arguments(make_args))
+    make_cmd.extend(handle_make_arguments(make_args, append_default_jobs_flags=not use_nmake))
     isolation_print_command(' '.join(make_cmd), build_dir)
     if last_env is not None:
         make_cmd = [last_env] + make_cmd
@@ -436,7 +436,7 @@ def build_catkin_package(
     # Make install
     # NMake doesn't have an option to list target so try it anyway
     if install or use_nmake:
-        if has_make_target(build_dir, 'install', use_ninja=use_ninja):
+        if has_make_target(build_dir, 'install', use_ninja=use_ninja, use_nmake=use_nmake):
             make_install_cmd = [make_executable, 'install']
             isolation_print_command(' '.join(make_install_cmd), build_dir)
             if last_env is not None:
@@ -448,11 +448,13 @@ def build_catkin_package(
                 % make_executable))
 
 
-def has_make_target(path, target, use_ninja=False):
-    if not use_ninja:
-        output = run_command(['make', '-pn'], path, quiet=True)
-    else:
+def has_make_target(path, target, use_ninja=False, use_nmake=False):
+    if use_ninja:
         output = run_command(['ninja', '-t', 'targets'], path, quiet=True)
+    elif use_nmake:
+        output = run_command(['nmake', '/PNC'], path, quiet=True)
+    else:
+        output = run_command(['make', '-pn'], path, quiet=True)
     lines = output.splitlines()
     # strip nanja warnings since they look similar to targets
     if use_ninja:
@@ -464,8 +466,109 @@ def has_make_target(path, target, use_ninja=False):
 def get_additional_environment(install, destdir, installspace):
     add_env = {}
     if install and destdir:
+        # exclude drive letter if on Windows, returns the same string on Linux since there is no drive specifications
+        _, installspace = os.path.splitdrive(installspace)
+
         add_env['_CATKIN_SETUP_DIR'] = os.path.join(destdir, installspace[1:])
     return add_env
+
+
+def write_env_bat(dest_file, variables):
+    env_bat_template = """\
+@echo off
+REM generated from catkin.builder Python module
+
+if "%1"=="" (
+  echo "Usage: env.bat COMMANDS"
+  echo "Calling env.bat without arguments is not supported anymore. Instead spawn a subshell and source a setup file manually."
+  exit 1
+) else (
+  call "{SETUP_DIR}\\{SETUP_FILENAME}.bat"
+  %*
+)
+"""
+    with open(dest_file, 'w') as f:
+        f.write(env_bat_template.format(**variables))
+
+
+def write_setup_bat(dest_file, last_setup_basename, variables):
+    setup_bat_header = """\
+@echo off
+REM generated from catkin.builder Python module
+"""
+    setup_bat_template = """\
+REM Prepend to the environment
+set CMAKE_PREFIX_PATH={cmake_prefix_path};%CMAKE_PREFIX_PATH%
+set LD_LIBRARY_PATH={ld_path};%LD_LIBRARY_PATH%
+set PATH={path};%PATH%
+set PKG_CONFIG_PATH={pkgcfg_path};%PKG_CONFIG_PATH%
+set PYTHONPATH={pythonpath};%PYTHONPATH%
+"""
+    with open(dest_file, 'w') as f:
+        f.write(setup_bat_header)
+        if last_setup_basename is not None:
+            f.write('call "%s.bat"\n\n' % last_setup_basename)
+        f.write(setup_bat_template.format(**variables))
+
+
+def write_env_sh(dest_file, variables):
+    env_sh_template = """\
+#!/usr/bin/env sh
+# generated from catkin.builder Python module
+
+if [ $# -eq 0 ] ; then
+  /bin/echo "Usage: env.sh COMMANDS"
+  /bin/echo "Calling env.sh without arguments is not supported anymore. \
+Instead spawn a subshell and source a setup file manually."
+  exit 1
+fi
+
+# ensure to not use different shell type which was set before
+CATKIN_SHELL=sh
+
+# source {SETUP_FILENAME}.sh from same directory as this file
+. "$(cd "`dirname "$0"`" && pwd)/{SETUP_FILENAME}.sh"
+exec "$@"
+"""
+    with open(os.path.join(dest_file), 'w') as f:
+        f.write(env_sh_template.format(**variables))
+    os.chmod(dest_file, stat.S_IXUSR | stat.S_IWUSR | stat.S_IRUSR)
+
+
+def write_setup_sh(dest_file, last_setup_basename, variables):
+    setup_sh_header = """\
+#!/usr/bin/env sh
+# generated from catkin.builder Python module
+
+# remember type of shell if not already set
+if [ -z "$CATKIN_SHELL" ]; then
+  CATKIN_SHELL=sh
+fi
+"""
+    setup_sh_template = """\
+# detect if running on Darwin platform
+_UNAME=`uname -s`
+IS_DARWIN=0
+if [ "$_UNAME" = "Darwin" ]; then
+  IS_DARWIN=1
+fi
+
+# Prepend to the environment
+export CMAKE_PREFIX_PATH="{cmake_prefix_path}:$CMAKE_PREFIX_PATH"
+if [ $IS_DARWIN -eq 0 ]; then
+  export LD_LIBRARY_PATH="{ld_path}:$LD_LIBRARY_PATH"
+else
+  export DYLD_LIBRARY_PATH="{ld_path}:$DYLD_LIBRARY_PATH"
+fi
+export PATH="{path}:$PATH"
+export PKG_CONFIG_PATH="{pkgcfg_path}:$PKG_CONFIG_PATH"
+export PYTHONPATH="{pythonpath}:$PYTHONPATH"
+"""
+    with open(dest_file, 'w') as f:
+        f.write(setup_sh_header)
+        if last_setup_basename is not None:
+            f.write('. "%s.$CATKIN_SHELL"\n\n' % last_setup_basename)
+        f.write(setup_sh_template.format(**variables))
 
 
 def build_cmake_package(
@@ -490,7 +593,7 @@ def build_cmake_package(
     # Check last_env
     if last_env is not None:
         cprint(blue_arrow + " Building with env: " +
-               "'{0}'".format(last_env))
+               "'{0}'".format(sanitize(last_env)))
 
     # Check for Makefile and maybe call cmake
     if not use_ninja:
@@ -536,7 +639,7 @@ def build_cmake_package(
     else:
         make_executable = 'make'
     make_cmd = [make_executable]
-    make_cmd.extend(handle_make_arguments(make_args))
+    make_cmd.extend(handle_make_arguments(make_args, append_default_jobs_flags=not use_nmake))
     isolation_print_command(' '.join(make_cmd), build_dir)
     if last_env is not None:
         make_cmd = [last_env] + make_cmd
@@ -552,13 +655,14 @@ def build_cmake_package(
         make_install_cmd = [last_env] + make_install_cmd
     run_command(make_install_cmd, build_dir, quiet)
 
-    # If we are installing, and a env.sh exists, don't overwrite it
-    if install and os.path.exists(prefix_destdir(os.path.join(install_target, 'env.sh'), destdir)):
+    env_script = 'env' + ('.bat' if sys.platform == 'win32' else '.sh')
+    # If an env script already exists, don't overwrite it
+    if install and os.path.exists(prefix_destdir(os.path.join(install_target, env_script), destdir)):
         return
-    cprint(blue_arrow + " Generating an env.sh")
-    # Generate env.sh for chaining to catkin packages
+    cprint(blue_arrow + " Generating an " + env_script)
+    # Generate env script for chaining to catkin packages
     # except if using --merge which implies that new_env_path equals last_env
-    new_env_path = os.path.join(install_target, 'env.sh')
+    new_env_path = os.path.join(install_target, env_script)
     if install:
         new_env_path = prefix_destdir(new_env_path, destdir)
     if new_env_path != last_env:
@@ -568,99 +672,57 @@ def build_cmake_package(
         }
         if not os.path.exists(os.path.dirname(new_env_path)):
             os.makedirs(os.path.dirname(new_env_path))
-        with open(os.path.join(new_env_path), 'w') as f:
-            f.write("""\
-#!/usr/bin/env sh
-# generated from catkin.builder module
+        env_script_writer = write_env_bat if sys.platform == 'win32' else write_env_sh
+        env_script_writer(dest_file=new_env_path, variables=variables)
 
-if [ $# -eq 0 ] ; then
-  /bin/echo "Usage: env.sh COMMANDS"
-  /bin/echo "Calling env.sh without arguments is not supported anymore. \
-Instead spawn a subshell and source a setup file manually."
-  exit 1
-fi
-
-# ensure to not use different shell type which was set before
-CATKIN_SHELL=sh
-
-# source {SETUP_FILENAME}.sh from same directory as this file
-. "$(cd "`dirname "$0"`" && pwd)/{SETUP_FILENAME}.sh"
-exec "$@"
-""".format(**variables))
-        os.chmod(new_env_path, stat.S_IXUSR | stat.S_IWUSR | stat.S_IRUSR)
-
-    # Generate setup.sh for chaining to catkin packages
+    # Generate setup script for chaining to catkin packages
     # except if using --merge which implies that new_setup_path equals last_setup_env
-    new_setup_path = os.path.join(install_target, 'setup.sh')
+    setup_script = 'setup' + ('.bat' if sys.platform == 'win32' else '.sh')
+    new_setup_path = os.path.join(install_target, setup_script)
     if install:
         new_setup_path = prefix_destdir(new_setup_path, destdir)
-    last_setup_env = os.path.join(os.path.dirname(last_env), 'setup.sh') if last_env is not None else None
+    last_setup_env = os.path.join(os.path.dirname(last_env), setup_script) if last_env is not None else None
     if new_setup_path != last_setup_env:
         subs = {}
-        subs['cmake_prefix_path'] = install_target + ":"
-        subs['ld_path'] = os.path.join(install_target, 'lib') + ":"
+        # CMAKE_PREFIX_PATH uses forward slash on all platforms.
+        subs['cmake_prefix_path'] = install_target.replace(os.sep, '/')
+        subs['ld_path'] = os.path.join(install_target, 'lib')
         pythonpath = os.path.join(install_target, get_python_install_dir())
-        subs['pythonpath'] = pythonpath + ':'
-        subs['pkgcfg_path'] = os.path.join(install_target, 'lib', 'pkgconfig') + ":"
-        subs['path'] = os.path.join(install_target, 'bin') + ":"
+        subs['pythonpath'] = pythonpath
+        subs['pkgcfg_path'] = os.path.join(install_target, 'lib', 'pkgconfig')
+        subs['path'] = os.path.join(install_target, 'bin')
         arch = get_multiarch()
         if arch:
-            subs['ld_path'] += os.path.join(install_target, 'lib', arch) + ":"
-            subs['pkgcfg_path'] += os.path.join(install_target, 'lib', arch, 'pkgconfig') + ":"
+            subs['ld_path'] = os.pathsep.join([subs['ld_path'], os.path.join(install_target, 'lib', arch)])
+            subs['pkgcfg_path'] = os.pathsep.join([subs['pkgcfg_path'], os.path.join(install_target, 'lib', arch, 'pkgconfig')])
         if not os.path.exists(os.path.dirname(new_setup_path)):
             os.mkdir(os.path.dirname(new_setup_path))
-        with open(new_setup_path, 'w') as file_handle:
-            file_handle.write("""\
-#!/usr/bin/env sh
-# generated from catkin.builder module
+        setup_script_writer = write_setup_bat if sys.platform == 'win32' else write_setup_sh
+        last_setup_basename = os.path.splitext(last_setup_env)[0] if last_setup_env is not None else None
+        setup_script_writer(dest_file=new_setup_path, last_setup_basename=last_setup_basename, variables=subs)
 
-# remember type of shell if not already set
-if [ -z "$CATKIN_SHELL" ]; then
-  CATKIN_SHELL=sh
-fi
-""")
-            if last_env is not None:
-                file_handle.write('. "%s.$CATKIN_SHELL"\n\n' % last_setup_env[:-3])
-            file_handle.write("""\
-# detect if running on Darwin platform
-_UNAME=`uname -s`
-IS_DARWIN=0
-if [ "$_UNAME" = "Darwin" ]; then
-  IS_DARWIN=1
-fi
-
-# Prepend to the environment
-export CMAKE_PREFIX_PATH="{cmake_prefix_path}$CMAKE_PREFIX_PATH"
-if [ $IS_DARWIN -eq 0 ]; then
-  export LD_LIBRARY_PATH="{ld_path}$LD_LIBRARY_PATH"
-else
-  export DYLD_LIBRARY_PATH="{ld_path}$DYLD_LIBRARY_PATH"
-fi
-export PATH="{path}$PATH"
-export PKG_CONFIG_PATH="{pkgcfg_path}$PKG_CONFIG_PATH"
-export PYTHONPATH="{pythonpath}$PYTHONPATH"
-""".format(**subs))
-
-        # generate setup.bash|zsh scripts
-        for shell in ['bash', 'zsh']:
-            setup_path = os.path.join(install_target, 'setup.%s' % shell)
-            if install:
-                setup_path = prefix_destdir(setup_path, destdir)
-            with open(setup_path, 'w') as f:
-                f.write("""\
+        if sys.platform != 'win32':
+            # generate setup.bash|zsh scripts
+            setup_script_template = """\
 #!/usr/bin/env {1}
-# generated from catkin.builder module
+# generated from catkin.builder Python module
 
 CATKIN_SHELL={1}
 . "{0}/setup.sh"
-""".format(os.path.dirname(setup_path), shell))
+"""
+            for shell in ['bash', 'zsh']:
+                setup_path = os.path.join(install_target, 'setup.%s' % shell)
+                if install:
+                    setup_path = prefix_destdir(setup_path, destdir)
+                with open(setup_path, 'w') as f:
+                    f.write(setup_script_template.format(os.path.dirname(setup_path), shell))
 
 
 def build_package(
     path, package,
     workspace, buildspace, develspace, installspace,
     install, force_cmake, quiet, last_env, cmake_args, make_args, catkin_make_args,
-    destdir=None, use_ninja=False,
+    destdir=None, use_ninja=False, use_nmake=False,
     number=None, of=None
 ):
     if platform.system() in ['Linux', 'Darwin'] and sys.stdout.isatty():
@@ -674,7 +736,7 @@ def build_package(
             path, package,
             workspace, buildspace, develspace, installspace,
             install, force_cmake, quiet, last_env, cmake_args, make_args + catkin_make_args,
-            destdir=destdir, use_ninja=use_ninja
+            destdir=destdir, use_ninja=use_ninja, use_nmake=use_nmake
         )
         if not os.path.exists(new_last_env):
             raise RuntimeError(
@@ -688,7 +750,7 @@ def build_package(
             path, package,
             workspace, buildspace, develspace, installspace,
             install, force_cmake, quiet, last_env, cmake_args, make_args,
-            destdir=destdir, use_ninja=use_ninja
+            destdir=destdir, use_ninja=use_ninja, use_nmake=use_nmake
         )
     else:
         sys.exit('Can not build package with unknown build_type')
@@ -702,12 +764,13 @@ def build_package(
 
 
 def get_new_env(package, develspace, installspace, install, last_env, destdir=None):
+    env_script = 'env.bat' if sys.platform == 'win32' else 'env.sh'
     new_env = None
     build_type = _get_build_type(package)
     if build_type in ['catkin', 'cmake']:
         new_env = os.path.join(
             installspace if install else develspace,
-            'env.sh'
+            env_script
         )
         if install:
             new_env = prefix_destdir(new_env, destdir)
@@ -716,6 +779,9 @@ def get_new_env(package, develspace, installspace, install, last_env, destdir=No
 
 def prefix_destdir(path, destdir=None):
     if destdir is not None:
+        # exclude drive letter if on Windows, returns the same string on Linux since there is no drive specifications
+        _, path = os.path.splitdrive(path)
+
         path = os.path.join(destdir, path[1:])
     return path
 
@@ -977,7 +1043,7 @@ def build_workspace_isolated(
                     workspace, buildspace, pkg_develspace, installspace,
                     install, force_cmake,
                     quiet, last_env, cmake_args, make_args, catkin_make_args,
-                    destdir=destdir, use_ninja=use_ninja,
+                    destdir=destdir, use_ninja=use_ninja, use_nmake=use_nmake,
                     number=index + 1, of=len(ordered_packages)
                 )
             except subprocess.CalledProcessError as e:
@@ -1008,34 +1074,69 @@ def build_workspace_isolated(
     if not os.path.exists(develspace):
         os.makedirs(develspace)
     if not build_packages:
-        generated_env_sh = os.path.join(develspace, 'env.sh')
-        generated_setup_util_py = os.path.join(develspace, '_setup_util.py')
-        if not merge and pkg_develspace:
-            # generate env.sh and setup.sh|bash|zsh which relay to last devel space
-            with open(generated_env_sh, 'w') as f:
-                f.write("""\
+        env_script = 'env'
+        if sys.platform == 'win32':
+            env_script += '.bat'
+            env_script_content = """\
+@echo off
+REM generated from catkin.builder Python module
+
+call {0} %*
+"""
+            setup_script_content = """\
+@echo off
+REM generated from catkin.builder Python module
+
+call "{0}/setup.{1}"
+"""
+        else:
+            env_script += '.sh'
+            env_script_content = """\
 #!/usr/bin/env sh
-# generated from catkin.builder module
+# generated from catkin.builder Python module
 
 {0} "$@"
-""".format(os.path.join(pkg_develspace, 'env.sh')))
-            os.chmod(generated_env_sh, stat.S_IXUSR | stat.S_IWUSR | stat.S_IRUSR)
-
-            for shell in ['sh', 'bash', 'zsh']:
-                with open(os.path.join(develspace, 'setup.%s' % shell), 'w') as f:
-                    f.write("""\
+"""
+            setup_script_content = """\
 #!/usr/bin/env {1}
-# generated from catkin.builder module
+# generated from catkin.builder Python module
 
 . "{0}/setup.{1}"
-""".format(pkg_develspace, shell))
+"""
+            setup_sh_content = """\
+#!/usr/bin/env sh
+# generated from catkin.builder Python module
+
+if [ ! -z "$_CATKIN_SETUP_DIR" ] && [ "$_CATKIN_SETUP_DIR" != "{1}" ]; then
+  echo "Relocation of this workspace is not supported"
+  return 1
+fi
+
+_CATKIN_SETUP_DIR= . "{0}/setup.sh"
+"""
+
+        generated_env_sh = os.path.join(develspace, env_script)
+        generated_setup_util_py = os.path.join(develspace, '_setup_util.py')
+        if not merge and pkg_develspace:
+            # generate env script and setup.sh|bash|zsh or setup.bat which relay to last devel space
+            with open(generated_env_sh, 'w') as f:
+                f.write(env_script_content.format(os.path.join(pkg_develspace, env_script)))
+            os.chmod(generated_env_sh, stat.S_IXUSR | stat.S_IWUSR | stat.S_IRUSR)
+
+            shells_to_write = ['bat'] if sys.platform == 'win32' else ['bash', 'zsh']
+            for shell in shells_to_write:
+                with open(os.path.join(develspace, 'setup.%s' % shell), 'w') as f:
+                    f.write(setup_script_content.format(pkg_develspace, shell))
+            if sys.platform != 'win32':
+                with open(os.path.join(develspace, 'setup.sh'), 'w') as f:
+                    f.write(setup_sh_content.format(pkg_develspace, develspace))
 
             # remove _setup_util.py file which might have been generated for an empty devel space before
             if os.path.exists(generated_setup_util_py):
                 os.remove(generated_setup_util_py)
 
         elif not pkg_develspace:
-            # generate env.sh and setup.sh|bash|zsh for an empty devel space
+            # generate env.* and setup.* scripts for an empty devel space
             if 'CMAKE_PREFIX_PATH' in os.environ.keys():
                 variables = {
                     'CATKIN_GLOBAL_BIN_DESTINATION': 'bin',
@@ -1053,13 +1154,20 @@ def build_workspace_isolated(
             else:
                 sys.exit("Unable to process CMAKE_PREFIX_PATH from environment. Cannot generate environment files.")
 
-            variables = {'SETUP_FILENAME': 'setup'}
+            variables = {
+                'SETUP_DIR': develspace,
+                'SETUP_FILENAME': 'setup',
+            }
             with open(generated_env_sh, 'w') as f:
-                f.write(configure_file(os.path.join(get_cmake_path(), 'templates', 'env.sh.in'), variables))
+                f.write(configure_file(os.path.join(get_cmake_path(), 'templates', env_script + '.in'), variables))
             os.chmod(generated_env_sh, stat.S_IXUSR | stat.S_IWUSR | stat.S_IRUSR)
 
-            variables = {'SETUP_DIR': develspace}
-            for shell in ['sh', 'bash', 'zsh']:
+            variables = {
+                'PYTHON_EXECUTABLE': sys.executable,
+                'SETUP_DIR': develspace,
+            }
+            shells_to_write = ['bat'] if sys.platform == 'win32' else ['sh', 'bash', 'zsh']
+            for shell in shells_to_write:
                 with open(os.path.join(develspace, 'setup.%s' % shell), 'w') as f:
                     f.write(configure_file(
                         os.path.join(get_cmake_path(), 'templates', 'setup.%s.in' % shell),
@@ -1112,3 +1220,14 @@ def get_package_names_with_recursive_dependencies(packages, pkg_names):
                 if dep in packages_by_name and dep not in check_pkg_names and dep not in dependencies:
                     check_pkg_names.add(dep)
     return dependencies
+
+def apply_platform_specific_defaults(args):
+    # add Windows specific defaults
+    if sys.platform == 'win32':
+        # default to use nmake if on Windows and if not using ninja
+        if not args.use_ninja:
+            args.use_nmake = True
+        # use RelWithDebInfo as default build type if on Windows
+        prefix = '-DCMAKE_BUILD_TYPE='
+        if not any(a.startswith(prefix) for a in args.cmake_args):
+            args.cmake_args.append(prefix + 'RelWithDebInfo')

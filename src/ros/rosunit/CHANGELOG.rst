@@ -2,6 +2,14 @@
 Changelog for package rosunit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.14.6 (2019-03-18)
+-------------------
+
+1.14.5 (2019-03-04)
+-------------------
+* add Python executable to ROSUNIT_EXE so it runs correctly on Windows (`#200 <https://github.com/ros/ros/issues/200>`_)
+* rosunit Python 3 support (`#190 <https://github.com/ros/ros/issues/190>`_)
+
 1.14.4 (2018-05-01)
 -------------------
 

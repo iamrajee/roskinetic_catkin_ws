@@ -6,5 +6,5 @@ CXX_FLAGS =    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dt
 
 CXX_DEFINES = -D_USE_MATH_DEFINES -D__OPENCV_BUILD=1 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
 
-CXX_INCLUDES = -I/home/pi/ros_catkin_ws/src -isystem /usr/include/eigen3 -isystem /usr/include/arm-linux-gnueabihf -I/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/include -I/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src -I/home/pi/ros_catkin_ws/src/modules/videoio -I/home/pi/ros_catkin_ws/src/opencv3/modules/core/include -I/home/pi/ros_catkin_ws/src/opencv3/modules/imgproc/include -I/home/pi/ros_catkin_ws/src/opencv3/modules/imgcodecs/include 
+CXX_INCLUDES = -I/home/pi/ros_catkin_ws/src -isystem /usr/include/eigen3 -isystem /usr/include/gstreamer-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/arm-linux-gnueabihf/glib-2.0/include -isystem /usr/include/arm-linux-gnueabihf -I/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/include -I/home/pi/ros_catkin_ws/src/opencv3/modules/videoio/src -I/home/pi/ros_catkin_ws/src/modules/videoio -I/home/pi/ros_catkin_ws/src/opencv3/modules/core/include -I/home/pi/ros_catkin_ws/src/opencv3/modules/imgproc/include -I/home/pi/ros_catkin_ws/src/opencv3/modules/imgcodecs/include 
 

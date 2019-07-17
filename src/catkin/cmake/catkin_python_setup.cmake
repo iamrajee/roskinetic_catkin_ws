@@ -79,6 +79,14 @@ function(catkin_python_setup)
     message(FATAL_ERROR "catkin_python_setup() version in setup.py (${${PROJECT_NAME}_SETUP_PY_VERSION}) differs from version in package.xml (${${PROJECT_NAME}_VERSION})")
   endif()
 
+  # if the Python install directory didn't exist before
+  # the cached environment won't contain it in the PYTHONPATH
+  if(NOT EXISTS "${CATKIN_DEVEL_PREFIX}/${PYTHON_INSTALL_DIR}")
+    file(MAKE_DIRECTORY "${CATKIN_DEVEL_PREFIX}/${PYTHON_INSTALL_DIR}")
+    # refresh environment cache
+    safe_execute_process(COMMAND ${GENERATE_ENVIRONMENT_CACHE_COMMAND})
+  endif()
+
   # generate relaying __init__.py for each python package
   if(${PROJECT_NAME}_SETUP_PY_PACKAGES)
     list(LENGTH ${PROJECT_NAME}_SETUP_PY_PACKAGES pkgs_count)
@@ -144,6 +152,14 @@ function(catkin_python_setup)
     atomic_configure_file(${catkin_EXTRAS_DIR}/templates/script.py.in
       ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_BIN_DESTINATION}/${name}
       @ONLY)
+
+    add_python_executable(SCRIPT_NAME ${name}
+      TARGET_NAME ${name}_executable_devel
+      DESTINATION ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_BIN_DESTINATION})
+
+    add_python_executable(SCRIPT_NAME ${name}
+      TARGET_NAME ${name}_executable_install
+      DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION})
   endforeach()
 endfunction()
 

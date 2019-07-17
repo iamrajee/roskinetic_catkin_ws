@@ -49,6 +49,17 @@ if(NOT CATKIN_BUILD_BINARY_PACKAGE)
   if(NOT ROSBUILD_init_called)
     message(STATUS "Call enable_testing()")
     enable_testing()
+    if(DEFINED CATKIN_ENABLE_TESTING)
+      # configure CTest not to truncate the dashboard summary
+      file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/CTestCustom.cmake"
+        "set(CTEST_CUSTOM_MAXIMUM_PASSED_TEST_OUTPUT_SIZE 0)\n"
+        "set(CTEST_CUSTOM_MAXIMUM_FAILED_TEST_OUTPUT_SIZE 0)\n")
+      # create dart configuration from template
+      site_name(SITE)
+      configure_file(
+        ${CMAKE_ROOT}/Modules/DartConfiguration.tcl.in
+        ${PROJECT_BINARY_DIR}/CTestConfiguration.ini)
+    endif()
   else()
     message(STATUS "Skip enable_testing() for dry packages")
   endif()
@@ -95,6 +106,11 @@ function(catkin_run_tests_target type name xunit_filename)
   cmake_parse_arguments(_testing "" "WORKING_DIRECTORY" "COMMAND;DEPENDENCIES" ${ARGN})
   if(_testing_UNPARSED_ARGUMENTS)
     message(FATAL_ERROR "catkin_run_tests_target() called with unused arguments: ${_testing_UNPARSED_ARGUMENTS}")
+  endif()
+
+  # Friendly error message for ros/catkin#961
+  if(TARGET run_tests_${PROJECT_NAME} AND NOT TARGET _run_tests_${PROJECT_NAME})
+    message(FATAL_ERROR "catkin_run_tests_target() needs to create a target called `run_tests_${PROJECT_NAME}`, but it already exists. Please rename the existing `run_tests_${PROJECT_NAME}` target/executable/library to something else.")
   endif()
 
   # create meta target to trigger all tests of a project
