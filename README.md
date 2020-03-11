@@ -15,7 +15,9 @@ $ roscore
 $ rosrun firstpkg talker.py
 ```
 Terminal 2:\
-`$ rosrun firstpkg listen.py`
+```
+$ rosrun firstpkg listen.py
+```
 
 
 * ## manualcontrol
