@@ -14,7 +14,7 @@ source /home/pi/ros_catkin_ws/devel/setup.bash
 source /home/pi/ros_catkin_ws/devel_isolated/setup.bash
 clear
 ```
-*It will source the workspace after buiding workspace or after creating new pkg. Run it as ./refresh.sh*
+*It will source the workspace after buiding workspace or after creating new pkg. Run it as `./refresh.sh`*
 
 * ## makefile
 ```
@@ -36,30 +36,34 @@ cd ../
 make
 source refresh.sh
 ```
-*It will . Run it as ./refresh.sh*
+*It will create new package . Run it as `./createpkg.sh`newpkg_name*
 
 * ## tftree.sh
 ```
 #!/bin/bash
 rosrun rqt_tf_tree rqt_tf_tree
 ```
+*It will  launch the gui to visvualise the tf tree. Run it as `./tftree.sh`*
 
 * ## printenv.sh
 ```
 #!/bin/bash
 printenv | grep -i ROS
 ```
+*It will print the ROS related environment variable . Run it as `./printenv.sh`*
 
 * ## rosdep.sh
 ```
-code
+sudo rosdep install -i --from-path src --rosdistro kinnetic -y
 ```
+*It will install dependencies of all pkg in the workspace . Run it as `./rosdep.sh`*
 
 * ## rajendra.sh
 ```
 #!/bin/bash
 ssh rajendra@rajendra
 ```
+*It will ssh into another system. Useful when using muliple ros masters. Run it as `./rajendra.sh`*
 
 * ## googleassistant.sh
 ```
@@ -72,6 +76,8 @@ ssh rajendra@rajendra
 	bash refresh.sh
 }
 ```
+*It will run the googleassistant api in terminal. I used this on RAWBOT 1.0 for audio commads . Run it as `./googleassistant.sh`*
+
 
 # License
 MIT License
