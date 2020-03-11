@@ -38,7 +38,7 @@ cd ../
 make
 source refresh.sh
 ```
-*It will create new package . Run it as `./createpkg.sh`newpkg_name*
+*It will create new package . Run it as `./createpkg.sh newpkg_name`*
 
 * ## tftree.sh
 ```
