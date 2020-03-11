@@ -207,6 +207,9 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46#file-samplereadme-md
 https://github.com/icholy/ttygif
+https://github.com/techqueria/website
+https://github.com/docsifyjs/docsify
+https://github.com/fvcproductions/apprenticeships.me
 --->
 
 
