@@ -222,8 +222,7 @@ Reach out to me at one of the following places!
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright (c) 2019 Rajendra Singh.
----  
-<br />
+---<br/>
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used and thanks to everyone who inspired and supported me in this project.
