@@ -79,7 +79,7 @@
 	source ~/ros_catkin_ws/devel_isolated/setup.bash
 	clear
 	```
-	*It will source the workspace after buiding workspace or after creating new pkg. Run it as `./refresh.sh`*
+	> It will source the workspace after buiding workspace or after creating new pkg. Run it as `./refresh.sh`
 
 * ## makefile
 	```
