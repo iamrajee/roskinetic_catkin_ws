@@ -7,7 +7,6 @@
 # File description
 
 * ## refresh.sh
-*It will source the workspace after buiding workspace or after creating new pkg. Run it as ./refresh.sh*
 ```
 #!/bin/bash
 source /opt/ros/kinetic/setup.bash
@@ -15,6 +14,7 @@ source /home/pi/ros_catkin_ws/devel/setup.bash
 source /home/pi/ros_catkin_ws/devel_isolated/setup.bash
 clear
 ```
+*It will source the workspace after buiding workspace or after creating new pkg. Run it as ./refresh.sh*
 
 * makefile
 ```
