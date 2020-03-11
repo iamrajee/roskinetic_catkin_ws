@@ -106,7 +106,7 @@ ssh rajendra@rajendra
 
 > Or Contributors/supporters/mentors/guides who helped me out in these projects.
 
-| <a href="http://" target="_blank">**Muskaan Maheshwari**</a> | <a href="http://fvcproductions.com" target="_blank">**Sachin Rustagi**</a> | <a href="http://fvcproductions.com" target="_blank">**S M Rafi**</a> |
+| <a href="https://github.com/MuskaanMaheshwari" target="_blank">**Muskaan Maheshwari**</a> | <a href="https://www.linkedin.com/in/sachin-rustagi-882b55145/" target="_blank">**Sachin Rustagi**</a> | <a href="https://www.linkedin.com/in/s-m-rafi-911442130/" target="_blank">**S M Rafi**</a> |
 | :---: |:---:| :---:|
 | [![Muskaan Maheshwari](https://avatars0.githubusercontent.com/u/18076234?s=200&v=3)](https://github.com/MuskaanMaheshwari)    | [![Sachin Rustagi](https://avatars0.githubusercontent.com/u/2555224?s=200&v=3)](https://www.linkedin.com/in/sachin-rustagi-882b55145/) | [![S M Rafi](https://avatars0.githubusercontent.com/u/917816?s=200&v=3)](https://www.linkedin.com/in/s-m-rafi-911442130/)  |
 <!--- 
