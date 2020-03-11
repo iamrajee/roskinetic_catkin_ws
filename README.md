@@ -197,7 +197,7 @@ https://github.com/icholy/ttygif
 
 - 🔃 Create a new pull request using <a href="https://github.com/iamrajee/roskinetic_catkin_ws/compare/" target="_blank">`https://github.com/iamrajee/roskinetic_catkin_ws/compare/`</a>.
 ---
-<br/><br/>
+
 ## FAQ
 
 - **I ran into xyz issue while running above package, what do I do?**
