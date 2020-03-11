@@ -120,6 +120,10 @@ https://stackoverflow.com/questions/52063556/add-image-to-github-readme-md-from-
 https://stackoverflow.com/questions/14494747/add-images-to-readme-md-on-github
 https://gist.github.com/uupaa/f77d2bcf4dc7a294d109
 https://github.com/jgm/pandoc/issues/2554
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46#file-samplereadme-md
+https://github.com/icholy/ttygif
 --->
 
 ---
