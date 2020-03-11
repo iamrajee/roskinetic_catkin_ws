@@ -204,7 +204,7 @@ https://github.com/icholy/ttygif
     - Simply contact me!
 
 ---
-
+<br/><br/>
 ## Support
 
 Reach out to me at one of the following places!
@@ -215,7 +215,7 @@ Reach out to me at one of the following places!
 - LinkedIn: at <a href="https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/" target="_blank">`@Rajendra Singh`</a>
 
 ---
-
+<br/><br/>
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
