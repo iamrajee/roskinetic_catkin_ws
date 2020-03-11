@@ -82,7 +82,7 @@
 	*It will source the workspace after buiding workspace or after creating new pkg. Run it as `./refresh.sh`*
 
 * ## makefile
-```
+	```
 	SHELL=/bin/bash
 	all:
 		make run
