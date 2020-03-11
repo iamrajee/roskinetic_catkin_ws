@@ -113,6 +113,8 @@ ssh rajendra@rajendra
 | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
 --->
 <img src="https://drive.google.com/uc?export=view&id=1hVB2mhKVIWReqvc5r2IEHbtcsNZjAqGi" width="48">
+<img src="https://drive.google.com/file/d/1hVB2mhKVIWReqvc5r2IEHbtcsNZjAqGi/view?usp=sharing" width="48">
+
 ---
 
 ## FAQ
