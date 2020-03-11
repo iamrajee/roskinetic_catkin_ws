@@ -191,7 +191,7 @@ https://github.com/icholy/ttygif
 
 ### Step 2
 
-	- **HACK AWAY!** 🔨🔨🔨
+- **HACK AWAY!** 🔨🔨🔨
 
 ### Step 3
 
