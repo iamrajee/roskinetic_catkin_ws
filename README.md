@@ -14,7 +14,7 @@ Terminal 1:
 $ roscore
 $ rosrun firstpkg talker.py
 ```
-Terminal 2:\
+Terminal 2:
 ```
 $ rosrun firstpkg listen.py
 ```
