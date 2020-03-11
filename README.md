@@ -108,7 +108,7 @@ ssh rajendra@rajendra
 
 | <a href="http://" target="_blank">**Muskaan Maheshwari**</a> | <a href="http://fvcproductions.com" target="_blank">**xyz1**</a> | <a href="http://fvcproductions.com" target="_blank">**xyz2**</a> |
 | :---: |:---:| :---:|
-| [![Muskaan Maheshwari](https://avatars3.githubusercontent.com/u/38295159?s=200&v=4)](https://github.com/MuskaanMaheshwari_)    | [![Sachin Rustagi](https://www.linkedin.com/in/sachin-rustagi-882b55145/detail/photo)](https://www.linkedin.com/in/sachin-rustagi-882b55145/) | [![S M Rafi](https://drive.google.com/uc?export=view&id=1hVB2mhKVIWReqvc5r2IEHbtcsNZjAqGi?s=200&v=4)](https://github.com/MuskaanMaheshwari_)  |
+| [![Muskaan Maheshwari](https://avatars3.githubusercontent.com/u/38295159?s=200&v=4)](https://github.com/MuskaanMaheshwari_)    | [![Sachin Rustagi](https://www.linkedin.com/in/sachin-rustagi-882b55145/detail/photo)](https://www.linkedin.com/in/sachin-rustagi-882b55145/) | [![S M Rafi](https://drive.google.com/uc?export=view&id=1hVB2mhKVIWReqvc5r2IEHbtcsNZjAqGi?v=3&s=200)](https://github.com/MuskaanMaheshwari_)  |
 <!--- 
 | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
 --->
