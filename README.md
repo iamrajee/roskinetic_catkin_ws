@@ -118,7 +118,7 @@ ssh rajendra@rajendra
 
 ## FAQ
 
-- **I ran into issues while run above package, what to do next??**
+- **I ran into xyz issue while running above package, what do I do?**
     - Simply contact me!
 
 ---
