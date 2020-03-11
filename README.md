@@ -104,7 +104,7 @@ ssh rajendra@rajendra
 
 ## Team
 
-> Or Contributors/People
+> Or Contributors/supporters/mentors/guides/People who help me in any manner in projects.
 
 | <a href="http://fvcproductions.com" target="_blank">**Muskaan Maheshwari**</a> | <a href="http://fvcproductions.com" target="_blank">**xyz1**</a> | <a href="http://fvcproductions.com" target="_blank">**xyz2**</a> |
 | :---: |:---:| :---:|
