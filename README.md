@@ -206,8 +206,7 @@ https://github.com/icholy/ttygif
 ---
 
 ## Support
-
-Reach out to me at one of the following places!
+	Reach out to me at one of the following places!
 
 - Website: <a href="https://iamrajee.github.io/" target="_blank">`iamrajee.github.io/`</a>
 - Twitter: <a href="https://twitter.com/i_am_rajee" target="_blank">`@i_am_rajee`</a>
@@ -217,7 +216,7 @@ Reach out to me at one of the following places!
 
 ## License
 
-	[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright (c) 2019 Rajendra Singh.
