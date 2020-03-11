@@ -68,7 +68,7 @@
 	*This pkg is similar to manualcontrol with some more functionality and modification, and it is meant to be used on ROS Master which is used as Slave in system on robots*
 
 ---
-
+<br/><br/>
 # Helper Scripts
 
 * ## refresh.sh
@@ -176,7 +176,7 @@ https://github.com/icholy/ttygif
 
 
 ---
-<br/><br/>
+
 ## Contributing
 
 > To get started...
