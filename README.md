@@ -9,6 +9,7 @@
 * ## firstpkg
 *first pkg to create simple talker and listener.*
 * Run\
+
 Terminal 1:\
 ```
 $ roscore
