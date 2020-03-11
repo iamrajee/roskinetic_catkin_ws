@@ -16,7 +16,7 @@ clear
 ```
 *It will source the workspace after buiding workspace or after creating new pkg. Run it as ./refresh.sh*
 
-* makefile
+* ## makefile
 ```
 SHELL=/bin/bash
 all:
@@ -25,8 +25,9 @@ run:
 	catkin_make #catkin_make_isolated
 	bash refresh.sh
 ```
+*It will build the workspace . Run it as `make`*
 
-* createpkg.sh
+* ## createpkg.sh
 ```
 #!/bin/bash
 cd src/
@@ -35,31 +36,32 @@ cd ../
 make
 source refresh.sh
 ```
+*It will . Run it as ./refresh.sh*
 
-* tftree.sh
+* ## tftree.sh
 ```
 #!/bin/bash
 rosrun rqt_tf_tree rqt_tf_tree
 ```
 
-* printenv.sh
+* ## printenv.sh
 ```
 #!/bin/bash
 printenv | grep -i ROS
 ```
 
-* rosdep.sh
+* ## rosdep.sh
 ```
 code
 ```
 
-* rajendra.sh
+* ## rajendra.sh
 ```
 #!/bin/bash
 ssh rajendra@rajendra
 ```
 
-* googleassistant.sh
+* ## googleassistant.sh
 ```
 #!/bin/bash
 { # try
