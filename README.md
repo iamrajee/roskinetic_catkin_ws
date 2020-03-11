@@ -86,8 +86,8 @@ ssh rajendra@rajendra
 
 * ## manualcontrol
 ![RAWBOT 2.0](demogif/RAWBOT.gif)\
+See full video [here](https://youtu.be/wrBw4yES4Eo).
 *In this pkg is create for a robot name RAWBOT,which is surveling robot.*\
-Full video [here](https://youtu.be/wrBw4yES4Eo).
 
 * ## manualcontrol_slave
 *This pkg is similar to manualcontrol.*
