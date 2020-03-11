@@ -183,7 +183,7 @@ https://github.com/icholy/ttygif
 
 ### Step 1
 
-- **Option 1**
+- **Option 1**\
 	    - 🍴 Fork this repo!
 
 	- **Option 2**
