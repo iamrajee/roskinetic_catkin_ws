@@ -23,7 +23,7 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftechqueria%2Fwebsite.svg?type=small)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftechqueria%2Fwebsite?ref=badge_small)
 -->
 
-It is ROS workspace create on Raspbian OS. Here I installed ROS Kinetic from source using cross-compilation.
+This ROS workspace is create on Raspbian OS. Here I have installed ROS Kinetic from source using cross-compilation.
 <br/><br/>
 
 <!---(Raspi#38)--->
