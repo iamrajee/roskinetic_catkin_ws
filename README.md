@@ -3,7 +3,7 @@
 * Author : Rajendra Singh
 * Email : singh.raj1997@gmail.com
 # File description
-* # refresh.sh
+## refresh.sh
 
 ```
 #!/bin/bash
