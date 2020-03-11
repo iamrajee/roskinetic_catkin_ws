@@ -124,9 +124,16 @@ ssh rajendra@rajendra
 
 > Or Contributors/supporters/mentors/guides who helped me out in these projects.
 
+| <a href="https://github.com/MuskaanMaheshwari" target="_blank">**Muskaan Maheshwari**</a> | <a href="https://www.linkedin.com/in/sachin-rustagi-882b55145/" target="_blank">**Sachin Rustagi**</a> | <a href="https://www.linkedin.com/in/amin-swamiprasad-pkd-17732b152/" target="_blank">**Swami Prasad**</a> |
+| :---: |:---:| :---:|
+| [![](https://avatars0.githubusercontent.com/u/18076234?s=200&v=3)] | [![](https://avatars0.githubusercontent.com/u/2555224?s=200&v=3)](https://www.linkedin.com/in/sachin-rustagi-882b55145/) | [![](https://avatars0.githubusercontent.com/u/917816?s=200&v=3)](https://www.linkedin.com/in/s-m-rafi-911442130/)  |
+
+<!---
 | <a href="https://github.com/MuskaanMaheshwari" target="_blank">**Muskaan Maheshwari**</a> | <a href="https://www.linkedin.com/in/sachin-rustagi-882b55145/" target="_blank">**Sachin Rustagi**</a> | <a href="https://www.linkedin.com/in/s-m-rafi-911442130/" target="_blank">**S M Rafi**</a> |
 | :---: |:---:| :---:|
-| [![Muskaan Maheshwari](https://avatars0.githubusercontent.com/u/18076234?s=200&v=3)](https://github.com/MuskaanMaheshwari)    | [![Sachin Rustagi](https://avatars0.githubusercontent.com/u/2555224?s=200&v=3)](https://www.linkedin.com/in/sachin-rustagi-882b55145/) | [![S M Rafi](https://avatars0.githubusercontent.com/u/917816?s=200&v=3)](https://www.linkedin.com/in/s-m-rafi-911442130/)  |
+| [![](https://avatars0.githubusercontent.com/u/18076234?s=200&v=3)](https://github.com/MuskaanMaheshwari)    | [![](https://avatars0.githubusercontent.com/u/2555224?s=200&v=3)](https://www.linkedin.com/in/sachin-rustagi-882b55145/) | [![](https://avatars0.githubusercontent.com/u/917816?s=200&v=3)](https://www.linkedin.com/in/s-m-rafi-911442130/)  |
+--->
+
 <!--- 
 https://avatars3.githubusercontent.com/u/38295159?s=200&v=3
 | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
@@ -157,7 +164,7 @@ https://github.com/icholy/ttygif
     - 🍴 Fork this repo!
 
 - **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
+    - 👯 Clone this repo to your local machine using `https://github.com/iamrajee/roskinetic_catkin_ws.git`
 
 ### Step 2
 
@@ -165,7 +172,7 @@ https://github.com/icholy/ttygif
 
 ### Step 3
 
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
+- 🔃 Create a new pull request using <a href="https://github.com/iamrajee/roskinetic_catkin_ws/compare/" target="_blank">`https://github.com/iamrajee/roskinetic_catkin_ws/compare/`</a>.
 ---
 
 ## FAQ
