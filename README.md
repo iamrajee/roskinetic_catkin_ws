@@ -25,7 +25,7 @@
 ## Installation
 
 - All the `code` required to get started
-#### Prerequisite
+- #### Prerequisite
 - You should have ROS 1 kinectic build from source on your raspberry pi(raspbian OS)
 
 #### Clone
