@@ -21,7 +21,7 @@
 * Web    : https://iamrajee.github.io/
 * LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/
 ---
-
+<br/><br/>
 ## Installation
 
 - All the `code` required to get started
