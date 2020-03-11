@@ -90,7 +90,7 @@
 		catkin_make #catkin_make_isolated
 		bash refresh.sh
 	```
-	*It will build the workspace . Run it as `make`*
+	> It will build the workspace . Run it as `make`
 
 * ## createpkg.sh
 	```
@@ -101,7 +101,7 @@
 	make
 	source refresh.sh
 	```
-	*It will create new package . Run it as `./createpkg.sh newpkg_name`*
+	> *It will create new package . Run it as `./createpkg.sh newpkg_name`*
 
 * ## tftree.sh
 	```
