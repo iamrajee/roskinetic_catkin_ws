@@ -85,8 +85,8 @@ ssh rajendra@rajendra
 *first pkg to create simple talker and listener.*
 
 * ## manualcontrol
-gif
-*In this pkg is create for a robot name RAWBOT,which is surveling robot.*
+![RAWBOT](demogif/RAWBOT.gif)
+*In this pkg is create for a robot name RAWBOT,which is surveling robot.*\
 Youtube video - link
 
 * ## manualcontrol_slave
