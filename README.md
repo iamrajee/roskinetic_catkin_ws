@@ -224,7 +224,6 @@ Reach out to me at one of the following places!
 - Copyright (c) 2019 Rajendra Singh.
 ---
 \
-\
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used and thanks to everyone who inspired and supported me in this project.
