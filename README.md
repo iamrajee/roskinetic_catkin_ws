@@ -62,7 +62,7 @@
 * ## [manualcontrol](src/manualcontrol)
 	![RAWBOT 2.0](demogif/RAWBOT.gif)\
 	See full video [here](https://youtu.be/wrBw4yES4Eo).
-	*In this pkg is create for a robot name RAWBOT,which is surveling robot.*\
+	*In this pkg is create for a robot name RAWBOT,which is surveling robot.*
 
 * ## [manualcontrol_slave](src/manualcontrol_slave)
 	*This pkg is similar to manualcontrol with some more functionality and modification, and it is meant to be used on ROS Master which is used as Slave in system on robots*
