@@ -14,14 +14,14 @@
 <!--- - [xyz](link) --->
 
 ---
-<br/><br/>
+
 ## Maintainer
 * Name : Rajendra Singh
 * Email  : singh.raj1997@gmail.com
 * Web    : https://iamrajee.github.io/
 * LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/
 ---
-<br/><br/>
+
 ## Installation
 
 - All the `code` required to get started
@@ -204,7 +204,7 @@ https://github.com/icholy/ttygif
     - Simply contact me!
 
 ---
-<br/><br/>
+
 ## Support
 
 Reach out to me at one of the following places!
@@ -215,7 +215,7 @@ Reach out to me at one of the following places!
 - LinkedIn: at <a href="https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/" target="_blank">`@Rajendra Singh`</a>
 
 ---
-<br/><br/>
+
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
@@ -223,7 +223,7 @@ Reach out to me at one of the following places!
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright (c) 2019 Rajendra Singh.
 ---
-<br/><br/>
-## Acknowledgments
+
+<br/> ## Acknowledgments
 
 * Hat tip to anyone whose code was used and thanks to everyone who inspired and supported me in this project.
