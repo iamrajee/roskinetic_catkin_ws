@@ -8,6 +8,15 @@
 # Package description
 * ## firstpkg
 *first pkg to create simple talker and listener.*
+* Run
+Terminal 1:\
+```
+$ roscore
+$ rosrun firstpkg talker.py
+```
+Terminal 2:\
+`$ rosrun firstpkg listen.py`
+
 
 * ## manualcontrol
 ![RAWBOT 2.0](demogif/RAWBOT.gif)\
