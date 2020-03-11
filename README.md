@@ -1,4 +1,4 @@
-# Raspberry pi raspbian ros kinetic workspace of pi(no. 38)
+# Raspberry pi(#38) raspbian ros kinetic workspace
 # Contact
 * Author : Rajendra Singh
 * Email  : singh.raj1997@gmail.com
