@@ -25,8 +25,9 @@ It is ROS workspace create on Raspbian OS. Here I install ROS Kinetic from sourc
 * LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/
 <!---
 | <a href="https://github.com/MuskaanMaheshwari" target="_blank">**Muskaan Maheshwari**</a> | <a href="https://www.linkedin.com/in/sachin-rustagi-882b55145/" target="_blank">**Sachin Rustagi**</a> |
-|  |  |
 --->
+|  |  |
+
 | :---: | --- |
 | ![](https://avatars0.githubusercontent.com/u/25712145?s=200&v=3) | Name : Rajendra Singh<br/> Email  : singh.raj1997@gmail.com<br/> Web    : https://iamrajee.github.io/<br/> LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/ |
 
