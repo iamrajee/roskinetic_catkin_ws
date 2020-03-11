@@ -13,9 +13,60 @@ source /home/pi/ros_catkin_ws/devel_isolated/setup.bash
 clear
 ```
 
-makefile   -
-tftree.sh  - 
-rosdep.sh  -
+* makefile
+```
+SHELL=/bin/bash
+all:
+	make run
+run:
+	catkin_make #catkin_make_isolated
+	bash refresh.sh
+```
+
+* createpkg.sh
+```
+#!/bin/bash
+cd src/
+catkin create $1
+cd ../
+make
+source refresh.sh
+```
+
+* tftree.sh
+```
+#!/bin/bash
+rosrun rqt_tf_tree rqt_tf_tree
+```
+
+* printenv.sh
+```
+#!/bin/bash
+printenv | grep -i ROS
+```
+
+* rosdep.sh
+```
+code
+```
+
+* rajendra.sh
+```
+#!/bin/bash
+ssh rajendra@rajendra
+```
+
+* googleassistant.sh
+```
+#!/bin/bash
+{ # try
+	googlesamples-assistant-hotword --project-id first-66e46 --device-model-id first-66e46-firstproduct-hx0n7j
+	#googlesamples-assistant-pushtotalk --project-id first-66e46 --device-model-id first-66e46-firstproduct-hx0n7j
+} || { # catch
+    # save log for exception
+	bash refresh.sh
+}
+```
 
 # License
 MIT License
