@@ -1,4 +1,4 @@
-# Raspberry Pi(#38) Raspbian ROS Kinetic Workspace
+# ROS Kinetic Workspace for Raspbian OS (Raspi#38)
 ## Table of content
 - [Author](https://github.com/iamrajee/roskinetic_catkin_ws#author)
 - [Installation](https://github.com/iamrajee/roskinetic_catkin_ws#installation)
