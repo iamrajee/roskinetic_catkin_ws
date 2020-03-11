@@ -23,7 +23,7 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftechqueria%2Fwebsite.svg?type=small)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftechqueria%2Fwebsite?ref=badge_small)
 -->
 
-This ROS workspace is create on Raspbian OS. Here I have installed ROS Kinetic from source using cross-compilation.
+This ROS workspace is created on Raspbian OS. Here I have installed ROS Kinetic from source using cross-compilation.
 <br/><br/>
 
 <!---(Raspi#38)--->
@@ -61,122 +61,122 @@ This ROS workspace is create on Raspbian OS. Here I have installed ROS Kinetic f
 
 > All the `code` required to get started
 - #### Prerequisite
-	- You should have ROS 1 kinectic build from source on your raspberry pi(raspbian OS).
-	- All ROS dependency are satisfied.
+    - You should have ROS 1 kinectic build from source on your raspberry pi(raspbian OS).
+    - All ROS dependency is satisfied.
 
 - #### Clone
 
-	```
-	git clone https://github.com/iamrajee/roskinetic_catkin_ws.git
-	```
+    ```
+    git clone https://github.com/iamrajee/roskinetic_catkin_ws.git
+    ```
 
 - #### Setup
-	```
-	cd roskinetic_catkin_ws/
-	./refresh.sh
-	make
-	```
+    ```
+    cd roskinetic_catkin_ws/
+    ./refresh.sh
+    make
+    ```
 ---
 
 
 ## Package description
 * ## [firstpkg](src/firstpkg)
-	first pkg to create simple talker and listener.*
+    first pkg to create simple talker and listener.*
 
-	Terminal 1:
-	```
-	$ roscore
-	$ rosrun firstpkg talker.py
-	```
-	Terminal 2:
-	```
-	$ rosrun firstpkg listen.py
-	```
+    Terminal 1:
+    ```
+    $ roscore
+    $ rosrun firstpkg talker.py
+    ```
+    Terminal 2:
+    ```
+    $ rosrun firstpkg listen.py
+    ```
 
 
 * ## [manualcontrol](src/manualcontrol)
-	![RAWBOT 2.0](demogif/RAWBOT.gif)\
-	See full video [here](https://youtu.be/wrBw4yES4Eo).
-	*In this pkg is create for a robot name RAWBOT,which is surveling robot.*
+    ![RAWBOT 2.0](demogif/RAWBOT.gif)\
+    See full video [here](https://youtu.be/wrBw4yES4Eo).
+    *In this pkg is create for a robot name RAWBOT,which is surveling robot.*
 
 * ## [manualcontrol_slave](src/manualcontrol_slave)
-	*This pkg is similar to manualcontrol with some more functionality and modification, and it is meant to be used on ROS Master which is used as Slave in system on robots*
+    *This pkg is similar to manualcontrol with some more functionality and modification, and it is meant to be used on ROS Master which is used as Slave in the system on robots*
 
 ---
 <br/><br/>
 # Helper Scripts
 
 * ## refresh.sh
-	```
-	#!/bin/bash
-	source /opt/ros/kinetic/setup.bash
-	source ~/ros_catkin_ws/devel/setup.bash
-	source ~/ros_catkin_ws/devel_isolated/setup.bash
-	clear
-	```
-	> It will source the workspace after buiding workspace or after creating new pkg. Run it as `./refresh.sh`
+    ```
+    #!/bin/bash
+    source /opt/ros/kinetic/setup.bash
+    source ~/ros_catkin_ws/devel/setup.bash
+    source ~/ros_catkin_ws/devel_isolated/setup.bash
+    clear
+    ```
+    > It will source the workspace after buiding workspace or after creating new pkg. Run it as `./refresh.sh`
 
 * ## makefile
-	```
-	SHELL=/bin/bash
-	all:
-		make run
-	run:
-		catkin_make #catkin_make_isolated
-		bash refresh.sh
-	```
-	> It will build the workspace . Run it as `make`
+    ```
+    SHELL=/bin/bash
+    all:
+        make run
+    run:
+        catkin_make #catkin_make_isolated
+        bash refresh.sh
+    ```
+    > It will build the workspace . Run it as `make`
 
 * ## createpkg.sh
-	```
-	#!/bin/bash
-	cd src/
-	catkin create $1
-	cd ../
-	make
-	source refresh.sh
-	```
-	> It will create new package . Run it as `./createpkg.sh newpkg_name`
+    ```
+    #!/bin/bash
+    cd src/
+    catkin create $1
+    cd ../
+    make
+    source refresh.sh
+    ```
+    > It will create new package . Run it as `./createpkg.sh newpkg_name`
 
 * ## tftree.sh
-	```
-	#!/bin/bash
-	rosrun rqt_tf_tree rqt_tf_tree
-	```
-	> It will  launch the gui to visvualise the tf tree. Run it as `./tftree.sh`
+    ```
+    #!/bin/bash
+    rosrun rqt_tf_tree rqt_tf_tree
+    ```
+    > It will  launch the gui to visvualise the tf tree. Run it as `./tftree.sh`
 
 * ## printenv.sh
-	```
-	#!/bin/bash
-	printenv | grep -i ROS
-	```
-	> It will print the ROS related environment variable . Run it as `./printenv.sh`
+    ```
+    #!/bin/bash
+    printenv | grep -i ROS
+    ```
+    > It will print the ROS related environment variable . Run it as `./printenv.sh`
 
 * ## rosdep.sh
-	```
-	sudo rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y
-	```
-	> It will install dependencies of all pkg in the workspace . Run it in workspace as `./rosdep.sh`
+    ```
+    sudo rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y
+    ```
+    > It will install dependencies of all pkg in the workspace. Run it in the workspace as `./rosdep.sh`
 
 * ## rajendra.sh
-	```
-	#!/bin/bash
-	ssh rajendra@rajendra
-	```
-	> It will ssh into another system. Useful when using muliple ros masters. Run it as `./rajendra.sh`
+    ```
+    #!/bin/bash
+    ssh rajendra@rajendra
+    ```
+    > It will ssh into another system. Useful when using multiple ros masters. Run it as `./rajendra.sh`
 
 * ## googleassistant.sh
-	```
-	#!/bin/bash
-	{ # try
-		googlesamples-assistant-hotword --project-id first-66e46 --device-model-id first-66e46-firstproduct-hx0n7j
-		#googlesamples-assistant-pushtotalk --project-id first-66e46 --device-model-id first-66e46-firstproduct-hx0n7j
-	} || { # catch
-	    # save log for exception
-		bash refresh.sh
-	}
-	```
-	> It will run the googleassistant api in terminal. I used this on RAWBOT 1.0 for audio commads . Run it as `./googleassistant.sh`
+    ```
+    #!/bin/bash
+    { # try
+        googlesamples-assistant-hotword --project-id first-66e46 --device-model-id first-66e46-firstproduct-hx0n7j
+        #googlesamples-assistant-pushtotalk --project-id first-66e46 --device-model-id first-66e46-firstproduct-hx0n7j
+    } || { # catch
+        # save log for exception
+        bash refresh.sh
+    }
+    ```
+    > It will run the googleassistant api in terminal. I used this on RAWBOT 1.0 for audio commads . Run it as `./googleassistant.sh`
 
 ---
 <br/><br/>
@@ -222,10 +222,10 @@ https://github.com/fvcproductions/apprenticeships.me
 ### Step 1
 
 - **Option 1**
-	- 🍴 Fork this repo!
+    - 🍴 Fork this repo!
 
 - **Option 2**
-	- 👯 Clone this repo to your local machine using `https://github.com/iamrajee/roskinetic_catkin_ws.git`
+    - 👯 Clone this repo to your local machine using `https://github.com/iamrajee/roskinetic_catkin_ws.git`
 
 ### Step 2
 
