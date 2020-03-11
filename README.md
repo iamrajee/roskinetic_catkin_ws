@@ -1,6 +1,6 @@
 # Raspberry Pi(#38) Raspbian ROS Kinetic Workspace
 # Contact
-* Author : Rajendra Singh
+* Maintainer : Rajendra Singh
 * Email  : singh.raj1997@gmail.com
 * Web    : https://iamrajee.github.io/
 * LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/
