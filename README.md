@@ -201,7 +201,7 @@ https://github.com/icholy/ttygif
 ## FAQ
 
 - **I ran into xyz issue while running above package, what do I do?**
-    - Simply contact me!
+    - Simply contact me!<br/><br/>
 
 ---
 
@@ -212,7 +212,7 @@ Reach out to me at one of the following places!
 - Website: <a href="https://iamrajee.github.io/" target="_blank">`iamrajee.github.io/`</a>
 - Twitter: <a href="https://twitter.com/i_am_rajee" target="_blank">`@i_am_rajee`</a>
 - Email  : singh.raj1997@gmail.com
-- LinkedIn: at <a href="https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/" target="_blank">`@Rajendra Singh`</a>
+- LinkedIn: at <a href="https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/" target="_blank">`@Rajendra Singh`</a><br/><br/>
 
 ---
 
