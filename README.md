@@ -106,9 +106,7 @@ ssh rajendra@rajendra
 
 > Or Contributors/People
 
-| <a href="http://fvcproductions.com" target="_blank">**Muskaan Maheshwari**</a> 
-| <a href="http://fvcproductions.com" target="_blank">**xyz1**</a> 
-| <a href="http://fvcproductions.com" target="_blank">**xyz2**</a> |
+| <a href="http://fvcproductions.com" target="_blank">**Muskaan Maheshwari**</a> | <a href="http://fvcproductions.com" target="_blank">**xyz1**</a> | <a href="http://fvcproductions.com" target="_blank">**xyz2**</a> |
 | :---: |:---:| :---:|
 | [![Muskaan Maheshwari](https://avatars3.githubusercontent.com/u/38295159?s=200&v=4)](https://github.com/MuskaanMaheshwari)    | [![xyz1](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![xyz2](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
 <!--- 
