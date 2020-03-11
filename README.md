@@ -4,6 +4,7 @@
 * Email  : singh.raj1997@gmail.com
 * Web    : https://iamrajee.github.io/
 * LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/
+---
 
 ## Installation
 
@@ -22,6 +23,7 @@ cd roskinetic_catkin_ws/
 make
 ```
 ---
+
 
 ## Package description
 * ## [firstpkg](src/firstpkg)
@@ -45,6 +47,7 @@ See full video [here](https://youtu.be/wrBw4yES4Eo).
 
 * ## [manualcontrol_slave](src/manualcontrol_slave)
 *This pkg is similar to manualcontrol with some more functionality and modification, and it is meant to be used on ROS Master which is used as Slave in system on robots*
+---
 
 # Helper Scripts
 
@@ -119,6 +122,7 @@ ssh rajendra@rajendra
 }
 ```
 *It will run the googleassistant api in terminal. I used this on RAWBOT 1.0 for audio commads . Run it as `./googleassistant.sh`*
+---
 
 ## Team
 
@@ -197,6 +201,7 @@ Reach out to me at one of the following places!
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright (c) 2019 Rajendra Singh.
+---
 
 ## Acknowledgments
 
