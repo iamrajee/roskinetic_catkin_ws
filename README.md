@@ -184,14 +184,14 @@ https://github.com/icholy/ttygif
 ### Step 1
 
 - **Option 1**
-    - 🍴 Fork this repo!
+	    - 🍴 Fork this repo!
 
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/iamrajee/roskinetic_catkin_ws.git`
+	- **Option 2**
+	    - 👯 Clone this repo to your local machine using `https://github.com/iamrajee/roskinetic_catkin_ws.git`
 
 ### Step 2
 
-- **HACK AWAY!** 🔨🔨🔨
+	- **HACK AWAY!** 🔨🔨🔨
 
 ### Step 3
 
@@ -206,7 +206,7 @@ https://github.com/icholy/ttygif
 ---
 
 ## Support
-	Reach out to me at one of the following places!
+Reach out to me at one of the following places!
 
 - Website: <a href="https://iamrajee.github.io/" target="_blank">`iamrajee.github.io/`</a>
 - Twitter: <a href="https://twitter.com/i_am_rajee" target="_blank">`@i_am_rajee`</a>
