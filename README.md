@@ -45,7 +45,7 @@ make
 
 ## Package description
 * ## [firstpkg](src/firstpkg)
-*first pkg to create simple talker and listener.*
+- first pkg to create simple talker and listener.*
 
 Terminal 1:
 ```
