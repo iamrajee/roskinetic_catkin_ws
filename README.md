@@ -80,7 +80,17 @@ ssh rajendra@rajendra
 ```
 *It will run the googleassistant api in terminal. I used this on RAWBOT 1.0 for audio commads . Run it as `./googleassistant.sh`*
 
+# Package description
+* ## firstpkg
+*first pkg to create simple talker and listener.*
 
+* ## manualcontrol
+gif
+*In this pkg is create for a robot name RAWBOT,which is surveling robot.*
+Youtube video - link
+
+* ## manualcontrol_slave
+*first pkg to create simple talker and listener.*
 # License
 MIT License
 Copyright (c) 2019 Rajendra Singh
