@@ -221,7 +221,7 @@ Reach out to me at one of the following places!
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright (c) 2019 Rajendra Singh.<br/>
+- Copyright (c) 2019 Rajendra Singh.<br/><br/>
 ---
 
 ## Acknowledgments
