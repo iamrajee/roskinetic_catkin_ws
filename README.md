@@ -1,4 +1,7 @@
-# ROS Kinetic Workspace for Raspbian OS (Source build) 
+# ROS Kinetic Workspace
+It is ROS workspace create on Raspbian OS. Here I install ROS Kinetic from source using cross-compilation.
+---
+
 <!---(Raspi#38)--->
 ## Table of content
 - [Maintainer](https://github.com/iamrajee/roskinetic_catkin_ws#maintainer)
