@@ -5,7 +5,29 @@
 * Web    : https://iamrajee.github.io/
 * LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/
 
-# Package description
+## Installation
+
+- All the `code` required to get started
+
+### Clone
+
+- `git clone https://github.com/iamrajee/roskinetic_catkin_ws.git`
+
+### Setup
+```
+cd roskinetic_catkin_ws/
+./refresh.sh
+make
+```
+
+> now install npm and bower packages
+
+```shell
+$ npm install
+$ bower install
+```
+
+## Package description
 * ## [firstpkg](src/firstpkg)
 *first pkg to create simple talker and listener.*
 
