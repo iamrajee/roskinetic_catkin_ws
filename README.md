@@ -15,7 +15,7 @@
 
 ---
 
-## Author
+## Maintainer
 * Name : Rajendra Singh
 * Email  : singh.raj1997@gmail.com
 * Web    : https://iamrajee.github.io/
