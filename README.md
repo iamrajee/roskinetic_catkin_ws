@@ -1,7 +1,9 @@
 # Raspberry pi raspbian ros kinetic workspace of pi(no. 38)
 # Contact
 * Author : Rajendra Singh
-* Email : singh.raj1997@gmail.com
+* Email  : singh.raj1997@gmail.com
+* Web    : https://iamrajee.github.io/
+* LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/
 
 
 # File description
