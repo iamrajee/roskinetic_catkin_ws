@@ -144,7 +144,7 @@
 	*It will run the googleassistant api in terminal. I used this on RAWBOT 1.0 for audio commads . Run it as `./googleassistant.sh`*
 
 ---
-
+<br/><br/>
 ## Team
 
 > Or Contributors/supporters/mentors/guides who helped me out in these projects.
@@ -176,7 +176,7 @@ https://github.com/icholy/ttygif
 
 
 ---
-
+<br/><br/>
 ## Contributing
 
 > To get started...
@@ -197,7 +197,7 @@ https://github.com/icholy/ttygif
 
 - 🔃 Create a new pull request using <a href="https://github.com/iamrajee/roskinetic_catkin_ws/compare/" target="_blank">`https://github.com/iamrajee/roskinetic_catkin_ws/compare/`</a>.
 ---
-
+<br/><br/>
 ## FAQ
 
 - **I ran into xyz issue while running above package, what do I do?**
