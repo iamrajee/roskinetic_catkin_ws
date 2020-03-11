@@ -5,6 +5,17 @@
 * Web    : https://iamrajee.github.io/
 * LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/
 
+# Package description
+* ## firstpkg
+*first pkg to create simple talker and listener.*
+
+* ## manualcontrol
+![RAWBOT 2.0](demogif/RAWBOT.gif)\
+See full video [here](https://youtu.be/wrBw4yES4Eo).
+*In this pkg is create for a robot name RAWBOT,which is surveling robot.*\
+
+* ## manualcontrol_slave
+*This pkg is similar to manualcontrol with some more functionality and modification, and it is meant to be used on ROS Master which is used as Slave in system on robots*
 
 # Helper Scripts
 
@@ -12,8 +23,8 @@
 ```
 #!/bin/bash
 source /opt/ros/kinetic/setup.bash
-source /home/pi/ros_catkin_ws/devel/setup.bash
-source /home/pi/ros_catkin_ws/devel_isolated/setup.bash
+source ~/ros_catkin_ws/devel/setup.bash
+source ~/ros_catkin_ws/devel_isolated/setup.bash
 clear
 ```
 *It will source the workspace after buiding workspace or after creating new pkg. Run it as `./refresh.sh`*
@@ -56,9 +67,9 @@ printenv | grep -i ROS
 
 * ## rosdep.sh
 ```
-sudo rosdep install -i --from-path src --rosdistro kinnetic -y
+sudo rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y
 ```
-*It will install dependencies of all pkg in the workspace . Run it as `./rosdep.sh`*
+*It will install dependencies of all pkg in the workspace . Run it in workspace as `./rosdep.sh`*
 
 * ## rajendra.sh
 ```
@@ -80,17 +91,6 @@ ssh rajendra@rajendra
 ```
 *It will run the googleassistant api in terminal. I used this on RAWBOT 1.0 for audio commads . Run it as `./googleassistant.sh`*
 
-# Package description
-* ## firstpkg
-*first pkg to create simple talker and listener.*
-
-* ## manualcontrol
-![RAWBOT 2.0](demogif/RAWBOT.gif)\
-See full video [here](https://youtu.be/wrBw4yES4Eo).
-*In this pkg is create for a robot name RAWBOT,which is surveling robot.*\
-
-* ## manualcontrol_slave
-*This pkg is similar to manualcontrol.*
 # License
 MIT License
 Copyright (c) 2019 Rajendra Singh
