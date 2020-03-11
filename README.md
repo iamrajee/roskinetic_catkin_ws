@@ -11,10 +11,13 @@
 
 ### Clone
 
-```git clone https://github.com/iamrajee/roskinetic_catkin_ws.git```
+```
+git clone https://github.com/iamrajee/roskinetic_catkin_ws.git
+```
 
 ### Setup
-```cd roskinetic_catkin_ws/
+```
+cd roskinetic_catkin_ws/
 ./refresh.sh
 make
 ```
