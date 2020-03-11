@@ -6,7 +6,7 @@
 * LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/
 
 # Package description
-* ## firstpkg
+* ## [firstpkg](src/firstpkg)
 *first pkg to create simple talker and listener.*
 
 Terminal 1:
