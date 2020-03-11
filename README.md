@@ -3,7 +3,7 @@
 * Author : Rajendra Singh
 * Email : singh.raj1997@gmail.com
 # File description
-## refresh.sh
+## * refresh.sh
 #### Run:    ./refresh.sh or . refresh.sh \
 *It will source the workspace after buiding workspace or after creating new pkg.*
 ```
