@@ -2,10 +2,12 @@
 # Contact
 * Author : Rajendra Singh
 * Email : singh.raj1997@gmail.com
+
+
 # File description
+
 * ## refresh.sh
-#### Run:    ./refresh.sh or . refresh.sh \
-*It will source the workspace after buiding workspace or after creating new pkg.*
+*It will source the workspace after buiding workspace or after creating new pkg. Run it as ./refresh.sh*
 ```
 #!/bin/bash
 source /opt/ros/kinetic/setup.bash
