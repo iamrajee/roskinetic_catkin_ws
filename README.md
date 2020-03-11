@@ -90,7 +90,7 @@ gif
 Youtube video - link
 
 * ## manualcontrol_slave
-*first pkg to create simple talker and listener.*
+*This pkg is similar to manualcontrol.*
 # License
 MIT License
 Copyright (c) 2019 Rajendra Singh
