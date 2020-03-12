@@ -99,8 +99,10 @@ This ROS workspace is created on Raspbian OS. Here I have installed ROS Kinetic 
     ![RAWBOT 2.0](demogif/RAWBOT.gif)\
     See full video [here](https://youtu.be/wrBw4yES4Eo).
     *In this pkg is create for a robot name RAWBOT,which is surveling robot.*
-
+    
 * ## [manualcontrol_slave](src/manualcontrol_slave)
+    ![](https://github.com/iamrajee/resume/blob/master/category_wise_gif/ROS1_Kinetic_raspi/RAWBOT.gif)\
+    ![](https://github.com/iamrajee/resume/blob/master/category_wise_gif/ROS1_Kinetic_raspi/gmapping_navigation.gif)\
     *This pkg is similar to manualcontrol with some more functionality and modification, and it is meant to be used on ROS Master which is used as Slave in the system on robots*
 
 ---
