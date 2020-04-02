@@ -31,7 +31,6 @@ This ROS workspace is created on Raspbian OS. Here I have installed ROS Kinetic 
 
 <!---(Raspi#38)--->
 ## Table of content
-- [Maintainer](https://github.com/iamrajee/roskinetic_catkin_ws#maintainer)
 - [Installation](https://github.com/iamrajee/roskinetic_catkin_ws#installation)
 - [Package description](https://github.com/iamrajee/roskinetic_catkin_ws#package-description)
 - [Helper scripts](https://github.com/iamrajee/roskinetic_catkin_ws#helper-scripts)
