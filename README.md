@@ -43,20 +43,19 @@ This ROS workspace is created on Raspbian OS. Here I have installed ROS Kinetic 
 - [Acknowledgments](https://github.com/iamrajee/roskinetic_catkin_ws#acknowledgments)
 <!--- - [xyz](link) --->
 
----
-
-## Maintainer
 <!---
+---
+## Maintainer
 * Name : Rajendra Singh
 * Email  : singh.raj1997@gmail.com
 * Web    : https://iamrajee.github.io/
 * LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/
 | <a href="https://github.com/MuskaanMaheshwari" target="_blank">**Muskaan Maheshwari**</a> | <a href="https://www.linkedin.com/in/sachin-rustagi-882b55145/" target="_blank">**Sachin Rustagi**</a> |
---->
 |  |  |
 | :---: | --- |
 | ![](https://avatars0.githubusercontent.com/u/25712145?s=200&v=3) | Name : Rajendra Singh<br/> Email  : singh.raj1997@gmail.com<br/> Web    : https://iamrajee.github.io/<br/> LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/ |
 |  |  |
+--->
 
 ---
 
@@ -249,12 +248,12 @@ https://github.com/fvcproductions/apprenticeships.me
 ---
 
 ## Support
-Reach out to me at one of the following places!
-
-- Website: <a href="https://iamrajee.github.io/" target="_blank">`iamrajee.github.io/`</a>
-- Twitter: <a href="https://twitter.com/i_am_rajee" target="_blank">`@i_am_rajee`</a>
-- Email  : singh.raj1997@gmail.com
-- LinkedIn: at <a href="https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/" target="_blank">`@Rajendra Singh`</a>
+Reach out to me for any help!
+|  |  |
+| :---: | --- |
+| ![](https://avatars0.githubusercontent.com/u/25712145?s=200&v=3) | Name : Rajendra Singh<br/> Email  : singh.raj1997@gmail.com<br/> Web    : https://iamrajee.github.io/<br/> LinkedIn    : https://www.linkedin.com/in/rajendra-singh-6b0b3a13a/<br/> Twitter: <a href="https://twitter.com/i_am_rajee" target="_blank">`@i_am_rajee`</a> |
+|  |  |
+ 
 ---
 
 ## License
