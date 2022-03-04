@@ -190,7 +190,7 @@ This ROS workspace is created on Raspbian OS. Here I have installed ROS Kinetic 
 | <a href="https://github.com/MuskaanMaheshwari" target="_blank">**Muskaan Maheshwari**</a> | <a href="https://www.linkedin.com/in/sachin-rustagi-882b55145/" target="_blank">**Sachin Rustagi**</a> | <a href="https://www.linkedin.com/in/s-m-rafi-911442130/" target="_blank">**S M Rafi**</a> |
 | :---: |:---:| :---:|
 --->
-| <a href="https://www.linkedin.com/in/amin-swamiprasad-pkd-17732b152/" target="_blank">**Swami Prasad**</a> | <a href="https://www.linkedin.com/in/sachin-rustagi-882b55145/" target="_blank">**Sachin Rustagi**</a> | <a href="https://github.com/MuskaanMaheshwari" target="_blank">**Muskaan Maheshwari**</a> |
+| <a href="https://github.com/AminS1" target="_blank">**Swami Prasad**</a> | <a href="https://www.linkedin.com/in/sachin-rustagi-882b55145/" target="_blank">**Sachin Rustagi**</a> | <a href="https://github.com/MuskaanMaheshwari" target="_blank">**Muskaan Maheshwari**</a> |
 | :---: |:---:| :---:|
 | ![](https://avatars0.githubusercontent.com/u/18076234?s=200&v=3) | ![](https://avatars0.githubusercontent.com/u/2555224?s=200&v=3) | ![](https://avatars0.githubusercontent.com/u/917816?s=200&v=3)  |
 
